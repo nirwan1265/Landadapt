@@ -62,27 +62,43 @@ extract_n_values <- function(df, id_col, lon_col, lat_col, crop_name, rast_obj) 
 }
 
 # -----------------------------
-# Load geolocation files (separate maize/sorghum/rice/arabidopsis)
+# Load geolocation files (pearl millet optional)
 # -----------------------------
 at <- clean_names(read.csv(file.path(geoloc_dir, "at_1001_geoloc.csv"), check.names = FALSE))
+barley <- clean_names(read.csv(file.path(geoloc_dir, "barley_geoloc.csv"), check.names = FALSE))
 maize <- clean_names(read.csv(file.path(geoloc_dir, "maize_SEEDS_geoloc.csv"), check.names = FALSE))
 rice <- clean_names(read.csv(file.path(geoloc_dir, "rice_3000_geoloc.csv"), check.names = FALSE))
 sorghum <- clean_names(read.csv(file.path(geoloc_dir, "sorghum_Lasky_geoloc.csv"), check.names = FALSE))
+pearl_millet_path <- file.path(geoloc_dir, "pearl_millet_geoloc.csv")
+has_pearl_millet <- file.exists(pearl_millet_path)
+if (has_pearl_millet) {
+  pearl_millet <- clean_names(read.csv(pearl_millet_path, check.names = FALSE))
+}
 
 at_n <- extract_n_values(at, id_col = "Acession_ID", lon_col = "Long", lat_col = "Lat", crop_name = "arabidopsis", rast_obj = nitrogen)
+barley_n <- extract_n_values(barley, id_col = "Taxa", lon_col = "lon", lat_col = "lat", crop_name = "barley", rast_obj = nitrogen)
 maize_n <- extract_n_values(maize, id_col = "Taxa", lon_col = "lon", lat_col = "lat", crop_name = "maize", rast_obj = nitrogen)
 rice_n <- extract_n_values(rice, id_col = "Taxa", lon_col = "lon", lat_col = "lat", crop_name = "rice", rast_obj = nitrogen)
 sorghum_n <- extract_n_values(sorghum, id_col = "Taxa", lon_col = "lon", lat_col = "lat", crop_name = "sorghum", rast_obj = nitrogen)
 
-points <- bind_rows(maize_n, sorghum_n, rice_n, at_n)
+all_n <- bind_rows(maize_n, sorghum_n, rice_n, at_n, barley_n)
+if (has_pearl_millet) {
+  pearl_millet_n <- extract_n_values(pearl_millet, id_col = "Taxa", lon_col = "lon", lat_col = "lat", crop_name = "pearl_millet", rast_obj = nitrogen)
+  all_n <- bind_rows(all_n, pearl_millet_n)
+}
+points <- all_n
 points <- points %>% filter(!is.na(log_n))
 
 # Save TN tables from the same pipeline
+write.csv(barley_n, file.path(out_dir, "barley_N_values.csv"), row.names = FALSE)
 write.csv(maize_n, file.path(out_dir, "maize_N_values.csv"), row.names = FALSE)
+if (has_pearl_millet) {
+  write.csv(pearl_millet_n, file.path(out_dir, "pearl_millet_N_values.csv"), row.names = FALSE)
+}
 write.csv(sorghum_n, file.path(out_dir, "sorghum_N_values.csv"), row.names = FALSE)
 write.csv(rice_n, file.path(out_dir, "rice_N_values.csv"), row.names = FALSE)
 write.csv(at_n, file.path(out_dir, "arabidopsis_N_values.csv"), row.names = FALSE)
-write.csv(points, file.path(out_dir, "all_crops_N_values.csv"), row.names = FALSE)
+write.csv(all_n, file.path(out_dir, "all_crops_N_values.csv"), row.names = FALSE)
 
 # -----------------------------
 # Plot style and colors
@@ -108,7 +124,9 @@ crop_palettes <- list(
   maize = c("#FFF6B0", "#D4A000"),
   sorghum = c("#F2D6B5", "#7A4A12"),
   rice = c("#FFD6D6", "#B30000"),
-  arabidopsis = c("#CFEFC7", "#1B7A2A")
+  arabidopsis = c("#CFEFC7", "#1B7A2A"),
+  barley = c("#DCEBFF", "#2C6BB0"),
+  pearl_millet = c("#F2D7FF", "#8E24AA")
 )
 
 log_min <- min(points$log_n, na.rm = TRUE)
@@ -135,14 +153,12 @@ p <- ggplot() +
 
 # Crop legend markers (South America ocean gap)
 legend_df <- data.frame(
-  crop = c("maize", "sorghum", "rice", "arabidopsis"),
-  lon = c(-120, -120, -120, -120),
-  lat = c(-10, -18, -26, -34),
-  col = c(
-    col_numeric(crop_palettes$maize, domain = log_range)(log_max),
-    col_numeric(crop_palettes$sorghum, domain = log_range)(log_max),
-    col_numeric(crop_palettes$rice, domain = log_range)(log_max),
-    col_numeric(crop_palettes$arabidopsis, domain = log_range)(log_max)
+  crop = unique(points$crop),
+  lon = -120,
+  lat = seq(-6, by = -6, length.out = length(unique(points$crop))),
+  col = sapply(
+    unique(points$crop),
+    function(cr) col_numeric(crop_palettes[[cr]], domain = log_range)(log_max)
   )
 )
 
@@ -154,15 +170,15 @@ p <- p +
 grad_vals <- seq(0, 1, length.out = 60)
 grad_df <- data.frame(
   lon = -120,
-  lat = seq(-44, -52, length.out = length(grad_vals)),
+  lat = seq(-46, -54, length.out = length(grad_vals)),
   col = gray(1 - grad_vals)
 )
 
 p <- p +
   geom_point(data = grad_df, aes(x = lon, y = lat), color = grad_df$col, size = 3.6) +
-  annotate("text", x = -118.5, y = -44, label = "high", hjust = 0, size = 3.0) +
-  annotate("text", x = -118.5, y = -52, label = "low", hjust = 0, size = 3.0) +
-  annotate("text", x = -118.5, y = -48, label = "log10(N)", hjust = 0, size = 3.0) +
+  annotate("text", x = -118.5, y = -46, label = "high", hjust = 0, size = 3.0) +
+  annotate("text", x = -118.5, y = -54, label = "low", hjust = 0, size = 3.0) +
+  annotate("text", x = -118.5, y = -50, label = "log10(N)", hjust = 0, size = 3.0) +
   coord_sf(expand = FALSE) +
   plot_theme +
   theme(

@@ -1,0 +1,6 @@
+n_sequences: 11
+sequence_names: AT2G02220_arabidopsis, AT3G49670_arabidopsis, HORVU.MOREX.r3.1HG0041440_barley, Zm00001eb032940_maize, Zm00001eb222050_maize, Zm00001eb336650_maize, Zm00001eb378340_maize, Zm00001eb402940_maize, Zm00001eb403550_maize, Os02g0154000_rice, SORBI_3006G217900_sorghum
+alignment_length_aa: 1528
+model: JTT + Inv + Gamma
+bootstrap_replicates: 100
+seed: 2026
