@@ -1,0 +1,9 @@
+trait,orthogroups_total,orthogroups_common_ge2,orthogroups_common5
+soilN,24212,2582,4
+pc1_worldclim,24320,2676,2
+pc2_worldclim,23994,2515,1
+pc3_worldclim,23723,2353,1
+ph,24195,2751,6
+am_rel_abundance_colonization,23609,2251,1
+am_roots_colonized,23771,2388,4
+aridity_index,15210,904,0

@@ -1,0 +1,98 @@
+GO biological process complete	Hordeum vulgare subsp. vulgare - REFLIST (34193)	upload_1 (850)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (raw P-value)
+cellular response to gamma radiation (GO:0071480)	1	1	0.02	+	40.23	2.49E-02
+cellular response to zinc ion starvation (GO:0034224)	1	1	0.02	+	40.23	2.49E-02
+mitochondrial tRNA wobble uridine modification (GO:0070899)	1	1	0.02	+	40.23	2.49E-02
+purine ribonucleoside catabolic process (GO:0046130)	1	1	0.02	+	40.23	2.49E-02
+positive regulation of reciprocal meiotic recombination (GO:0010845)	1	1	0.02	+	40.23	2.49E-02
+xanthine metabolic process (GO:0046110)	1	1	0.02	+	40.23	2.49E-02
+inosine biosynthetic process (GO:0046103)	1	1	0.02	+	40.23	2.49E-02
+inosine metabolic process (GO:0046102)	1	1	0.02	+	40.23	2.49E-02
+heparan sulfate proteoglycan biosynthetic process (GO:0015012)	1	1	0.02	+	40.23	2.49E-02
+symbiont entry into host cell (GO:0046718)	1	1	0.02	+	40.23	2.49E-02
+symbiont entry into host (GO:0044409)	1	1	0.02	+	40.23	2.49E-02
+heparan sulfate proteoglycan metabolic process (GO:0030201)	1	1	0.02	+	40.23	2.49E-02
+response to zinc ion starvation (GO:0120127)	1	1	0.02	+	40.23	2.49E-02
+adenosine catabolic process (GO:0006154)	1	1	0.02	+	40.23	2.49E-02
+CMP-keto-3-deoxy-D-manno-octulosonic acid biosynthetic process (GO:0033468)	1	1	0.02	+	40.23	2.49E-02
+proteoglycan biosynthetic process (GO:0030166)	1	1	0.02	+	40.23	2.49E-02
+protein O-linked glycosylation via xylose (GO:0180064)	1	1	0.02	+	40.23	2.49E-02
+leukotriene metabolic process (GO:0006691)	1	1	0.02	+	40.23	2.49E-02
+regulation of ribosome biogenesis (GO:0090069)	1	1	0.02	+	40.23	2.49E-02
+cellular response to ionizing radiation (GO:0071479)	2	1	0.05	+	20.11	4.91E-02
+positive regulation of gibberellin biosynthetic process (GO:0010372)	2	1	0.05	+	20.11	4.91E-02
+regulation of gibberellin biosynthetic process (GO:0010371)	2	1	0.05	+	20.11	4.91E-02
+cardiolipin biosynthetic process (GO:0032049)	2	1	0.05	+	20.11	4.91E-02
+cardiolipin metabolic process (GO:0032048)	2	1	0.05	+	20.11	4.91E-02
+transcription antitermination (GO:0031564)	2	1	0.05	+	20.11	4.91E-02
+UV protection (GO:0009650)	2	1	0.05	+	20.11	4.91E-02
+mitochondrion DNA recombination (GO:1905951)	2	1	0.05	+	20.11	4.91E-02
+adenosine metabolic process (GO:0046085)	2	1	0.05	+	20.11	4.91E-02
+"retrograde transport, vesicle recycling within Golgi (GO:0000301)"	2	1	0.05	+	20.11	4.91E-02
+inter-Golgi cisterna vesicle-mediated transport (GO:0048219)	2	1	0.05	+	20.11	4.91E-02
+glutathione transport (GO:0034635)	2	1	0.05	+	20.11	4.91E-02
+regulation of reciprocal meiotic recombination (GO:0010520)	2	1	0.05	+	20.11	4.91E-02
+icosanoid metabolic process (GO:0006690)	2	1	0.05	+	20.11	4.91E-02
+viral life cycle (GO:0019058)	2	1	0.05	+	20.11	4.91E-02
+positive regulation of DNA recombination (GO:0045911)	2	1	0.05	+	20.11	4.91E-02
+biotin biosynthetic process (GO:0009102)	6	2	0.15	+	13.41	8.66E-03
+biotin metabolic process (GO:0006768)	6	2	0.15	+	13.41	8.66E-03
+L-serine biosynthetic process (GO:0006564)	6	2	0.15	+	13.41	8.66E-03
+response to UV-B (GO:0010224)	8	2	0.2	+	10.06	1.56E-02
+nuclear-transcribed mRNA poly(A) tail shortening (GO:0000289)	8	2	0.2	+	10.06	1.56E-02
+transcription-dependent tethering of RNA polymerase II gene DNA at nuclear periphery (GO:0000972)	9	2	0.22	+	8.94	1.98E-02
+sexual sporulation (GO:0034293)	10	2	0.25	+	8.05	2.43E-02
+plant-type sporogenesis (GO:0048236)	10	2	0.25	+	8.05	2.43E-02
+sporulation (GO:0043934)	10	2	0.25	+	8.05	2.43E-02
+intracellular pH reduction (GO:0051452)	11	2	0.27	+	7.31	2.93E-02
+vacuolar acidification (GO:0007035)	11	2	0.27	+	7.31	2.93E-02
+modified amino acid transport (GO:0072337)	12	2	0.3	+	6.7	3.45E-02
+negative regulation of protein-containing complex disassembly (GO:0043242)	13	2	0.32	+	6.19	4.02E-02
+magnesium ion transmembrane transport (GO:1903830)	20	3	0.5	+	6.03	1.27E-02
+magnesium ion transport (GO:0015693)	20	3	0.5	+	6.03	1.27E-02
+regulation of photosynthesis (GO:0010109)	14	2	0.35	+	5.75	4.61E-02
+(1->3)-beta-D-glucan biosynthetic process (GO:0006075)	14	2	0.35	+	5.75	4.61E-02
+(1->3)-beta-D-glucan metabolic process (GO:0006074)	14	2	0.35	+	5.75	4.61E-02
+cutin biosynthetic process (GO:0010143)	22	3	0.55	+	5.49	1.66E-02
+positive regulation of organelle organization (GO:0010638)	22	3	0.55	+	5.49	1.66E-02
+cutin-based cuticle development (GO:0160062)	24	3	0.6	+	5.03	2.10E-02
+response to UV (GO:0009411)	24	3	0.6	+	5.03	2.10E-02
+cytokinin-activated signaling pathway (GO:0009736)	60	7	1.49	+	4.69	7.03E-04
+cellular response to cytokinin stimulus (GO:0071368)	60	7	1.49	+	4.69	7.03E-04
+negative regulation of translation (GO:0017148)	35	4	0.87	+	4.6	1.08E-02
+intra-Golgi vesicle-mediated transport (GO:0006891)	27	3	0.67	+	4.47	2.87E-02
+response to cytokinin (GO:0009735)	64	7	1.59	+	4.4	1.04E-03
+L-serine metabolic process (GO:0006563)	28	3	0.7	+	4.31	3.16E-02
+xenobiotic export from cell (GO:0046618)	47	5	1.17	+	4.28	6.07E-03
+xenobiotic detoxification by transmembrane export across the plasma membrane (GO:1990961)	47	5	1.17	+	4.28	6.07E-03
+negative regulation of protein metabolic process (GO:0051248)	39	4	0.97	+	4.13	1.57E-02
+serine family amino acid biosynthetic process (GO:0009070)	39	4	0.97	+	4.13	1.57E-02
+positive regulation of cellular component organization (GO:0051130)	30	3	0.75	+	4.02	3.78E-02
+modulation of process of another organism (GO:0035821)	31	3	0.77	+	3.89	4.11E-02
+export across plasma membrane (GO:0140115)	76	7	1.89	+	3.71	2.83E-03
+nuclear-transcribed mRNA catabolic process (GO:0000956)	67	6	1.67	+	3.6	6.40E-03
+mRNA catabolic process (GO:0006402)	83	7	2.06	+	3.39	4.63E-03
+xenobiotic transport (GO:0042908)	62	5	1.54	+	3.24	1.89E-02
+phosphorelay signal transduction system (GO:0000160)	158	11	3.93	+	2.8	2.07E-03
+nucleic acid catabolic process (GO:0141188)	117	8	2.91	+	2.75	8.96E-03
+RNA catabolic process (GO:0006401)	104	7	2.59	+	2.71	1.52E-02
+export from cell (GO:0140352)	144	9	3.58	+	2.51	1.01E-02
+auxin-activated signaling pathway (GO:0009734)	113	7	2.81	+	2.49	2.29E-02
+cellular response to auxin stimulus (GO:0071365)	114	7	2.83	+	2.47	2.39E-02
+pollen development (GO:0009555)	100	6	2.49	+	2.41	3.88E-02
+hormone-mediated signaling pathway (GO:0009755)	507	24	12.6	+	1.9	3.45E-03
+cellular response to hormone stimulus (GO:0032870)	512	24	12.73	+	1.89	3.62E-03
+cellular response to endogenous stimulus (GO:0071495)	513	24	12.75	+	1.88	3.67E-03
+defense response (GO:0006952)	763	35	18.97	+	1.85	5.66E-04
+negative regulation of gene expression (GO:0010629)	389	16	9.67	+	1.65	4.74E-02
+macromolecule catabolic process (GO:0009057)	949	36	23.59	+	1.53	1.43E-02
+cellular response to chemical stimulus (GO:0070887)	871	33	21.65	+	1.52	1.97E-02
+response to chemical (GO:0042221)	1443	49	35.87	+	1.37	3.02E-02
+response to stress (GO:0006950)	2170	72	53.94	+	1.33	1.25E-02
+response to stimulus (GO:0050896)	3983	131	99.01	+	1.32	9.30E-04
+regulation of nucleobase-containing compound metabolic process (GO:0019219)	2259	71	56.16	+	1.26	4.23E-02
+response to oxygen-containing compound (GO:1901700)	586	7	14.57	-	0.48	4.33E-02
+system development (GO:0048731)	546	6	13.57	-	0.44	3.60E-02
+generation of precursor metabolites and energy (GO:0006091)	313	2	7.78	-	0.26	2.75E-02
+post-embryonic development (GO:0009791)	365	2	9.07	-	0.22	1.02E-02
+energy derivation by oxidation of organic compounds (GO:0015980)	224	1	5.57	-	0.18	4.87E-02
+transposition (GO:0032196)	260	1	6.46	-	0.15	2.46E-02

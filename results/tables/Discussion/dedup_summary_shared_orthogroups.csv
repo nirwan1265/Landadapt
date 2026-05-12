@@ -1,0 +1,7 @@
+file,n_before,n_after_dedup,removed
+results/tables/Discussion/soilN_shared_ge4_putative_functions.csv,39,18,21
+results/tables/Discussion/ph_shared_ge4_putative_functions.csv,46,20,26
+results/tables/Discussion/am_rel_abundance_colonization_shared_ge4_putative_functions.csv,21,11,10
+results/tables/Discussion/am_roots_colonized_shared_ge4_putative_functions.csv,32,17,15
+results/tables/Discussion/target_maize_genes_orthogroups_phenotype_presence_ge3.csv,23,6,17
+results/tables/Discussion/NRT_ortholog_all_species_in_common_ge3_phenotypes_binary.csv,4,1,3

@@ -2,3 +2,11 @@
 .Rhistory
 .RData
 .Ruserdata
+results/top0.5pct_traits/
+results/top0.5pct_traits_am/
+results/ph/no_window_test/
+results/AT_am_rel_abundance_colonization/
+results/withPC/rice_snprelate_chr1/
+*.gds
+*.vcf.gz
+*.vcf.gz.csi

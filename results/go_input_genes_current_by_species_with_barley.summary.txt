@@ -1,0 +1,6 @@
+top_fraction=0.005
+Arabidopsis: unique_snps=6886449, top0.5pct_snps=34433, genes=11203
+Rice: unique_snps=6146838, top0.5pct_snps=30735, genes=5176
+Maize: unique_snps=21874, top0.5pct_snps=110, genes=228
+Sorghum: unique_snps=3094, top0.5pct_snps=16, genes=47
+Barley: unique_snps=490617, top0.5pct_snps=2454, genes=859

@@ -1,0 +1,6 @@
+trait,species,top0p5_snps,bonf_snps,genes_mixed_window_10kb,annotation_window_bp
+pc1_worldclim,Maize,2477,1,3852,25000
+pc1_worldclim,Sorghum,367,6,1283,25000
+pc1_worldclim,Rice,31224,602,8459,10000
+pc1_worldclim,Barley,2460,8,1270,25000
+pc1_worldclim,Arabidopsis,17515,38,5699,10000

@@ -1,0 +1,10 @@
+Input: /Users/nirwantandukar/Documents/Github/Landadapt/results/pc1_worldclim/pc1_bonferroni_gene_table.csv
+Rows in input: 1390
+Genes per species:
+  Maize: 2
+  Sorghum: 10
+  Rice: 1308
+  Barley: 5
+  Arabidopsis: 65
+Orthogroups total: 250
+Orthogroups with >= 5 species: 0

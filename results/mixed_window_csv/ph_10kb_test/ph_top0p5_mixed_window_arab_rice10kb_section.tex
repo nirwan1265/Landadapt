@@ -1,0 +1,27 @@
+\subsection{Cross-species genome-wide associations with soil pH identify shared orthologous genes across all species (Arabidopsis/Rice 10 kb)}
+
+We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 6, rice 383, sorghum 3, barley 6, maize 0). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using \pm10 kb annotation for Arabidopsis and rice and \pm25 kb annotation for maize, sorghum, and barley. This yielded 5,102 Arabidopsis genes, 9,635 rice genes, 3,937 maize genes, 1,526 barley genes, and 1,203 sorghum genes.
+
+Orthogroup integration identified 24,195 total orthogroups, with 6 orthogroups represented in all five species. Table~\ref{tab:shared_function_candidates_ph_mixed_10kb} summarizes these shared orthogroups and reports, for each species, the strongest gene-level signal within each orthogroup as $-\log_{10}(P)$.
+
+\begin{table*}[t]
+\caption{Shared orthogroups across all five species from the top 0.5\% of SNPs for soil pH (Arabidopsis/Rice \pm10 kb; Maize/Sorghum/Barley \pm25 kb).\label{tab:shared_function_candidates_ph_mixed_10kb}}
+\scriptsize
+\tabcolsep=3pt
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllllllll@{}}
+\toprule
+Orthogroup & Maize gene & $-\log_{10}(P)$ & Sorghum gene & $-\log_{10}(P)$ & Rice gene & $-\log_{10}(P)$ & Barley gene & $-\log_{10}(P)$ & Arabidopsis gene & $-\log_{10}(P)$ \\
+\midrule
+158457at33090 & Zm00001eb277700 & 2.87 & SORBI\_3009G003800 & 3.28 & LOC\_Os01g07500 & 3.52 & HORVU.MOREX.r3.5HG0471130 & 2.78 & AT5G47960 & 2.45 \\
+179088at33090 & Zm00001eb254960 & 3.19 & SORBI\_3003G341500 & 2.54 & LOC\_Os07g01010 & 2.89 & HORVU.MOREX.r3.5HG0465270 & 2.82 & AT5G03260 & 2.98 \\
+220610at3193 & Zm00001eb254960 & 3.19 & SORBI\_3003G341500 & 2.54 & LOC\_Os07g01010 & 2.89 & HORVU.MOREX.r3.5HG0465270 & 2.82 & AT5G03260 & 2.98 \\
+35153at2759 & Zm00001eb277700 & 2.87 & SORBI\_3009G003800 & 3.28 & LOC\_Os01g07500 & 3.52 & HORVU.MOREX.r3.5HG0471130 & 2.78 & AT5G47960 & 2.45 \\
+4495752at2759 & Zm00001eb254960 & 3.19 & SORBI\_3003G341500 & 2.54 & LOC\_Os07g01010 & 2.89 & HORVU.MOREX.r3.5HG0465270 & 2.82 & AT5G03260 & 2.98 \\
+640662at2759 & Zm00001eb068210 & 3.57 & SORBI\_3003G320800 & 3.31 & LOC\_Os08g03020 & 3.73 & HORVU.MOREX.r3.2HG0112720 & 3.53 & AT5G06720 & 3.56 \\
+\botrule
+\end{tabular*}
+\begin{tablenotes}%
+\item Note: One representative gene per species is shown for each orthogroup (the gene with the smallest $P$ within that species/orthogroup).
+\end{tablenotes}
+\end{table*}
+

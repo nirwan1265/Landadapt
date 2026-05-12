@@ -1,0 +1,6 @@
+trait,species,top0p5_snps,bonf_snps,genes_mixed_window_10kb,annotation_window_bp
+ph,Maize,2466,0,3937,25000
+ph,Sorghum,367,3,1203,25000
+ph,Rice,30734,383,9635,10000
+ph,Barley,2453,6,1526,25000
+ph,Arabidopsis,17294,6,5102,10000

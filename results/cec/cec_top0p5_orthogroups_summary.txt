@@ -1,0 +1,10 @@
+Input: /Users/nirwantandukar/Documents/Github/Landadapt/results/cec/cec_top0p5_gene_table.csv
+Rows in input: 58276
+Genes per species:
+  Maize: 4070
+  Sorghum: 1191
+  Rice: 31287
+  Barley: 1561
+  Arabidopsis: 20167
+Orthogroups total: 43836
+Orthogroups with >= 5 species: 16

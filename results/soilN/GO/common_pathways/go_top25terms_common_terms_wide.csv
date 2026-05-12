@@ -1,0 +1,24 @@
+"domain","go_id","term","barley","maize","arabidopsis","rice"
+"BP","GO:0009791","post-embryonic development",0.0102,0.00107,NA,NA
+"BP","GO:0009987","cellular process",NA,0.000216,1.92e-11,4.85e-11
+"BP","GO:0019219","regulation of nucleobase-containing compound metabolic process",NA,0.00091,5.54e-12,NA
+"BP","GO:0050789","regulation of biological process",NA,0.00124,2.08e-21,8.22e-07
+"BP","GO:0050794","regulation of cellular process",NA,0.001,5.67e-21,1.24e-06
+"BP","GO:0050896","response to stimulus",0.00093,NA,6.39e-13,NA
+"BP","GO:0051252","regulation of RNA metabolic process",NA,0.00183,5.04e-12,NA
+"BP","GO:0065007","biological regulation",NA,NA,2.93e-23,1.67e-08
+"MF","GO:0003677","DNA binding",NA,0.00514,1.84e-14,NA
+"MF","GO:0003700","DNA-binding transcription factor activity",NA,0.00477,5.41e-15,NA
+"MF","GO:0003824","catalytic activity",NA,0.00368,3.33e-09,5.42e-08
+"MF","GO:0005488","binding",NA,0.000426,7.15e-13,2.13e-14
+"MF","GO:0005524","ATP binding",NA,0.00626,3.07e-06,1.22e-07
+"MF","GO:0030554","adenyl nucleotide binding",NA,0.00838,1.49e-06,5.15e-09
+"MF","GO:0032553","ribonucleotide binding",NA,NA,2.23e-05,9.75e-09
+"MF","GO:0032555","purine ribonucleotide binding",NA,NA,2.05e-05,7.33e-09
+"MF","GO:0032559","adenyl ribonucleotide binding",NA,0.00854,4.38e-07,8.42e-09
+"MF","GO:0036094","small molecule binding",NA,NA,1.07e-07,4.6e-11
+"MF","GO:0043167","ion binding",NA,NA,1.5e-08,2.54e-11
+"MF","GO:0043168","anion binding",NA,NA,3.99e-06,1.2e-09
+"MF","GO:0140096","""catalytic activity, acting on a protein (GO:0140096)""",NA,0.00428,5.2e-06,NA
+"MF","GO:0140110","transcription regulator activity",NA,0.00705,9.22e-15,NA
+"MF","GO:1901363","heterocyclic compound binding",NA,NA,1.72e-05,7.61e-10

@@ -1,0 +1,10 @@
+Input: /Users/nirwantandukar/Documents/Github/Landadapt/results/cec/cec_bonferroni_gene_table.csv
+Rows in input: 1264
+Genes per species:
+  Maize: 1
+  Sorghum: 23
+  Rice: 176
+  Barley: 7
+  Arabidopsis: 1057
+Orthogroups total: 1869
+Orthogroups with >= 5 species: 0

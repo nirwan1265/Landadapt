@@ -1,0 +1,76 @@
+GO molecular function complete	Sorghum bicolor - REFLIST (33746)	upload_1 (803)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (raw P-value)
+fumarylacetoacetase activity (GO:0004334)	1	1	0.02	+	42.02	2.38E-02
+tRNA (adenine(58)-N1)-methyltransferase activity (GO:0160107)	1	1	0.02	+	42.02	2.38E-02
+aluminum ion transmembrane transporter activity (GO:0015083)	1	1	0.02	+	42.02	2.38E-02
+carotene epsilon hydroxylase activity (GO:0072374)	1	1	0.02	+	42.02	2.38E-02
+spermine synthase activity (GO:0016768)	1	1	0.02	+	42.02	2.38E-02
+cyclin binding (GO:0030332)	1	1	0.02	+	42.02	2.38E-02
+phospholipid:diacylglycerol acyltransferase activity (GO:0046027)	1	1	0.02	+	42.02	2.38E-02
+rRNA (guanine-N7-)-methyltransferase activity (GO:0070043)	1	1	0.02	+	42.02	2.38E-02
+protein-arginine deiminase activity (GO:0004668)	1	1	0.02	+	42.02	2.38E-02
+agmatine deiminase activity (GO:0047632)	1	1	0.02	+	42.02	2.38E-02
+imidazoleglycerol-phosphate dehydratase activity (GO:0004424)	1	1	0.02	+	42.02	2.38E-02
+thermospermine synthase activity (GO:0010487)	1	1	0.02	+	42.02	2.38E-02
+GMP synthase (glutamine-hydrolyzing) activity (GO:0003922)	2	2	0.05	+	42.02	5.66E-04
+GMP synthase activity (GO:0003921)	2	2	0.05	+	42.02	5.66E-04
+arginine decarboxylase activity (GO:0008792)	1	1	0.02	+	42.02	2.38E-02
+tRNA (guanine(26)-N2)-dimethyltransferase activity (GO:0160104)	3	2	0.07	+	28.02	1.67E-03
+sn-glycerol 3-phosphatase activity (GO:0043136)	3	2	0.07	+	28.02	1.67E-03
+phosphopantothenoylcysteine decarboxylase activity (GO:0004633)	5	3	0.12	+	25.21	1.30E-04
+polyamine transmembrane transporter activity (GO:0015203)	7	4	0.17	+	24.01	1.05E-05
+glutamate-5-semialdehyde dehydrogenase activity (GO:0004350)	2	1	0.05	+	21.01	4.70E-02
+glutamate 5-kinase activity (GO:0004349)	2	1	0.05	+	21.01	4.70E-02
+ribonuclease P RNA binding (GO:0033204)	2	1	0.05	+	21.01	4.70E-02
+cysteine-dependent adenosine diphosphate thiazole synthase activity (GO:0160205)	2	1	0.05	+	21.01	4.70E-02
+chlorophyllide a oxygenase activity (GO:0010277)	6	3	0.14	+	21.01	2.54E-04
+sulfate adenylyltransferase (ATP) activity (GO:0004781)	2	1	0.05	+	21.01	4.70E-02
+sulfate adenylyltransferase activity (GO:0004779)	2	1	0.05	+	21.01	4.70E-02
+pyruvate dehydrogenase (acetyl-transferring) kinase activity (GO:0004740)	2	1	0.05	+	21.01	4.70E-02
+sphingosine kinase activity (GO:0008481)	2	1	0.05	+	21.01	4.70E-02
+glycerate kinase activity (GO:0008887)	2	1	0.05	+	21.01	4.70E-02
+tRNA (adenine) methyltransferase activity (GO:0016426)	2	1	0.05	+	21.01	4.70E-02
+cystathionine gamma-synthase activity (GO:0003962)	2	1	0.05	+	21.01	4.70E-02
+"fructose 1,6-bisphosphate 1-phosphatase activity (GO:0042132)"	5	2	0.12	+	16.81	5.39E-03
+"oxidoreductase activity, acting on single donors with incorporation of molecular oxygen, incorporation of one atom of oxygen (internal monooxygenases or internal mixed function oxidases) (GO:0016703)"	8	3	0.19	+	15.76	6.87E-04
+"alpha-(1,2)-fucosyltransferase activity (GO:0031127)"	19	5	0.45	+	11.06	6.64E-05
+galactoside 2-alpha-L-fucosyltransferase activity (GO:0008107)	19	5	0.45	+	11.06	6.64E-05
+NAD(P)H dehydrogenase (quinone) activity (GO:0003955)	16	4	0.38	+	10.51	4.61E-04
+fucosyltransferase activity (GO:0008417)	23	5	0.55	+	9.14	1.78E-04
+nucleoside transmembrane transporter activity (GO:0005337)	20	4	0.48	+	8.4	1.14E-03
+tRNA (guanine) methyltransferase activity (GO:0016423)	12	2	0.29	+	7	3.19E-02
+voltage-gated monoatomic anion channel activity (GO:0008308)	26	4	0.62	+	6.47	3.14E-03
+tRNA methyltransferase activity (GO:0008175)	20	3	0.48	+	6.3	1.13E-02
+ubiquitin protein ligase binding (GO:0031625)	14	2	0.33	+	6	4.26E-02
+protein-membrane adaptor activity (GO:0043495)	21	3	0.5	+	6	1.30E-02
+monoatomic anion channel activity (GO:0005253)	29	4	0.69	+	5.8	4.71E-03
+FMN binding (GO:0010181)	45	6	1.07	+	5.6	6.58E-04
+monoatomic anion transmembrane transporter activity (GO:0008509)	32	4	0.76	+	5.25	6.74E-03
+sugar-phosphatase activity (GO:0050308)	24	3	0.57	+	5.25	1.87E-02
+carbohydrate phosphatase activity (GO:0019203)	26	3	0.62	+	4.85	2.32E-02
+"oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor (GO:0016655)"	35	4	0.83	+	4.8	9.28E-03
+"glucan endo-1,3-beta-D-glucosidase activity (GO:0042973)"	50	5	1.19	+	4.2	6.60E-03
+metalloendopeptidase activity (GO:0004222)	43	4	1.02	+	3.91	1.89E-02
+RNA methyltransferase activity (GO:0008173)	70	6	1.67	+	3.6	6.43E-03
+voltage-gated channel activity (GO:0022832)	51	4	1.21	+	3.3	3.29E-02
+voltage-gated monoatomic ion channel activity (GO:0005244)	51	4	1.21	+	3.3	3.29E-02
+"oxidoreductase activity, acting on NAD(P)H (GO:0016651)"	77	6	1.83	+	3.27	1.01E-02
+carboxypeptidase activity (GO:0004180)	66	5	1.57	+	3.18	2.04E-02
+"2 iron, 2 sulfur cluster binding (GO:0051537)"	53	4	1.26	+	3.17	3.72E-02
+carboxy-lyase activity (GO:0016831)	75	5	1.78	+	2.8	3.33E-02
+serine-type endopeptidase inhibitor activity (GO:0004867)	75	5	1.78	+	2.8	3.33E-02
+N-methyltransferase activity (GO:0008170)	80	5	1.9	+	2.63	4.21E-02
+metallopeptidase activity (GO:0008237)	82	5	1.95	+	2.56	4.60E-02
+glucosyltransferase activity (GO:0046527)	311	15	7.4	+	2.03	1.28E-02
+UDP-glucosyltransferase activity (GO:0035251)	273	13	6.5	+	2	1.58E-02
+calcium ion binding (GO:0005509)	297	14	7.07	+	1.98	1.87E-02
+phosphatase activity (GO:0016791)	337	15	8.02	+	1.87	1.85E-02
+glycosyltransferase activity (GO:0016757)	723	32	17.2	+	1.86	7.94E-04
+hexosyltransferase activity (GO:0016758)	503	22	11.97	+	1.84	7.04E-03
+"hydrolase activity, hydrolyzing O-glycosyl compounds (GO:0004553)"	399	17	9.49	+	1.79	1.96E-02
+phosphoric ester hydrolase activity (GO:0042578)	398	16	9.47	+	1.69	4.41E-02
+peptidase activity (GO:0008233)	640	24	15.23	+	1.58	3.45E-02
+transferase activity (GO:0016740)	4226	121	100.56	+	1.2	3.08E-02
+catalytic activity (GO:0003824)	9927	264	236.22	+	1.12	3.11E-02
+molecular_function (GO:0003674)	17947	463	427.06	+	1.08	1.10E-02
+Unclassified (UNCLASSIFIED)	15799	340	375.94	-	0.9	1.10E-02
+ATP-dependent activity (GO:0140657)	783	10	18.63	-	0.54	4.24E-02

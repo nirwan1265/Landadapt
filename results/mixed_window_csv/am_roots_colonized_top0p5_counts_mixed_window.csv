@@ -1,0 +1,6 @@
+trait,species,top0p5_snps,bonf_snps,genes_mixed_window,annotation_window_bp
+am_roots_colonized,Maize,2450,5,3934,25000
+am_roots_colonized,Sorghum,289,4,940,25000
+am_roots_colonized,Rice,29900,1536,3457,0
+am_roots_colonized,Barley,2374,125,1153,25000
+am_roots_colonized,Arabidopsis,16481,1160,3094,0

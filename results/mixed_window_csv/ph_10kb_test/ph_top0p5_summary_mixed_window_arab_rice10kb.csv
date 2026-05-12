@@ -1,0 +1,2 @@
+trait,Arabidopsis_genes_10kb,Rice_genes_10kb,Maize_genes_25kb,Sorghum_genes_25kb,Barley_genes_25kb,orthogroups_total,orthogroups_common_ge2,orthogroups_common5,bonf_Arabidopsis_snps,bonf_Rice_snps,bonf_Maize_snps,bonf_Sorghum_snps,bonf_Barley_snps
+ph,5102,9635,3937,1203,1526,24195,2751,6,6,383,0,3,6

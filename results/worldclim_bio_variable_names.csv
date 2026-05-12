@@ -1,0 +1,20 @@
+Variable,bio_name
+BIO01,Annual Mean Temperature
+BIO02,Mean Diurnal Range
+BIO03,Isothermality
+BIO04,Temperature Seasonality
+BIO05,Max Temperature of Warmest Month
+BIO06,Min Temperature of Coldest Month
+BIO07,Temperature Annual Range
+BIO08,Mean Temperature of Wettest Quarter
+BIO09,Mean Temperature of Driest Quarter
+BIO10,Mean Temperature of Warmest Quarter
+BIO11,Mean Temperature of Coldest Quarter
+BIO12,Annual Precipitation
+BIO13,Precipitation of Wettest Month
+BIO14,Precipitation of Driest Month
+BIO15,Precipitation Seasonality
+BIO16,Precipitation of Wettest Quarter
+BIO17,Precipitation of Driest Quarter
+BIO18,Precipitation of Warmest Quarter
+BIO19,Precipitation of Coldest Quarter

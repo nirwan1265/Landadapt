@@ -1,0 +1,10 @@
+Input: /Users/nirwantandukar/Documents/Github/Landadapt/results/pc2_worldclim/pc2_top0p5_gene_table.csv
+Rows in input: 55299
+Genes per species:
+  Maize: 3923
+  Sorghum: 1167
+  Rice: 27776
+  Barley: 1550
+  Arabidopsis: 20883
+Orthogroups total: 44046
+Orthogroups with >= 5 species: 8

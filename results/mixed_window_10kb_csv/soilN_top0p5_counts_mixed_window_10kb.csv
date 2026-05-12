@@ -1,0 +1,6 @@
+trait,species,top0p5_snps,bonf_snps,genes_mixed_window_10kb,annotation_window_bp
+soilN,Maize,2478,1,4423,25000
+soilN,Sorghum,368,2,990,25000
+soilN,Rice,30734,202,4851,10000
+soilN,Barley,2453,4,1636,25000
+soilN,Arabidopsis,17292,64,5034,10000
