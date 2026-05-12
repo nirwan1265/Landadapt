@@ -61,12 +61,14 @@
 \theoremstyle{thmstylethree}%
 \newtheorem{definition}{Definition}
 
+\usepackage{seqsplit}
+
 %\usepackage{draftwatermark}
 %\SetWatermarkText{Draft}
 %%Uncomment  \usepackage{draftwatermark} and \SetWatermarkText{Draft} to watermark your PDF as a draft
 \begin{document}
 
-\journaltitle{Journal Title Here}
+\journaltitle{Convergent genomic signatures of environmental adaptation across five plant species revealed by cross-species environmental GWAS}
 \DOI{DOI added during production}
 \copyrightyear{YEAR}
 \pubyear{YEAR}
@@ -79,20 +81,16 @@
 
 %\subtitle{Subject Section}
 
-\title[Short Article Title]{Article Title}
+\title[Environmental adaptation]{Convergent genomic signatures of environmental adaptation across five plant species revealed by environmental GWAS}
 
-\author[1,$\ast$]{First Author}
-\author[2]{Second Author}
-\author[3]{Third Author}
-\author[3]{Fourth Author}
-\author[4]{Fifth Author\ORCID{0000-0000-0000-0000}}
+\author[1,2,$\ast$]{Nirwan Tandukar}
+\author[2]{ Rubén Rellán-Álvarez\ORCID{0000-0000-0000-0000}}
 
-\address[1]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \postcode{Postcode}, \state{State}, \country{Country}}}
-\address[2]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \postcode{Postcode}, \state{State}, \country{Country}}}
-\address[3]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \postcode{Postcode}, \state{State}, \country{Country}}}
-\address[4]{\orgdiv{Department}, \orgname{Organization}, \orgaddress{\street{Street}, \postcode{Postcode}, \state{State}, \country{Country}}}
+\address[1]{\orgdiv{Department of Molecular and Structural Biochemistry}, \orgname{North Carolina State University}, \orgaddress{\street{Raleigh}, \postcode{27606}, \state{NC}, \country{USA}}}
+\address[2]{\orgdiv{Genetics and Genomics Program}, \orgname{North Carolina State University}, \orgaddress{\street{Raleigh}, \postcode{27606}, \state{NC}, \country{USA}}}
 
-\corresp[$\ast$]{Corresponding author. \href{email:email-id.com}{email-id.com}}
+\corresp[$\ast$]{Rubén Rellán-Álvarez. \href{email:email-id.com}{rrellan@ncsu.edu}}
+
 
 \received{Date}{0}{Year}
 \revised{Date}{0}{Year}
@@ -108,21 +106,33 @@
 %\textbf{Supplementary information:} Supplementary data are available at \textit{Journal Name}
 %online.}
 
-\abstract{Check the journal's online author guidelines for guidance on requirements for the abstract and other components of the submitted manuscript. Abstracts must be able to stand alone and so cannot contain citations to the paper's references, equations, etc. Que cum aut etum qui ium dolupta ssequia autati odis demporepe ad et es alit rem repudaerae min et volorum re volupta nobit volectur aut fuga.} 
+\abstract{
+Understanding whether environmental adaptation relies on conserved genetic mechanisms or lineage-specific variation remains a central question in evolutionary biology. Here, we used a comparative environmental genome-wide association framework across five plant species—Arabidopsis, barley, rice, maize, and sorghum—to test for shared genomic signatures of adaptation to climatic, edaphic, and biotic gradients. Using georeferenced accessions, we integrated WorldClim-derived climate variables, soil nitrogen, soil pH, aridity index, and arbuscular mycorrhizal (AM) fungal traits as environmental phenotypes. Genome-wide association analyses were performed independently within each species, followed by cross-species integration through orthogroup mapping of genes linked to the top 0.5\% of SNPs. Across all environmental variables, only a small number of orthogroups were consistently shared across species, indicating limited gene-level convergence. However, shared candidates repeatedly mapped to conserved functional modules, including oxidative stress regulation (peroxidases), signaling pathways (kinases and phosphatases), vesicle trafficking, and nitrogen transport (NRT1/PTR family). Notably, nitrate transporters, peptide transporters, and vascular nitrate redistribution genes recurred across multiple environmental axes, suggesting coordinated roles in nutrient sensing, root architecture, and stress response. Similarly, soil pH and aridity signals implicated proton transport, cell-wall remodeling, and ion homeostasis mechanisms. These results indicate that environmental adaptation across deeply diverged plant taxa is characterized by functional convergence at the pathway level rather than widespread reuse of identical genes. This study provides a comparative framework linking environmental gradients to conserved physiological processes and highlights key molecular modules underlying plant adaptation to heterogeneous environments.
+}
 
-\keywords{keyword1, keyword2, keyword3, keyword4}
+\keywords{environmental GWAS, local adaptation, orthogroups, plant evolution, landraces, climate adaptation, nutrient transport, stress response}
 
-\keywords[Abbreviations]{abbreviation1, abbreviation2, abbreviation3, abbreviation4}
+\keywords[Abbreviations]{
+GWAS, genome-wide association study;
+AMF, arbuscular mycorrhizal fungi;
+PC, principal component;
+NRT, nitrate transporter;
+PTR, peptide transporter;
+MLM, mixed linear model;
+ROS, reactive oxygen species;
+PCA, principal component analysis
+}
 
-\otherabstract[Additional Abstract]{Use this element for elements such as Graphical abstract, Lay summary, Translated abstract etc. Que cum aut etum qui ium dolupta ssequia autati odis demporepe ad et es alit rem repudaerae min et volorum re volupta nobit volectur aut fuga.}
 
 \otherabstract[Graphical Abstract]{\colorbox{black!20}{\hbox to 0.97\textwidth{\vbox to 50pt{}}}}
 
 \boxedtext{Key Messages}{
 \begin{itemize}
-\item Key boxed text here.
-\item Key boxed text here.
-\item Key boxed text here.
+\item Cross-species environmental GWAS reveals limited gene-level convergence across five plant species.
+\item Environmental adaptation is driven by conserved functional modules, including stress response, signaling, and nutrient transport pathways.
+\item NRT1/PTR transporters, peroxidases, and kinase signaling components recur across multiple environmental gradients.
+\item Adaptation reflects functional convergence at the pathway level rather than reuse of identical genes across species.
+\item Comparative frameworks enable identification of broadly conserved mechanisms relevant for climate-resilient crop improvement.
 \end{itemize}}
 
 \maketitle
@@ -135,10 +145,27 @@
 %\end{epigraph}
 
 \section{Introduction}
-The introduction introduces the context and summarizes the manuscript. It is importantly to clearly state the contributions
-of this piece of work. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-This is an example of a new paragraph with a numbered footnote\footnote{\url{https://www.academic.oup.com/}} and a second footnote marker.\footnote{Example of footnote text.}
+
+% Crop landraces provide a powerful framework for studying environmental adaptation because they retain genetic variation shaped by domestication, geographic dispersal, local ecological conditions, and human selection \cite{Casanas2017Landrace,Lazaridi2024Landraces}. Domesticated crops have long been used as models for understanding evolutionary change because domestication and subsequent crop improvement produced repeated phenotypic transformations across species, including changes in plant architecture, reproductive timing, seed traits, and stress-related traits \cite{Olsen2013CropAdaptation}. Unlike many natural systems, crops often retain close wild relatives, historical germplasm, and diverse cultivated forms, allowing evolutionary questions to be studied through comparative genomics, genome-wide association studies, selection scans, and experimental crossing approaches \cite{Olsen2013CropAdaptation,Gutaker2024CropSpread}.
+
+% The global distribution of crop diversity reflects thousands of years of human-mediated dispersal and adaptation. Major crop species originated in different domestication centers and then spread across continents through early agricultural diffusion, trade networks, migration, and more recent global exchange. During this spread, crops encountered new climates, soils, seasonal regimes, altitudes, and cultural management systems, creating strong opportunities for adaptation beyond the original domestication environment. Adaptation after dispersal is especially clear for seasonal and latitudinal traits, such as flowering-time responses to photoperiod and vernalization, but adaptation to temperature, altitude, soil conditions, and other local environmental pressures also contributed to the establishment of crops across broad geographic ranges \cite{Gutaker2024CropSpread}.
+
+% Landraces are especially important within this evolutionary context because they are not static historical materials, but dynamic cultivated populations shaped by local environments and farmer management. Landraces are generally described as genetically heterogeneous cultivated varieties that evolved within particular ecogeographic regions and became adapted to local edaphic, climatic, management, and cultural conditions \cite{Casanas2017Landrace}. This definition is important because it links landraces directly to place: their genetic composition reflects both environmental filtering and human selection over time. As a result, landraces can preserve adaptive variation that may be reduced or absent in modern elite cultivars, especially where breeding has favored broad adaptation, uniformity, and high performance under managed agricultural conditions \cite{Casanas2017Landrace,Gao2023ClimateAdaptation}.
+
+% The value of landraces has become increasingly important under climate change. Modern agriculture faces the combined challenges of climate instability, soil degradation, genetic erosion, and the need to increase food production while reducing environmental impacts \cite{Gao2023ClimateAdaptation,Lazaridi2024Landraces}. Evolutionary perspectives emphasize that crop improvement depends on available genetic variation, yet domestication and modern breeding can reduce diversity and limit future adaptive potential \cite{Gao2023ClimateAdaptation}. Landraces and indigenous varieties are therefore valuable reservoirs of alleles for abiotic and biotic stress tolerance, yield stability, and adaptation to marginal or changing environments \cite{Lazaridi2024Landraces}. Their diversity can support breeding for climate resilience, especially when combined with modern genomic tools such as molecular markers, genome-wide association studies, genomic selection, multi-omics, and gene editing \cite{Lazaridi2024Landraces}.
+
+
+Crop landraces are used for studying environmental adaptation, as they retain genetic variation structured by domestication, geographic spread, local environments, and farmer selection \cite{Casanas2017Landrace,Lazaridi2024Landraces}. Domesticated crops have served as models of evolution, with domestication shifting plant architecture, phenology, seed traits, and stress responses across species \cite{Olsen2013CropAdaptation}. The current global distribution of crop diversity reflects millennia of agricultural expansion, trade, migration, and recent globalization, exposing crops to newer climates, soils, altitudes, seasonal regimes, and management systems that promote adaptive divergence beyond their domestication centers enabling crop diversity across wide ranges \cite{Gutaker2024CropSpread}. Their recent genetics reflect environmental stress management and farmer selection, allowing them to retain adaptive alleles that may be rare or absent in modern elite cultivars \cite{Casanas2017Landrace,Gao2023ClimateAdaptation}. As a result, landraces are increasingly important under climate change \cite{Gao2023ClimateAdaptation,Lazaridi2024Landraces}. Crop improvement depends on available genetic variation and domestication bottlenecks.  Modern breeding can greatly narrow these factors. Hence, landraces and other indigenous varieties remain crucial sources of alleles for stress tolerance, yield stability, and adaptation to rapidly changing environments \cite{Lazaridi2024Landraces}.
+
+
+Evidence from individual crops shows that landraces are a valuable resource of alleles for adaptation to abiotic stress. In maize, drought and heat are major climate-related constraints, and modern breeding has markedly narrowed the genetic base of cultivated germplasm. Evaluating European maize landraces under contrasting water regimes has revealed accessions adapted to severe water deficit, indicating that landrace variation can improve drought resilience in elite breeding materials \cite{Santiago2025MaizeDrought}. Similarly, rice landraces harbor extensive genetic and phenotypic diversity for adaptation to drought, salinity, temperature extremes, submergence, and nutrient-poor soils. These genetically heterogeneous populations, shaped by long-term natural and farmer-mediated selection, contain adaptive traits that can broaden the genetic base of modern rice breeding programs \cite{Kou2026RiceLandraces}. Natural accessions of model species such as \textit{Arabidopsis thaliana} also illuminate local adaptation. Across the Iberian Peninsula, \textit{Arabidopsis} populations show regional genetic differentiation driven mainly by distance and environment. Environmental factors such as precipitation seasonality and topsoil pH correlate with the spatial distribution of genetic diversity, indicating that climatic and edaphic gradients structure adaptive genetic variation even in non-crop species (Castilla et al., 2020). Together, evidence from crop landraces and natural populations supports the hypothesis that environmental gradients leave detectable, interpretable signatures in plant genomes.
+
+Most research on environmental adaptation still focuses on single species. Species-specific studies are essential for identifying adaptive alleles individually, such as in maize, rice, sorghum, barley, or Arabidopsis, but they do not test whether similar environmental pressures act among them through homologous genes, conserved orthogroups, or shared pathways across divergent plant lineages. Evidence of convergence across species would strengthen confidence that these signals reflect conserved biological processes rather than species-specific or demographic effects. This represents a key gap because crops and model species differ in domestication history, genome structure, mating system, geographic origin, and breeding history. Similar environmental pressures may therefore target conserved processes or instead drive species-specific genetic responses. A comparative, cross-species framework is needed to distinguish between these possibilities.
+
+Here, to adress this, we use a comparative environmental GWAS framework across maize, rice, sorghum, barley, and Arabidopsis. By linking georeferenced accessions to climatic, edaphic, and below ground biotic variables, including WorldClim-derived climate predictors, soil nitrogen, soil pH, aridity index, and arbuscular mycorrhizal fungal traits, and integrating species-specific GWAS through orthogroup analysis, we test whether adaptation to similar environments converges across deeply diverged plant lineages. We find that cross-species convergence at the level of individual genes is limited, but the convergent signals that do emerge are biologically informative and repeatedly highlight a small set of conserved functional modules. In particular, shared associations implicate phosphatase- and kinase-related signaling, peroxidase-centered oxidative and cell-wall stress responses, and recurrent NRT1/PTR-family transporters involved in nutrient sensing and transport. These results support a model in which environmental adaptation is mediated primarily through conserved physiological pathways implemented through distinct genetic routes in different species.
+
+% This is an example of a new paragraph with a numbered footnote\footnote{\url{https://www.academic.oup.com/}} and a second footnote marker.\footnote{Example of footnote text.}
 
 \section{Results}
 We analyzed cross-species genotype--environment associations for soil nitrogen, soil pH, climate PCs (PC1--PC3), and AM fungal colonization traits. To keep interpretation clear, each subsection below first defines the phenotype and then summarizes the GWAS and shared-orthogroup results.
@@ -146,583 +173,667 @@ We analyzed cross-species genotype--environment associations for soil nitrogen, 
 \input{results/mixed_window_10kb_csv/cross_species_top0p5_mixed_window_10kb_sections.tex}
 
 
-\section{This is an example for first level head - section head}\label{sec2}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum (refer Section~\ref{sec5}).
-
-\subsection{This is an example for second level head - subsection head}\label{subsec1}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\subsubsection{This is an example for third level head - subsubsection head}\label{subsubsec1}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. %Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\paragraph{This is an example for fourth level head - paragraph head}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\subparagraph{This is an example for fifth level head - subparagraph head}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\section{This is an example for first level head}\label{sec3}
-
-\subsection{This is an example for second level head - subsection head}\label{subsec2}
-
-\subsubsection{This is an example for third level head - subsubsection head}\label{subsubsec2}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\subsubsection{Level three heading}
-
-\paragraph{Level four heading}
-
-\subparagraph{Level five heading}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%=======================================================================
+%=======================================================================
+%=======================================================================
 
 
-\section{Equations}\label{sec4}
+\section{Results}
 
-Equations in \LaTeX{} can either be inline or set as display equations. For
-inline equations use the \verb+$...$+ commands. Eg: the equation
-$H\psi = E \psi$ is written via the command \verb+$H \psi = E \psi$+.
+\subsection{Evolutionary divergence and global sampling of the five species}
 
-For display equations (with auto generated equation numbers)
-one can use the equation or eqnarray environments:
-\begin{equation}
-\|\tilde{X}(k)\|^2 \leq\frac{\sum\limits_{i=1}^{p}\left\|\tilde{Y}_i(k)\right\|^2+\sum\limits_{j=1}^{q}\left\|\tilde{Z}_j(k)\right\|^2 }{p+q},\label{eq1}
-\end{equation}
-where,
-\begin{align}
-D_\mu &=  \partial_\mu - ig \frac{\lambda^a}{2} A^a_\mu \nonumber \\
-F^a_{\mu\nu} &= \partial_\mu A^a_\nu - \partial_\nu A^a_\mu + g f^{abc} A^b_\mu A^a_\nu.\label{eq2}
-\end{align}
-Notice the use of \verb+\nonumber+ in the align environment at the end
-of each line, except the last, so as not to produce equation numbers on
-lines where no equation numbers are required. The \verb+\label{}+ command
-should only be used at the last line of an align environment where
-\verb+\nonumber+ is not used.
-\begin{equation}
-Y_\infty = \left( \frac{m}{\textrm{GeV}} \right)^{-3}
-    \left[ 1 + \frac{3 \ln(m/\textrm{GeV})}{15}
-    + \frac{\ln(c_2/5)}{15} \right].
-\end{equation}
-The class file also supports the use of \verb+\mathbb{}+, \verb+\mathscr{}+ and
-\verb+\mathcal{}+ commands. As such \verb+\mathbb{R}+, \verb+\mathscr{R}+
-and \verb+\mathcal{R}+ produces $\mathbb{R}$, $\mathscr{R}$ and $\mathcal{R}$
-respectively (refer Subsubsection~\ref{subsubsec3}).
+We first characterized the evolutionary history and the geographic distribution of the five species (Figure 1). The five taxa, including Arabidopsis, barley, rice, maize, and sorghum, span deep divergence events across major angiosperm clades (Figure 1A). Panel A comprises distantly related lineages with distinct evolutionary histories, rather than closely related species sharing a common adaptive background. Panel A further places these divergence events within a broader geological and atmospheric context, including major shifts in Earth history, such as variations in atmospheric oxygen and carbon dioxide, solar luminosity, and Earth impact frequency over time. Thus, the five taxa did not originate under a static environmental regime but rather adapted across a succession of distinct planetary conditions throughout evolutionary time. Such diversity allows us to test whether adaptation to environmental gradients shows repeated genomic patterns across species or mainly reflects species-specific genetic architecture.
+
+% If similar environmental variables are repeatedly associated with genomic signals across these divergent taxa, this would support parallel adaptive responses to shared ecological pressures. In contrast, taxon-specific environmental associations would suggest that local adaptation is shaped more by lineage-specific genetic architecture, demographic history, or crop-specific selection.
+
+The geographic distribution of accessions likewise reflects a wide environmental coverage (Figure 1B). For all five taxa, genotypes occur on multiple continents and across broad elevational ranges, from lowlands to highlands, encompassing diverse climatic and edaphic conditions rather than a narrow geographic subset. This expansive sampling increases environmental contrast for environmental GWAS, including gradients related to climate, soil chemistry, and topography. Including five species broadens inference beyond any single plant species. Arabidopsis is a widely distributed model for natural genetic variation, whereas barley, rice, maize, and sorghum are major crops occupying contrasting agroecological zones. Joint analysis of these systems allows direct tests of whether environmental associations converge on similar variables across species or whether each species shows a distinct adaptive signature shaped by its own ecological and evolutionary context.
+
+%=======================================================================
+%=======================================================================
+%=======================================================================
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+\subsection{Cross-species genome-wide associations with WorldClim principal components identify a small set of shared orthologous genes}
+
+To summarize broad climatic variation, we performed principal component analysis on the 19 WorldClim bioclimatic variables for each species separately and used the leading principal components as environmental phenotypes for GWAS. Across species, PC1 explained the largest fraction of variance (mean $38.3\% \pm 2.9$ SE), followed by PC2 ($25.9\% \pm 1.6$) and PC3 ($16.7\% \pm 0.8$), indicating that these axes captured the major dimensions of climatic variation. Because PCA sign can differ among independent analyses, we compared variables using absolute loading magnitudes. For PC1, Arabidopsis, barley, rice, and maize were mainly driven by temperature variables (BIO06, BIO07, BIO11, BIO04), whereas sorghum PC1 reflected warm-temperature and precipitation seasonality variables (BIO05, BIO10, BIO15, BIO08). For PC2, rice and maize were dominated by warm-temperature and precipitation variables (rice: BIO05, BIO10, BIO08; maize: BIO05, BIO14, BIO17, BIO15), while sorghum PC2 emphasized cold and seasonal temperature variables (BIO06, BIO11, BIO09, BIO04). For PC3, rice and sorghum were most influenced by precipitation during wet and dry periods (rice: BIO13, BIO16, BIO18, BIO12; sorghum: BIO16, BIO13, BIO12), whereas maize and barley retained mixed seasonality signals (maize: BIO03, BIO04, BIO14, BIO17; barley: BIO15, BIO03, BIO14, BIO17). Overall, these results indicate species-specific climatic architectures underlying the GWAS signals.
+
+We next performed GWASs for WorldClim PC1, PC2, and PC3 using a mixed linear model with kinship correction in GEMMA. Under log10 $p$-value of 7, the number of significant SNPs was heterogeneous across species and across climate axes. For PC1, significant SNP counts were highest overall, with 38 in Arabidopsis, 602 in rice, 6 in sorghum, 8 in barley, and 1 in maize. For PC2, the Bonferroni-significant signal was weaker, with 13 in Arabidopsis, 0 in rice, 0 in sorghum, 1 in barley, and 1 in maize. For PC3, the distribution again differed among species, with 29 in Arabidopsis, 10 in rice, 80 in sorghum, 24 in barley, and 0 in maize. These results indicate that the strength of species-specific associations with broad climatic gradients varied substantially among both taxa and environmental axes. Since the environmental phenotypes were predicted from gridded global surfaces rather than measured directly for each accession, we also considered a less stringent comparative framework to capture upper-ranked signals that may remain informative despite noise in the environmental predictors for species comparison. We therefore retained the top 0.5\% of SNPs per species for each principal component and mapped nearby genes to identify orthologous candidate genes shared across species. For PC1, this yielded 5,699 Arabidopsis genes, 8,459 rice genes, 3,852 maize genes, 1,270 barley genes, and 1,283 sorghum genes. For PC2, the corresponding values were 5,108, 6,859, 3,953, 1,557, and 1,151 genes, respectively. For PC3, the gene sets included 5,597 Arabidopsis genes, 8,122 rice genes, 3,961 maize genes, 1,629 barley genes, and 554 sorghum genes. Orthogroup mapping yielded 5,946 unique orthologous genes for PC1 (Arabidopsis 1,784; rice 193; maize 2,403; barley 742; sorghum 824), 5,827 for PC2 (1,546; 167; 2,481; 891; 742), and 5,736 for PC3 (1,719; 216; 2,517; 952; 332).
+
+Despite the large number of orthogroups identified within each analysis, only a small subset was shared across all five species. PC1 yielded two groups, whereas PC2 and PC3 each yielded one. PC1 and PC2 shared orthogroup \textit{5017799} at 2759, and recurrent genes included \textit{LOC\_Os04g04520} in rice and \textit{AT1G34750}/\textit{AT2G30020} in Arabidopsis, indicating the repeated involvement of a limited homologous core across correlated climate axes. These results indicate a narrow core of shared orthologous candidates across deeply diverged taxa, with stronger cross-axis recurrence between PC1 and PC2 than with PC3.
 
 
-\section{Tables}\label{sec5}
-
-Tables can be inserted via the normal table and tabular environment. To put
-footnotes inside tables one has to Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. use the additional ``tablenotes" environment
-enclosing the tabular environment. The footnote appears just below the table
-itself (refer Tables~\ref{tab1} and \ref{tab2}).
-
-
-\begin{verbatim}
-\begin{table}[t]
-\begin{center}
-\begin{minipage}{<width>}
-\caption{<table-caption>\label{<table-label>}}%
-\begin{tabular}{@{}llll@{}}
-\toprule
-column 1 & column 2 & column 3 & column 4\\
-\midrule
-row 1 & data 1 & data 2          & data 3 \\
-row 2 & data 4 & data 5$^{1}$ & data 6 \\
-row 3 & data 7 & data 8      & data 9$^{2}$\\
-\botrule
-\end{tabular}
-\begin{tablenotes}%
-\item Source: Example for source.
-\item[$^{1}$] Example for a 1st table footnote.
-\item[$^{2}$] Example for a 2nd table footnote.
-\end{tablenotes}
-\end{minipage}
-\end{center}
-\end{table}
-\end{verbatim}
-
-
-Lengthy tables which do not fit within textwidth should be set as rotated tables. For this, we need to use \verb+\begin{sidewaystable}...+ \verb+\end{sidewaystable}+ instead of\break \verb+\begin{table}...+ \verb+\end{table}+ environment.
-
-
-\begin{table}[!t]
-\caption{Caption text\label{tab1}}%
-\begin{tabular*}{\columnwidth}{@{\extracolsep\fill}llll@{\extracolsep\fill}}
-\toprule
-column 1 & column 2  & column 3 & column 4\\
-\midrule
-row 1    & data 1   & data 2  & data 3  \\
-row 2    & data 4   & data 5$^{1}$  & data 6  \\
-row 3    & data 7   & data 8  & data 9$^{2}$  \\
-\botrule
-\end{tabular*}
-\begin{tablenotes}%
-\item Source: This is an example of table footnote this is an example of table footnote this is an example of table footnote this is an example of~table footnote this is an example of table footnote
-\item[$^{1}$] Example for a first table footnote.
-\item[$^{2}$] Example for a second table footnote.
-\end{tablenotes}
-\end{table}
 
 \begin{table*}[t]
-\caption{Example of a lengthy table which is set to full textwidth.\label{tab2}}
-\tabcolsep=0pt%%
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccccc@{\extracolsep{\fill}}}
-\toprule%
-& \multicolumn{3}{@{}c@{}}{Element 1$^{1}$} & \multicolumn{3}{@{}c@{}}{Element 2$^{2}$} \\
-\cline{2-4}\cline{5-7}%
-Project & Energy & $\sigma_{calc}$ & $\sigma_{expt}$ & Energy & $\sigma_{calc}$ & $\sigma_{expt}$ \\
+\caption{Shared candidate genes across all five species from the top 0.5\% of SNPs for WorldClim principal components.}
+\label{tab:shared_genes_worldclim_pcs_combined}
+\scriptsize
+\tabcolsep=4pt
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllll@{}}
+\toprule
+Climate axis & Putative function & Maize genes & Sorghum genes & Rice genes & Barley genes & Arabidopsis genes \\
 \midrule
-Element 3  & 990 A & 1168 & $1547\pm12$ & 780 A & 1166 & $1239\pm100$\\
-Element 4  & 500 A & 961  & $922\pm10$  & 900 A & 1268 & $1092\pm40$\\
-\botrule
+
+PC1 & Protein phosphatases &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb192230\\
+Zm00001eb204210
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3005G087800\\
+SORBI\_3006G209400
+\end{tabular}
+&
+LOC\_Os04g04520
+&
+HORVU.MOREX.r3.2HG0202320
+&
+\begin{tabular}[t]{@{}l@{}}
+AT1G34750\\
+AT2G30020
+\end{tabular}
+\\
+\midrule
+
+PC2 & Protein phosphatases &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb192230\\
+Zm00001eb258010\\
+Zm00001eb430620
+\end{tabular}
+&
+SORBI\_3010G180700
+&
+LOC\_Os04g04520
+&
+HORVU.MOREX.r3.4HG0384700
+&
+\begin{tabular}[t]{@{}l@{}}
+AT1G22280\\
+AT1G34750\\
+AT2G30020\\
+AT4G31750
+\end{tabular}
+\\
+\midrule
+
+PC3 & Purple acid phosphatases &
+Zm00001eb202100
+&
+SORBI\_3007G091100
+&
+LOC\_Os12g01510
+&
+HORVU.MOREX.r3.5HG0461970
+&
+AT2G16430
+\\
+
+\bottomrule
 \end{tabular*}
-\begin{tablenotes}%
-\item Note: This is an example of table footnote this is an example of table footnote this is an example of table footnote this is an example of~table footnote this is an example of table footnote
-\item[$^{1}$] Example for a first table footnote.
-\item[$^{2}$] Example for a second table footnote.\vspace*{6pt}
-\end{tablenotes}
+% \begin{tablenotes}%
+% \item Note: Shared candidates were identified by selecting the top 0.5\% of SNPs per species for each WorldClim principal component, mapping nearby genes to orthogroups, and retaining orthogroups represented in all five species. Arabidopsis and rice were annotated using $\pm$10 kb windows, whereas maize, sorghum, and barley were annotated using $\pm$25 kb windows.
+% \end{tablenotes}
 \end{table*}
 
-\begin{sidewaystable}%[!p]
-\caption{Tables which are too long to fit, should be written using the ``sidewaystable" environment as shown here\label{tab3}}
-\tabcolsep=0pt%
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lcccccc@{\extracolsep{\fill}}}
-\toprule%
-& \multicolumn{3}{@{}c@{}}{Element 1$^{1}$}& \multicolumn{3}{@{}c@{}}{Element$^{2}$} \\
-\cline{2-4}\cline{5-7}%
-Projectile & Energy     & $\sigma_{calc}$ & $\sigma_{expt}$ & Energy & $\sigma_{calc}$ & $\sigma_{expt}$ \\
+
+\subsection{Cross-species genome-wide associations with soil nitrogen (0--5 cm) identify shared orthologous genes across all species}
+
+Next, we performed GWAS for soil nitrogen predicted for a depth of 0--5 cm. Soil nitrogen was included as an environmental phenotype because nitrogen availability is a major determinant of plant growth, resource allocation, and root-system function, and can therefore impose strong selective pressures. Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 64, rice 202, sorghum 2, barley 4, maize 1). Similarly, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups. This yielded 5,034 Arabidopsis genes, 4,851 rice genes, 4,423 maize genes, 1,636 barley genes, and 990 sorghum genes. Among these soil nitrogen threshold genes, 5,922 genes mapped to orthogroups (Arabidopsis 1,481; rice 127; maize 2,738; barley 949; sorghum 627). Table~\ref{tab:shared_function_candidates_soilN_mixed10kb} summarizes shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values. 
+
+Only two orthogroups were shared across all five species (Table~\ref{tab:shared_function_candidates_soilN_mixed10kb}), including functional modules such as UDP-arabinose/UDP-galactose epimerase and leucine-rich repeat receptor-like kinase. When we reduced the filter to shared orthogroups present in at least four species (Supplementary Table~\ref{tab:soilN_shared_ge4_functions_dedup}), additional recurrent functional modules were recovered. Representative examples included peroxidase (\textit{Zm00001eb043110}), calcium-transporting ATPase (\textit{Zm00001eb030420}), protein kinase (\textit{Zm00001eb011650}), protein-serine/threonine phosphatase (\textit{Zm00001eb331410}), laccase (\textit{Zm00001eb148270}), chloride channel protein (\textit{Zm00001eb244120}), and exostosin family protein (\textit{Zm00001eb163690}). Together, these patterns support convergence on stress signaling, redox/cell-wall processes, and membrane transport under soil nitrogen-associated selection.
+
+
+\begin{table*}[t]
+\caption{Shared candidate genes across all five species from the top 0.5\% of SNPs for soil nitrogen (0--5 cm).}
+\label{tab:shared_genes_soilN_clean}
+\scriptsize
+\tabcolsep=4pt
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llllll@{}}
+\toprule
+Putative function & Maize genes & Sorghum genes & Rice genes & Barley genes & Arabidopsis genes \\
 \midrule
-Element 3 & 990 A & 1168 & $1547\pm12$ & 780 A & 1166 & $1239\pm100$ \\
-Element 4 & 500 A & 961  & $922\pm10$  & 900 A & 1268 & $1092\pm40$ \\
+
+% ===== GROUP 1 =====
+UDP-arabinose 4-epimerase 2/UDP-galactose 4-epimerase &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb014110
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3006G217300
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+LOC\_Os09g03230
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.2HG0195580
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT1G12780
+\end{tabular}
+\\
+
+\midrule
+
+% ===== GROUP 2 =====
+Leucine-rich repeat receptor-like kinase &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb032940\\
+Zm00001eb059050\\
+Zm00001eb066630\\
+Zm00001eb222050\\
+Zm00001eb303060\\
+Zm00001eb362650\\
+Zm00001eb378340\\
+Zm00001eb402940\\
+Zm00001eb403550
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3006G217900
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+LOC\_Os02g01540
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.1HG0041440
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT1G08590\\
+AT1G09970\\
+AT2G26330
+\end{tabular}
+\\
+
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+
+\subsection{Cross-species genome-wide associations with soil pH identify shared orthologous genes across all species}
+
+We also performed GWAS for soil pH. Soil pH is a major edaphic variable that affects nutrient availability, root function, and microbial interactions and can therefore impose strong selective pressures on plant populations. Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 6, rice 383, sorghum 3, barley 6, maize 0). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,102 Arabidopsis genes, 9,635 rice genes, 3,937 maize genes, 1,526 barley genes, and 1,203 sorghum genes. Among these soil pH threshold genes, 5,909 genes mapped to orthogroups (Arabidopsis 1,551; rice 242; maize 2,434; barley 897; sorghum 785). Table~\ref{tab:shared_function_candidates_ph_mixed10kb} summarizes shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values. 
+
+When we expanded to shared orthogroups present in at least four species (Supplementary Table~\ref{tab:soilN_shared_ge4_functions_dedup}), additional recurrent functional modules were recovered. Representative examples included peroxidase (\textit{Zm00001eb043110}), calcium-transporting ATPase (\textit{Zm00001eb030420}), protein kinase (\textit{Zm00001eb011650}), protein-serine/threonine phosphatase (\textit{Zm00001eb331410}), laccase (\textit{Zm00001eb148270}), chloride channel protein (\textit{Zm00001eb244120}), and exostosin family protein (\textit{Zm00001eb163690}). Together, these patterns support convergence on stress signaling, redox/cell-wall processes, and membrane transport under soil nitrogen-associated selection.
+
+
+\begin{table*}[t]
+\caption{Unique shared candidate-gene groups across all five species from the top 0.5\% of SNPs for soil pH.}
+\label{tab:shared_genes_ph_unique_clean}
+\scriptsize
+\tabcolsep=4pt
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llllll@{}}
+\toprule
+Putative function & Maize genes & Sorghum genes & Rice genes & Barley genes & Arabidopsis genes \\
+\midrule
+
+% ===== UNIQUE GROUP 1 =====
+RAB GTPase &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb277700\\
+Zm00001eb401400
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3009G003800
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+LOC\_Os01g07500
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.1HG0002320\\
+HORVU.MOREX.r3.5HG0471130
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT1G16920\\
+AT5G47960
+\end{tabular}
+\\
+
+\midrule
+
+% ===== UNIQUE GROUP 4 =====
+Laccase/Diphenol oxidase family protein &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb166100\\
+Zm00001eb195100\\
+Zm00001eb254960\\
+Zm00001eb368580\\
+Zm00001eb384970
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3003G341500
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+LOC\_Os07g01010
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.5HG0465270\\
+HORVU.MOREX.r3.7HG0667290
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT2G38080\\
+AT4G39830\\
+AT5G03260\\
+AT5G60020
+\end{tabular}
+\\
+
+\midrule
+
+% ===== UNIQUE GROUP 5 =====
+Peroxidase family protein &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb067730\\
+Zm00001eb068210\\
+Zm00001eb118090\\
+Zm00001eb280790\\
+Zm00001eb291850\\
+Zm00001eb390710
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3001G314000\\
+SORBI\_3003G320800
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+LOC\_Os05g01620\\
+LOC\_Os08g03020
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.1HG0054280\\
+HORVU.MOREX.r3.2HG0112720\\
+HORVU.MOREX.r3.6HG0618250
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT3G17070\\
+AT4G30170\\
+AT5G06720\\
+AT5G15180
+\end{tabular}
+\\
+
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+
+
+\subsection{Cross-species genome-wide associations with AM fungal phenotypes identify a limited set of shared orthologous genes}
+
+We also performed GWAS for AM fungal relative abundance colonization and AM fungal roots colonized.  AM fungal phenotypes are ecologically important because AM symbiosis can alter plant nutrient acquisition (especially P and N), root function, and drought-stress performance, making AM-associated loci plausible targets of environmental adaptation. Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species and between the two AM fungal phenotypes. For AM fungal relative abundance colonization, the number of significant SNPs was 824 in Arabidopsis, 268 in rice, 0 in sorghum, 9 in barley, and 1 in maize. For AM fungal roots colonized, the number of significant SNPs was higher overall, with 1160 in Arabidopsis, 1536 in rice, 4 in sorghum, 125 in barley, and 5 in maize. These results indicate that the strength of association with AM fungal phenotypes varied substantially among species and was generally greater for roots colonized than for relative abundance colonization.
+
+Similarly, we selected the top 0.5\% of SNPs per species for each AM fungal phenotype and mapped genes to orthogroups. For AM fungal relative abundance colonization, this yielded 5,613 Arabidopsis genes, 6,947 rice genes, 3,791 maize genes, 1,246 barley genes, and 994 sorghum genes. For AM fungal roots colonized, the corresponding values were 5,617 Arabidopsis genes, 5,975 rice genes, 3,934 maize genes, 1,153 barley genes, and 940 sorghum genes. Among these threshold genes, 5,693 genes from the relative abundance analysis and 5,726 genes from the roots colonized analysis mapped to orthogroups. Despite recovering many orthogroup-mapped genes for both traits (AM fungal relative abundance colonization: 5,693 total ortholog-mapped genes; Arabidopsis 1,730, rice 201, maize 2,301, barley 787, sorghum 674; AM fungal roots colonized: 5,726 total; Arabidopsis 1,814, rice 206, maize 2,352, barley 853, sorghum 501), only a very small all-five-species core was detected. For relative abundance colonization, a single all-five orthogroup (MYB-domain candidate set, Table~\ref{tab:shared_genes_amfungal_combined}) was shared. For roots colonized, four all-five orthogroup rows collapsed into two non-redundant functional groups: a peroxidase superfamily and a protein kinase superfamily. 
+
+Beyond the small all-five-species core, additional shared candidate modules were recovered when considering orthogroups present in at least four species (Supplementary Tables~\ref{tab:amrel_shared_ge4_functions_dedup} and \ref{tab:amroots_shared_ge4_functions_dedup}). For AM fungal relative abundance colonization, four-species shared groups were dominated by maize--sorghum--barley--Arabidopsis, with additional groups involving rice. Representative putative functions included peroxidase (\textit{Zm00001eb001560}), LRR receptor-like kinase (\textit{Zm00001eb016040}), NRT1/PTR-family transporter (\textit{Zm00001eb046210}), purple acid phosphatase (\textit{Zm00001eb151650}), amino acid permease (\textit{Zm00001eb145670}), and potassium transporter (\textit{Zm00001eb275630}). For AM fungal roots colonized, four-species shared groups were also substantial and included modules such as LRR receptor-like kinase (\textit{Zm00001eb002030}), laccase (\textit{Zm00001eb368580}), E3 ubiquitin ligase (\textit{Zm00001eb032800}), amino acid/oligopeptide transporters (\textit{\seqsplit{Zm00001eb178270}}, \textit{\seqsplit{Zm00001eb257490}}, \textit{\seqsplit{Zm00001eb033760}}), and trehalose-6-phosphate phosphatase (\textit{\seqsplit{Zm00001eb105040}}). Together, these AMF-associated shared modules indicate convergence on signaling, membrane transport, redox/cell-wall processes, and nutrient-response functions across taxa.
+
+
+\begin{table*}[t]
+\caption{Shared candidate genes across all five species from the top 0.5\% of SNPs for AM fungal phenotypes.}
+\label{tab:shared_genes_amfungal_combined}
+\scriptsize
+\tabcolsep=3pt
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllll@{}}
+\toprule
+Phenotype & Putative function & Maize genes & Sorghum genes & Rice genes & Barley genes & Arabidopsis genes \\
+\midrule
+
+\begin{tabular}[t]{@{}l@{}}
+AM fungal relative abundance\\
+colonization
+\end{tabular}
+&
+MYB domain protein
+&
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb045780\\
+Zm00001eb103730\\
+Zm00001eb289320
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3003G053200\\
+SORBI\_3003G373000
+\end{tabular}
+&
+LOC\_Os08g05490
+&
+HORVU.MOREX.r3.4HG0415430
+&
+AT5G40330
+\\
+\midrule
+
+\begin{tabular}[t]{@{}l@{}}
+AM fungal roots\\
+colonized
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+Peroxidase superfamily\\
+protein
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb001560\\
+Zm00001eb022050\\
+Zm00001eb102470\\
+Zm00001eb194740\\
+Zm00001eb276250\\
+Zm00001eb281180\\
+Zm00001eb330530\\
+Zm00001eb390710\\
+Zm00001eb395060
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3001G080200\\
+SORBI\_3001G293000
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+LOC\_Os04g06510\\
+LOC\_Os05g01620\\
+LOC\_Os12g01120
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.2HG0112720\\
+HORVU.MOREX.r3.7HG0667610\\
+HORVU.MOREX.r3.7HG0667620
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT1G14540\\
+AT1G68850\\
+AT2G38380\\
+AT4G11290\\
+AT5G40150\\
+AT5G58390
+\end{tabular}
+\\
+\midrule
+
+\begin{tabular}[t]{@{}l@{}}
+AM fungal roots\\
+colonized
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+Protein kinase\\
+superfamily protein
+\end{tabular}
+&
+Zm00001eb144570
+&
+SORBI\_3004G185000
+&
+LOC\_Os01g08990
+&
+HORVU.MOREX.r3.4HG0338070
+&
+\begin{tabular}[t]{@{}l@{}}
+AT1G06700\\
+AT2G41970
+\end{tabular}
+\\
+
+\bottomrule
+\end{tabular*}
+% \begin{tablenotes}%
+% \item Note: Shared candidates were identified from the top 0.5\% of SNPs for each AM fungal phenotype and grouped here by putative shared functional annotation to highlight conserved cross-species signals.
+% \end{tablenotes}
+\end{table*}
+
+
+
+\subsection{Cross-species genome-wide associations with aridity index identify shared orthologous genes across all species}
+
+Finally, we performed GWASs for the aridity index. Aridity index represents long-term water availability relative to atmospheric evaporative demand, providing an integrated climatic dryness gradient across sampling locations. Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 436, rice 0, sorghum 90, barley 1, maize 4). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,663 Arabidopsis genes, 9,209 rice genes, 1,573 maize genes, 807 barley genes, and 131 sorghum genes.
+
+Among these aridity index threshold genes, 3,413 genes mapped to orthogroups (Arabidopsis 1,684; rice 264; maize 917; barley 469; sorghum 79). Table~\ref{tab:shared_function_candidates_aridity_index_mixed10kb_common4} summarizes shared orthogroups represented in at least four species and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
+
+In addition to the four-species shared orthogroups summarized in Table~\ref{tab:shared_function_candidates_aridity_index_mixed10kb_common4}, we observed recurring functional modules across species combinations. Shared groups were present across maize--rice--barley--Arabidopsis, maize--sorghum--barley--Arabidopsis, and maize--sorghum--rice--Arabidopsis. Representative putative functions included peroxidase (\textit{Zm00001eb022050}; orthogroup 640662at2759), NRT1/PTR-family transporter (\textit{Zm00001eb046210}; 627237at2759), cation/H$^{+}$ antiporter (\textit{Zm00001eb031840}; 755348at2759), protein-serine/threonine phosphatase (\textit{Zm00001eb112250}; 5017799at2759), GDSL esterase/lipase (\textit{Zm00001eb426230}; 381908at2759), RAV-family DNA-binding protein (\textit{Zm00001eb156040}; 665330at2759), and carboxypeptidase (\textit{Zm00001eb113170}; 4805980at2759). Together, these aridity-associated shared modules support recurring contributions of stress signaling, membrane transport, and redox/cell-wall-associated pathways to adaptation along long-term climatic dryness gradients.
+
+
+
+
+\begin{table*}[t]
+\caption{Shared candidate genes identified across at least four species from the top 0.5\% of SNPs for aridity index (Arabidopsis/Rice $\pm$10 kb; Maize/Sorghum/Barley $\pm$25 kb).\label{tab:shared_function_candidates_aridity_index_mixed10kb_common4}}
+\scriptsize
+\tabcolsep=4pt
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llllll@{}}
+\toprule
+Function & Maize genes & Sorghum genes & Rice genes & Barley genes & Arabidopsis genes \\
+\midrule
+
+GDSL-like Lipase &
+Zm00001eb426230 &
+SORBI\_3001G003600 &
+NA &
+HORVU.MOREX.r3.2HG0198640 &
+\begin{tabular}[t]{@{}l@{}}
+AT2G30310\\
+AT5G63170
+\end{tabular}
+\\
+\midrule
+
+Serine carboxypeptidase-like &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb113170\\
+Zm00001eb131190
+\end{tabular}
+&
+SORBI\_3008G073700 &
+NA &
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.4HG0411760\\
+HORVU.MOREX.r3.6HG0623790
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT2G35780\\
+AT3G07990
+\end{tabular}
+\\
+\midrule
+
+Protein phosphatase  &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb112250\\
+Zm00001eb396970
+\end{tabular}
+&
+SORBI\_3008G071300 &
+LOC\_Os04g04520 &
+NA &
+\begin{tabular}[t]{@{}l@{}}
+AT1G34750\\
+AT4G28400\\
+AT4G31750
+\end{tabular}
+\\
+\midrule
+
+Nitrate transporter &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb046210\\
+Zm00001eb053220\\
+Zm00001eb126980
+\end{tabular}
+&
+SORBI\_3004G276200 &
+NA &
+HORVU.MOREX.r3.1HG0041600 &
+\begin{tabular}[t]{@{}l@{}}
+AT1G12110\\
+AT1G32450\\
+AT1G59740\\
+AT3G45680\\
+AT5G62680
+\end{tabular}
+\\
+\midrule
+
+Peroxidase family protein &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb022050\\
+Zm00001eb067730\\
+Zm00001eb068210\\
+Zm00001eb425840
+\end{tabular}
+&
+NA &
+\begin{tabular}[t]{@{}l@{}}
+LOC\_Os01g07870\\
+LOC\_Os08g03020
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.1HG0054280\\
+HORVU.MOREX.r3.5HG0446790\\
+HORVU.MOREX.r3.6HG0546360\\
+HORVU.MOREX.r3.6HG0615810\\
+HORVU.MOREX.r3.6HG0618250
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT4G11290\\
+AT4G30170\\
+AT4G37520\\
+AT5G05340
+\end{tabular}
+\\
+\midrule
+
+ABI3-VP1-transcription factor &
+Zm00001eb156040 &
+NA &
+LOC\_Os01g01410 &
+HORVU.MOREX.r3.3HG0227830 &
+AT1G68840
+\\
+\midrule
+
+Cation/H exchanger &
+Zm00001eb031840 &
+NA &
+LOC\_Os05g04850 &
+HORVU.MOREX.r3.2HG0206000 &
+AT5G58460
+\\
+
 \botrule
 \end{tabular*}
-\begin{tablenotes}%
-\item Note: This is an example of a table footnote this is an example of a table footnote this is an example of a table footnote this is an example of a table footnote this is an example of a table footnote
-\item[$^{1}$] This is an example of a table footnote
-\end{tablenotes}
-\end{sidewaystable}
-
-
-\section{Figures}\label{sec6}
-
-As per display \LaTeX\ standards one has to use eps images for \verb+latex+ compilation and \verb+pdf/jpg/png+ images for
-\verb+pdflatex+ compilation. This is one of the major differences between \verb+latex+
-and \verb+pdflatex+. The images should be single-page documents. The command for inserting images
-for \verb+latex+ and \verb+pdflatex+ can be generalized. The package used to insert images in \verb+latex/pdflatex+ is the
-graphicx package. Figures can be inserted via the normal figure environment as shown in the below example:
-
-
-\begin{figure}[!t]%
-\centering
-{\color{black!20}\rule{213pt}{37pt}}
-\caption{This is a widefig. This is an example of a long caption this is an example of a long caption  this is an example of a long caption this is an example of a long caption}\label{fig1}
-\figalttext[Figure alt-text short description needs to be provided here]{Figure alt-text long description needs to be provided here}%
-\end{figure}
-
-\begin{figure*}[!t]%
-\centering
-{\color{black!20}\rule{\textwidth}{74pt}}
-\caption{This is a widefig. This is an example of a long caption this is an example of a long caption  this is an example of a long caption this is an example of a long caption}\label{fig2}
-\end{figure*}
-
-
-\begin{verbatim}
-\begin{figure}[t]
-        \centering\includegraphics{<eps-file>}
-        \caption{<figure-caption>}
-        \label{<figure-label>}
-\end{figure}
-\end{verbatim}
-
-Test text here.
-
-For sample purposes, we have included the width of images in the
-optional argument of \verb+\includegraphics+ tag. Please ignore this.
-Lengthy figures which do not fit within textwidth should be set in rotated mode. For rotated figures, we need to use \verb+\begin{sidewaysfigure}+ \verb+...+ \verb+\end{sidewaysfigure}+ instead of the \verb+\begin{figure}+ \verb+...+ \verb+\end{figure}+ environment.
-
-\begin{sidewaysfigure}%
-\centering
-{\color{black!20}\rule{\hsize}{102pt}}
-\caption{This is an example for a sideways figure. This is an example of a long caption this is an example of a long caption  this is an example of a long caption this is an example of a long caption}\label{fig3}
-\end{sidewaysfigure}
-
-
-
-\section{Algorithms, Program codes and Listings}\label{sec7}
-
-Packages \verb+algorithm+, \verb+algorithmicx+ and \verb+algpseudocode+ are used for setting algorithms in latex.
-For this, one has to use the below format:
-
-
-\begin{verbatim}
-\begin{algorithm}
-\caption{<alg-caption>}\label{<alg-label>}
-\begin{algorithmic}[1]
-. . .
-\end{algorithmic}
-\end{algorithm}
-\end{verbatim}
-
-
-You may need to refer to the above-listed package documentations for more details before setting an \verb+algorithm+ environment.
-To set program codes, one has to use the \verb+program+ package. We need to use the \verb+\begin{program}+ \verb+...+
-\verb+\end{program}+ environment to set program codes.
-
-\begin{algorithm}[!t]
-\caption{Calculate $y = x^n$}\label{algo1}
-\begin{algorithmic}[1]
-\Require $n \geq 0 \vee x \neq 0$
-\Ensure $y = x^n$
-\State $y \Leftarrow 1$
-\If{$n < 0$}
-        \State $X \Leftarrow 1 / x$
-        \State $N \Leftarrow -n$
-\Else
-        \State $X \Leftarrow x$
-        \State $N \Leftarrow n$
-\EndIf
-\While{$N \neq 0$}
-        \If{$N$ is even}
-            \State $X \Leftarrow X \times X$
-            \State $N \Leftarrow N / 2$
-        \Else[$N$ is odd]
-            \State $y \Leftarrow y \times X$
-            \State $N \Leftarrow N - 1$
-        \EndIf
-\EndWhile
-\end{algorithmic}
-\end{algorithm}
-
-Similarly, for \verb+listings+, one has to use the \verb+listings+ package. The \verb+\begin{lstlisting}+ \verb+...+ \verb+\end{lstlisting}+ environment is used to set environments similar to the \verb+verbatim+ environment. Refer to the \verb+lstlisting+ package documentation for more details on this.
-
-
-\begin{minipage}{\hsize}%
-\lstset{language=Pascal}% Set your language (you can change the language for each code-block optionally)
-\begin{lstlisting}[frame=single,framexleftmargin=-1pt,framexrightmargin=-17pt,framesep=12pt,linewidth=0.98\textwidth]
-for i:=maxint to 0 do
-begin
-{ do nothing }
-end;
-Write('Case insensitive ');
-Write('Pascal keywords.');
-\end{lstlisting}
-\end{minipage}
+% \begin{tablenotes}%
+% \item Note: Shared candidates were identified from the top 0.5\% of SNPs for aridity index and grouped here by shared functional annotation to highlight conserved cross-species signals across at least four species.
+% \end{tablenotes}
+\end{table*}
 
 
-\section{Cross referencing}\label{sec8}
-
-Environments such as figure, table, equation, and align can have a label
-declared via the \verb+\label{#label}+ command. For figures and table
-environments one should use the \verb+\label{}+ command inside or just
-below the \verb+\caption{}+ command.  One can then use the
-\verb+\ref{#label}+ command to cross-reference them. As an example, consider
-the label declared for Figure \ref{fig1} which is
-\verb+\label{fig1}+. To cross-reference it, use the command
-\verb+ Figure \ref{fig1}+, for which it comes up as
-``Figure~\ref{fig1}".
+%=======================================================================
+%=======================================================================
+%=======================================================================
 
-\subsection{Details on reference citations}\label{subsec3}
 
-With standard numerical .bst files, only numerical citations are possible.
-With an author-year .bst file, both numerical and author-year citations are possible.
-
-If author-year citations are selected, \verb+\bibitem+ must have one of the following forms:
-
+\section{Discussion}
 
-\begin{verbatim}
-\bibitem[Jones et al.(1990)]{key}...
-\bibitem[Jones et al.(1990)Jones,
-                Baker, and Williams]{key}...
-\bibitem[Jones et al., 1990]{key}...
-\bibitem[\protect\citeauthoryear{Jones,
-                Baker, and Williams}
-                {Jones et al.}{1990}]{key}...
-\bibitem[\protect\citeauthoryear{Jones et al.}
-                {1990}]{key}...
-\bibitem[\protect\astroncite{Jones et al.}
-                {1990}]{key}...
-\bibitem[\protect\citename{Jones et al., }
-                1990]{key}...
-\harvarditem[Jones et al.]{Jones, Baker, and
-                Williams}{1990}{key}...
-\end{verbatim}
+\subsection{Shared world climate-associated candidates point to conserved stress-response, signaling, and nutrient-transport pathways across traits}
 
+The shared candidate gene analysis supports both a narrow core of ortholog gene-level convergence and broader functional convergence. Across species, only a limited set of orthogroups was repeatedly shared, but many additional candidates converged on similar stress-response annotations (Table). These modules were not limited to the World Climate PC phenotypes but also included other environmental phenotypes we used, indicating cross-trait reuse of related stress-response pathways.
 
-This is either to be made up manually, or to be generated by an
-appropriate .bst file with BibTeX. Then,
+One prominent functional module involved oxidative-stress regulation and cell-wall remodeling. The candidate set contained many peroxidase or plant heme peroxidase-domain genes, including \textit{\seqsplit{Zm00001eb067730}}, \textit{\seqsplit{Zm00001eb425840}}, \textit{\seqsplit{Zm00001eb068210}}, \textit{\seqsplit{Zm00001eb043110}}, \textit{\seqsplit{Zm00001eb195200}}, \textit{\seqsplit{Zm00001eb291850}}, and additional peroxidase-like genes. In the cross-trait orthogroup mapping, all six maize peroxidase candidates recurred in the same phenotype combination (PC1, PC2, PC3, pH, soilN, AM fungal relative abundance, and aridity), but not in AM roots colonized. They were repeatedly annotated with peroxidase and oxidoreductase activity, heme binding, response to oxidative stress, hydrogen peroxide catabolism, cellular oxidant detoxification, and extracellular and plant-type cell-wall localization. This pattern matches the known roles of class III peroxidases in reactive oxygen species homeostasis, apoplastic redox regulation, lignification, cell-wall modification, and biotic and abiotic stress responses \citep{Hiraga2001,Passardi2004,Cosio2009,Kidwai2020}. In maize, class III peroxidases form a large family, and selected \textit{ZmPRX} genes respond transcriptionally to hydrogen peroxide, salicylic acid, salt, and PEG-induced drought stress \citep{Wang2015Peroxidase}. Thus, recurrence of peroxidase candidates across climate axes and phenotypes likely reflects repeated recruitment of extracellular redox and cell-wall remodeling processes under environmental stress, rather than a single peroxidase gene.
 
+A second recurring theme was stress perception and signal transduction. Several candidates were annotated as protein kinases, receptor-like kinases, calcium-dependent protein kinases, MAP kinases, phosphatases, or related signaling proteins, including the CBL-interacting protein kinase-like gene \textit{Zm00001eb041140}, the lectin-like receptor kinase \textit{Zm00001eb058940}, and calcium-dependent kinase-related candidates \textit{\seqsplit{Zm00001eb429270}}, \textit{\seqsplit{Zm00001eb117300}}, \textit{\seqsplit{Zm00001eb107190}}, \textit{\seqsplit{Zm00001eb093410}}, \textit{\seqsplit{Zm00001eb369270}}, \textit{\seqsplit{Zm00001eb408020}}, \textit{\seqsplit{Zm00001eb072810}}, and \textit{\seqsplit{Zm00001eb061860}}. Cross-trait mapping revealed heterogeneity within this module: the CDPK-like set (\textit{\seqsplit{Zm00001eb429270}}, \textit{\seqsplit{Zm00001eb117300}}, \textit{\seqsplit{Zm00001eb107190}}, \textit{\seqsplit{Zm00001eb093410}}, \textit{\seqsplit{Zm00001eb369270}}, \textit{\seqsplit{Zm00001eb408020}}, \textit{\seqsplit{Zm00001eb072810}}, \textit{\seqsplit{Zm00001eb061860}}) consistently mapped to PC1, PC2, PC3, pH, soilN, and AM roots colonized, whereas \textit{\seqsplit{Zm00001eb041140}} mapped only to PC1 plus AM fungal relative abundance and \textit{\seqsplit{Zm00001eb058940}} only to PC1. These genes were associated with protein kinase and serine/threonine kinase activity, calcium and calmodulin binding, ATP binding, intracellular signal transduction, plasma membrane localization, and receptor-mediated signaling. This is consistent with the role of calcium fluxes, membrane receptors, phosphorylation cascades, ABA-related pathways, and ROS signaling in perceiving abiotic stresses such as drought, heat, cold, salinity, and oxidative stress. Maize SnRK, LecRLK, and CDPK studies support this: SnRK genes respond to drought, salinity, temperature, and UV stress \citep{Feng2022SnRK}; LecRLKs mediate membrane-associated stress perception and respond to salt, drought, and combined drought–salt stress \citep{Yang2025LecRLK}; and CDPKs integrate calcium signaling with drought, heat, salinity, ABA, ROS, ion transport, heat-shock proteins, transcription factors, and MAPK pathways \citep{Du2023CDPK}. The candidate set also included genes linked to stress-buffering metabolism and transport. For example, \textit{Zm00001eb058360}, annotated as a GNAT15 acetyltransferase, is related to the GNAT/SNAT family involved in melatonin biosynthesis; maize \textit{ZmSNAT1} and \textit{ZmSNAT3} respond transcriptionally to drought and heat stress \citep{Guo2024SNAT}, and \textit{Zm00001eb058360} appeared in PC1 and pH in our cross-trait map.
 
-\begin{verbatim}
-                    Author-year mode
-                        || Numerical mode
-\citet{key} ==>>  Jones et al. (1990)
-                        || Jones et al. [21]
-\citep{key} ==>> (Jones et al., 1990) || [21]
-\end{verbatim}
 
 
-\noindent
-Multiple citations as normal:
+%=======================================================================
+%=======================================================================
+%=======================================================================
 
 
-\begin{verbatim}
-\citep{key1,key2} ==> (Jones et al., 1990;
-                         Smith, 1989)||[21,24]
-        or (Jones et al., 1990, 1991)||[21,24]
-        or (Jones et al., 1990a,b)   ||[21,24]
-\end{verbatim}
 
+\subsection{Soil pH-associated candidates implicate vesicle trafficking, proton transport, and cell-surface stress remodeling.}
 
-\noindent
-\verb+\cite{key}+ is the equivalent of \verb+\citet{key}+ in author-year mode
-and  of \verb+\citep{key}+ in numerical mode. Full author lists may be forced with
-\verb+\citet*+ or \verb+\citep*+, e.g.
+For the soil pH GWAS, a notable candidate was \textit{Zm00001eb401400}, functionally similar to rice stress-response genes involved in ion homeostasis and cell-surface remodeling. A rice homolog, \textit{OsRab11}, mediates vesicle trafficking of the vacuolar H\textsuperscript{+}-ATPase subunit \textit{OsVHA-a1} under high salinity. In rice, \textit{OsVHA-a1}, \textit{OsGAP1}, and \textit{OsRab11} are transcriptionally induced by high salinity, and \textit{OsRab11} is required for trafficking \textit{OsVHA-a1} from the trans-Golgi network to the prevacuolar compartment and/or vacuole \citep{Son2013OsRab11}. This is relevant to soil pH adaptation because vacuolar H\textsuperscript{+}-ATPases generate proton gradients that drive vesicle acidification, vacuolar ion sequestration, cytosolic pH balance, and membrane trafficking under ionic stress. Thus, \textit{Zm00001eb401400} suggests that pH-associated adaptation may involve endomembrane trafficking and proton-coupled ion homeostasis, not only root-surface nutrient uptake.
 
+A second functional link involves rice \textit{OsChI1}, which encodes a putative laccase precursor induced by chilling, dehydration, and high salinity. \textit{OsChI1} localizes to the plasma membrane in rice protoplasts, and its overexpression in Arabidopsis increases drought and salinity tolerance \citep{Cho2014OsChI1}. Laccase-like multicopper oxidases are associated with lignin polymerization, phenolic oxidation, cell-wall modification, and oxidative-stress responses, all of which can affect root interactions with chemically stressful soils. In the context of soil pH, these functions are plausible because acidic or alkaline conditions alter nutrient availability, ion toxicity, oxidative pressure, and cell-wall properties. Thus, \textit{Zm00001eb401400} may be a pH-associated candidate linking two stress-response processes: vacuolar trafficking/proton transport via an \textit{OsRab11}-like mechanism and plasma membrane or cell-wall stress remodeling via an \textit{OsChI1}-like laccase pathway. Together, these homology-based links suggest that soil pH adaptation partly reflects conserved mechanisms that maintain ion balance, vesicle trafficking, and root cell-wall integrity under chemically stressful soils.
 
-\begin{verbatim}
-\citep*{key} ==>> (Jones, Baker, and Mark, 1990)
-\end{verbatim}
 
+%=======================================================================
+%=======================================================================
+%=======================================================================
 
-\noindent
-Optional notes as:
+\subsection{Recurrent NRT1/PTR-family candidates suggest conserved roles for nitrate sensing, peptide transport, and vascular nutrient partitioning}
 
+Several recurrent NRT1/PTR-family candidates were associated with environmental phenotypes, suggesting that adaptation to climate, aridity, soil chemistry, and belowground interactions involves coordinated transport mechanisms rather than a single nitrate-uptake pathway. The strongest and most frequent signal was the NRT1.1-like orthogroup containing \textit{AT1G12110} in \textit{Arabidopsis} and \textit{Zm00001eb126980} in maize. This orthogroup occurred in four species (\textit{Arabidopsis}, barley, maize, and sorghum) and was associated with four environmental phenotypes: WorldClim PC1, PC2, PC3, and aridity index. Its recurrence across climate axes is consistent with the known biology of \textit{Arabidopsis} NRT1.1 (CHL1), which acts as a nitrate transceptor that integrates nitrate uptake, signaling, lateral-root plasticity, auxin transport, and rhizosphere stress responses \citep{Wang2009NRT11,Glass2013NRT11,Krouk2010NRT11Auxin}. In \textit{Arabidopsis}, NRT1.1 is required for full induction of nitrate-responsive genes such as \textit{NIA1}, \textit{NiR}, and \textit{NRT2.1}, supporting its role as a nitrate sensor \citep{Wang2009NRT11}. It promotes root colonization of nitrate-rich patches via an ANR1-linked nitrate-signaling pathway, driving local root proliferation where nitrate is abundant \citep{Remans2006NRT11Patch}. NRT1.1 also links nitrate availability to auxin transport, because nitrate inhibits NRT1.1-dependent auxin movement, thereby coupling external nitrate status to lateral-root auxin accumulation and root-system architecture \citep{Krouk2010NRT11Auxin}. In addition, NRT1.1 connects nitrate transport to chemically stressful soils: its mediated nitrate uptake can alleviate proton toxicity by alkalifying the rhizosphere, \textit{nrt1.1} mutation alters ammonium/low-pH tolerance, and NRT1.1-dependent uptake can limit rhizosphere acidification under lead stress \citep{Fang2016NRT11Proton,Hachiya2011NRT11LowpH,Zhu2019NRT11Lead}. Together, the \textit{AT1G12110}--\textit{Zm00001eb126980} signal supports a model in which climate and aridity adaptation involves conserved nitrate-transceptor pathways coordinating nutrient sensing, root foraging, auxin-mediated development, and rhizosphere chemical buffering.
 
-\begin{verbatim}
-\citep[chap. 2]{key}     ==>>
-        (Jones et al., 1990, chap. 2)
-\citep[e.g.,][]{key}     ==>>
-        (e.g., Jones et al., 1990)
-\citep[see][pg. 34]{key} ==>>
-        (see Jones et al., 1990, pg. 34)
-\end{verbatim}
+A second recurrent NRT1/PTR-family signal was the PTR-family 5.2 candidate \textit{Zm00001eb046210}. This locus was shared across \textit{Arabidopsis}, barley, maize, and sorghum and associated with three phenotypes: AM fungal relative abundance colonization, AM roots colonized, and aridity index. Unlike the NRT1.1-like signal, best explained by nitrate-transceptor biology, the PTR-family 5.2 signal more directly implicates peptide transport, stress responses, and defense-related nitrogen transport. Evidence from \textit{Arabidopsis} supports this view. \textit{AtPTR3}, a stress-induced PTR-type peptide transporter, was identified as a wound-induced, proton-dependent oligopeptide transporter with 12 transmembrane domains, typical of major facilitator superfamily/PTR proteins \citep{Karim2005AtPTR3}. \textit{AtPTR3} expression is induced by amino acids and strongly by salt stress, and \textit{atptr3} knockouts show reduced germination on salt-containing medium, indicating a role in early stress tolerance \citep{Karim2005AtPTR3}. A later study showed that \textit{AtPTR3} transports di- and tripeptides in yeast and is regulated by salicylic acid, methyl jasmonate, abscisic acid, and wounding; \textit{atptr3} mutants were more susceptible to virulent bacteria and accumulated more reactive oxygen species under oxidative stress \citep{Karim2007AtPTR3}. These findings support a broad role for PTR3-like peptide transporters in stress and defense physiology. In this context, the recurrence of \textit{Zm00001eb046210} across aridity and AM colonization traits is plausible: aridity imposes osmotic stress, alters root C and N allocation, and reshapes belowground interactions, while AM colonization depends on nutrient exchange, membrane transport, and stress-responsive root remodeling. This PTR-family candidate may therefore reflect peptide or nitrogen transport involved in root stress adaptation, ROS regulation, defense, and symbiotic-interface function.
 
+A third recurrent signal was the NRT1.9-like candidate, \textit{AT1G18880} in \textit{Arabidopsis} and \textit{Zm00001eb053220} in maize, suggesting a role in long-distance nitrate redistribution rather than direct sensing or peptide transport. In \textit{Arabidopsis}, \textit{NRT1.9} encodes a low-affinity NRT1/PTR nitrate transporter: \textit{Xenopus} oocyte assays showed nitrate but no dipeptide transport, and reporter/GFP analyses placed it mainly in root phloem companion cells, consistent with vascular rather than soil nitrate uptake \citep{Wang2011NRT19}. In \textit{nrt1.9} mutants, nitrate content in root phloem exudates and downward nitrate transport decreased, indicating that NRT1.9 loads nitrate into the root phloem, while loss of \textit{NRT1.9} increased root-to-shoot nitrate transport and shoot nitrate accumulation under high nitrate, implying that phloem loading shapes the balance between downward root redistribution and upward xylem flow \citep{Wang2011NRT19}. Thus, the \textit{AT1G18880}--\textit{Zm00001eb053220} signal may reflect adaptive nitrate partitioning, tuning root–shoot fluxes to external heterogeneity. Overall, the NRT1.1-, PTR3-, and NRT1.9-like candidates show that recurrent NRT1/PTR-family signals are not redundant but reflect complementary functions—nitrate sensing and root foraging, peptide/stress-associated transport, and vascular nitrate partitioning—supporting a central role for nutrient sensing, root–shoot nitrogen economy, rhizosphere chemical buffering, and stress-responsive transport in adaptation to heterogeneous climatic and edaphic conditions.
 
-\noindent
-(Note: in standard LaTeX, only one note is allowed, after the ref.
-Here, one note is like the standard, two make pre- and post-notes.)
+%=======================================================================
+%=======================================================================
+%=======================================================================
 
 
-\begin{verbatim}
-\citealt{key}   ==>> Jones et al. 1990
-\citealt*{key}  ==>> Jones, Baker, and
-                        Williams 1990
-\citealp{key}   ==>> Jones et al., 1990
-\citealp*{key}  ==>> Jones, Baker, and
-                        Williams, 1990
-\end{verbatim}
+\section{Materials and Methods}
 
+For downstream environmental matching, we used accession-level coordinates from species-specific geolocation and retained longitude/latitude.
 
-\noindent
-Additional citation possibilities (both author-year and numerical modes):
+\subsection{Plant material}
+We analyzed five georeferenced diversity panels spanning Arabidopsis, barley, rice, maize, and sorghum. Arabidopsis accessions were drawn from the 1001 Genomes resource (\cite{1001genomes2016}). Maize accessions were from the SeeD landrace panel described by Romero Navarro et al. (\citealp{romeroNavarro2017}). Sorghum accessions correspond to the georeferenced landrace panel described by Lasky et al. (\citealp{lasky2015}). Rice accessions were derived from the 3,000 Rice Genomes Project (\citealp{rice3k2014}; \citealp{wang2018}). Barley accessions were taken from the IPK barley genebank genomics resource (\citealp{milner2019,konig2020}).
 
+After integrating genotype data with accession-level geographic metadata, the final dataset comprised 1,130 Arabidopsis, 1,661 barley, 1,443 rice, 3,560 maize, and 1,943 sorghum accessions. Together, these panels represent broad geographic and genetic diversity across four major crops and one model species, enabling comparative analyses of adaptation to environmental heterogeneity. For environmental matching, longitude and latitude were retained from species-specific geolocation metadata and used to extract climate and soil variables for each accession from gridded environmental datasets.
 
-\begin{verbatim}
-\citeauthor{key}       ==>> Jones et al.
-\citeauthor*{key}      ==>> Jones, Baker, and
-                                Williams
-\citeyear{key}         ==>> 1990
-\citeyearpar{key}      ==>> (1990)
-\citetext{priv. comm.} ==>> (priv. comm.)
-\citenum{key}          ==>> 11 
-                            [non-superscripted]
-\end{verbatim}
+\subsection{Environmental data}
+Because all accessions were georeferenced, accession-level longitude and latitude were used to extract environmental values from global gridded raster datasets. We assembled environmental phenotypes representing broad climatic, edaphic, and belowground biotic conditions for each accession location.
 
+Climatic variables were obtained from the WorldClim database. We used the 19 standard bioclimatic variables, which summarize major dimensions of temperature and precipitation, including annual means, seasonality, and climatic extremes. These variables were then used for principal component analysis to derive composite climate phenotypes for downstream environmental GWAS. \citep{fick2017worldclim} % or cite the WorldClim resource used in your bibliography
 
-\noindent
-Note: full author lists depend on whether the bib style supports them;
-if not, the abbreviated list is printed even when full is requested.
+Soil variables included surface soil nitrogen and soil pH. These were extracted from global gridded soil-property layers from SoilGrids, which provides machine-learning-based predictions of soil properties worldwide at 250~m resolution and across standard soil depth intervals. For this study, we used values corresponding to the surface soil layer for nitrogen and pH extraction at accession coordinates. \citep{poggio2021soilgrids} 
 
-\noindent
-For names like della Robbia at the start of a sentence, use
+To represent belowground biotic variation, we also extracted arbuscular mycorrhizal fungal (AMF) variables from the fine-resolution global maps of root biomass carbon colonized by arbuscular and ectomycorrhizal fungi. From this dataset, we used AM fungal relative abundance colonization and AM fungal roots colonized as environmental phenotypes for cross-species association analysis. \citep{barcelo2023amf} 
 
+Aridity index values were extracted from the Global Aridity Index and Potential Evapotranspiration Database (v3), which provides globally gridded estimates of climatic aridity derived from precipitation and atmospheric evaporative demand \citep{zomer2022aridity}.
 
-\begin{verbatim}
-\Citet{dRob98}      ==>> Della Robbia (1998)
-\Citep{dRob98}      ==>> (Della Robbia, 1998)
-\Citeauthor{dRob98} ==>> Della Robbia
-\end{verbatim}
+\subsection{Genome-wide association studies}
 
+Genome-wide association studies (GWAS) were performed separately for each species and environmental phenotype using GEMMA under a mixed linear model (MLM) framework. To account for relatedness among accessions, we included a kinship matrix in all analyses.  Association testing was performed independently within each species for all environmental phenotypes considered in this study.
 
-\noindent
-The following is an example for \verb+\cite{...}+: \cite{rahman2019centroidb}. Another example for \verb+\citep{...}+: \citep{bahdanau2014neural,imboden2018cardiorespiratory,motiian2017unified,murphy2012machine,ji20123d}.
-Sample cites here \cite{krizhevsky2012imagenet,horvath2018dna} and \cite{pyrkov2018quantitative}, \cite{wang2018face}, \cite{lecun2015deep,zhang2018fine,ravi2016deep}.
+For each GWAS, we first evaluated species-specific association signals using the full genome-wide SNP set and corresponding significance thresholds. To facilitate cross-species comparison beyond the strict Bonferroni tail, we then retained the top 0.5\% of SNPs from each species-specific analysis as a candidate set for downstream orthogroup-based integration. This thresholding approach was used to capture upper-ranked association signals in each species while allowing comparative analysis across taxa with different marker densities and statistical power.
 
+Candidate SNPs were assigned to nearby genes based on species-specific genome annotations. Gene models were obtained from corresponding genome annotation files (e.g. GFF3-format annotations), and SNPs were mapped to genes using species-specific genomic coordinates. For Arabidopsis and rice, SNP-to-gene assignment was performed using a $\pm$10 kb window around each candidate SNP, whereas for maize, sorghum, and barley, a $\pm$25 kb window was used. For downstream orthology analysis, genes linked to the top 0.5\% SNPs were subsequently grouped using orthogroup relationships to identify shared candidate-gene sets across species.
 
-\section{Lists}\label{sec9}
 
-List in \LaTeX{} can be of three types: numbered, bulleted and unnumbered. The ``enumerate'' environment produces a numbered list, the 
-``itemize'' environment produces a bulleted list and the ``unlist''
-environment produces an unnumbered list.
-In each environment, a new entry is added via the \verb+\item+ command.
-\begin{enumerate}[1.]
-\item This is the 1st item
 
-\item Enumerate creates numbered lists, itemize creates bulleted lists and
-unnumerate creates unnumbered lists.
-\begin{enumerate}[b.]
-\item Second level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
-description creates unnumbered lists.
-
-\item Second level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
-description creates unnumbered lists.
-\begin{enumerate}[ii.]
-\item Third level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
-description creates unnumbered lists.
-
-\item Third level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
-description creates unnumbered lists.
-\end{enumerate}
-
-\item Second level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
-description creates unnumbered lists.
-
-\item Second level numbered list. Enumerate creates numbered lists, itemize creates bulleted lists and
-description creates unnumbered lists.
-\end{enumerate}
-
-\item Enumerate creates numbered lists, itemize creates bulleted lists and
-description creates unnumbered lists.
-
-\item Numbered lists continue.
-\end{enumerate}
-Lists in \LaTeX{} can be of three types: enumerate, itemize and description.
-In each environment, a new entry is added via the \verb+\item+ command.
-\begin{itemize}
-\item First level bulleted list. This is the 1st item
-
-\item First level bulleted list. Itemize creates bulleted lists and description creates unnumbered lists.
-\begin{itemize}
-\item Second level dashed list. Itemize creates bulleted lists and description creates unnumbered lists.
-
-\item Second level dashed list. Itemize creates bulleted lists and description creates unnumbered lists.
-
-\item Second level dashed list. Itemize creates bulleted lists and description creates unnumbered lists.
-\end{itemize}
-
-\item First level bulleted list. Itemize creates bulleted lists and description creates unnumbered lists.
-
-\item First level bulleted list. Bullet lists continue.
-\end{itemize}
-
-\noindent
-Example for unnumbered list items:
-
-\begin{unlist}
-\item Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text.
-
-\item Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text.
-
-\item sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text. Sample unnumberd list text.
-\end{unlist}
-
-\begin{boxtext}[Box title]
-Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text.
-
-\section{Box subheading level one}
-Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text.
-
-\subsection{Box subheading level two}
-Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text.
-
-\subsubsection{Shoulder heading} 
-Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text.
-
-Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text. Sample text box text.
-\end{boxtext}
-
-
-\section{Examples for theorem-like environments}\label{sec10}
-
-For theorem-like environments, we require the \verb+amsthm+ package. There are three types of predefined theorem styles - \verb+thmstyleone+, \verb+thmstyletwo+ and \verb+thmstylethree+   (check your journal's instructions page in case a specific style is required).
-
-\medskip
-\noindent\begin{tabular}{|l|p{0.6\columnwidth}|}
-\hline
-\verb+thmstyleone+ & Numbered, theorem head in bold font and theorem text in italic style \\\hline
-\verb+thmstyletwo+ & Numbered, theorem head in roman font and theorem text in italic style \\\hline
-\verb+thmstylethree+ & Numbered, theorem head in bold font and theorem text in roman style \\\hline
-\end{tabular}
-
-
-\begin{theorem}[Theorem subhead]\label{thm1}
-Example theorem text. Example theorem text. Example theorem text. Example theorem text. Example theorem text.
-Example theorem text. Example theorem text. Example theorem text. Example theorem text. Example theorem text.
-Example theorem text.
-\end{theorem}
-
-Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt ultrices. Lorem ipsum dolor sit
-amet, consectetuer adipiscing elit. In hac habitasse platea dictumst. Integer tempus convallis augue.
-
-\begin{proposition}
-Example proposition text. Example proposition text. Example proposition text. Example proposition text. Example proposition text.
-Example proposition text. Example proposition text. Example proposition text. Example proposition text. Example proposition text.
-\end{proposition}
-
-Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tristique, libero. Vivamus
-viverra fermentum felis. Donec nonummy pellentesque ante.
-
-\begin{example}
-Phasellus adipiscing semper elit. Proin fermentum massa
-ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend
-at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem.
-\end{example}
-
-Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tristique, libero. Vivamus
-viverra fermentum felis. Donec nonummy pellentesque ante.
-
-\begin{remark}
-Phasellus adipiscing semper elit. Proin fermentum massa
-ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend
-at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem.
-\end{remark}
-
-Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt ultrices. Lorem ipsum dolor sit
-amet, consectetuer adipiscing elit. In hac habitasse platea dictumst.
-
-\begin{definition}[Definition sub head]
-Example definition text. Example definition text. Example definition text. Example definition text. Example definition text. Example definition text. Example definition text. Example definition text.
-\end{definition}
-
-Apart from the above styles, we have the \verb+\begin{proof}+ \verb+...+ \verb+\end{proof}+ environment - with the proof head in italic style and the body text in roman font with an open square at the end of each proof environment.
-
-\begin{proof}Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text.
-\end{proof}
-
-Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero,
-pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna,
-vitae ornare odio metus a mi.
-
-\begin{proof}[Proof of Theorem~{\upshape\ref{thm1}}]
-Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text. Example for proof text.
-\end{proof}
-
-\noindent
-For a quote environment, one has to use\newline \verb+\begin{quote}...\end{quote}+
-\begin{quote}
-Quoted text example. Aliquam porttitor quam a lacus. Praesent vel arcu ut tortor cursus volutpat. In vitae pede quis diam bibendum placerat. Fusce elementum
-convallis neque. Sed dolor orci, scelerisque ac, dapibus nec, ultricies ut, mi. Duis nec dui quis leo sagittis commodo.
-\end{quote}
-Donec congue. Maecenas urna mi, suscipit in, placerat ut, vestibulum ut, massa. Fusce ultrices nulla et nisl (refer Figure~\ref{fig3}). Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam ligula arcu,
-elementum a, venenatis quis, sollicitudin sed, metus. Donec nunc pede, tincidunt in, venenatis vitae, faucibus vel (refer Table~\ref{tab3}).
 
 \section{Conclusion}
 
-Some Conclusions here.
+This study provides a comparative framework for understanding environmental adaptation across diverse plant taxa using cross-species environmental GWAS. Despite extensive genomic divergence among Arabidopsis, barley, rice, maize, and sorghum, we observed limited convergence at the level of individual genes. Instead, adaptation consistently mapped to a small set of conserved functional modules, including oxidative stress regulation, signal transduction, vesicle trafficking, and nitrogen transport.
+
+The repeated recovery of NRT1/PTR-family transporters, peroxidases, and signaling components across climatic, edaphic, and biotic phenotypes suggests that plants rely on shared physiological strategies to cope with environmental heterogeneity. These include coordinated regulation of nutrient sensing, root system plasticity, redox balance, and cell-wall remodeling. At the same time, the largely species-specific genomic signals highlight the importance of lineage-specific genetic architecture and evolutionary history in shaping adaptive responses.
+
+Together, these findings support a model in which environmental adaptation is driven by conserved biological processes implemented through partially distinct genetic routes in different species. This work bridges single-species studies and comparative genomics, providing a foundation for identifying broadly relevant adaptive mechanisms that can inform crop improvement under changing environmental conditions.
 
 \section{Conflicts of interest}
 The authors declare that they have no competing interests.
@@ -744,252 +855,288 @@ The authors thank the anonymous reviewers for their valuable suggestions. This w
 
 \begin{thebibliography}{10}
 
-\bibitem[Bahdanau et al.(2014)]{bahdanau2014neural}
-Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio.
-\newblock Neural machine translation by jointly learning to align and translate.
-\newblock {\em arXiv preprint arXiv:1409.0473}, 2014.
+\bibitem{Olsen2013CropAdaptation}
+Olsen, K. M., and Wendel, J. F. (2013).
+Crop plants as models for understanding plant adaptation and diversification.
+\textit{Frontiers in Plant Science}, 4, 290.
+https://doi.org/10.3389/fpls.2013.00290
 
-\bibitem[Horvath and Raj(2018)]{horvath2018dna}
-Steve Horvath and Kenneth Raj.
-\newblock Dna methylation-based biomarkers and the epigenetic clock theory of ageing.
-\newblock {\em Nature Reviews Genetics}, 19(6):371, 2018.
+\bibitem{Gutaker2024CropSpread}
+Gutaker, R. M., and Purugganan, M. D. (2024).
+Adaptation and the geographic spread of crop species.
+\textit{Annual Review of Plant Biology}, 75, 679--706.
+https://doi.org/10.1146/annurev-arplant-060223-030954
 
-\bibitem[Imboden et al.(2018)]{imboden2018cardiorespiratory}
-Mary~T Imboden, Matthew~P Harber, Mitchell~H Whaley, W~Holmes Finch, Derron~L Bishop, and Leonard~A Kaminsky.
-\newblock Cardiorespiratory fitness and mortality in healthy men and women.
-\newblock {\em Journal of the American College of Cardiology}, 72(19):2283--2292, 2018.
+\bibitem{Casanas2017Landrace}
+Casa{\~n}as, F., Sim{\'o}, J., Casals, J., and Prohens, J. (2017).
+Toward an evolved concept of landrace.
+\textit{Frontiers in Plant Science}, 8, 145.
+https://doi.org/10.3389/fpls.2017.00145
 
-\bibitem[Ji et al.(2012)]{ji20123d}
-Shuiwang Ji, Wei Xu, Ming Yang, and Kai Yu.
-\newblock 3d convolutional neural networks for human action recognition.
-\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, 35(1):221--231, 2012.
+\bibitem{Gao2023ClimateAdaptation}
+Gao, L., Kantar, M. B., Moxley, D., Ortiz-Barrientos, D., and Rieseberg, L. H. (2023).
+Crop adaptation to climate change: An evolutionary perspective.
+\textit{Molecular Plant}, 16, 1518--1546.
+https://doi.org/10.1016/j.molp.2023.07.011
 
-\bibitem[Krizhevsky et al.(2012)]{krizhevsky2012imagenet}
-Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
-\newblock Imagenet classification with deep convolutional neural networks.
-\newblock In {\em Advances in Neural Information Processing Systems}, pages 1097--1105, 2012.
+\bibitem{Lazaridi2024Landraces}
+Lazaridi, E., Kapazoglou, A., Gerakari, M., Kleftogianni, K., Passa, K., Sarri, E., Papasotiropoulos, V., Tani, E., and Bebeli, P. J. (2024).
+Crop landraces and indigenous varieties: A valuable source of genes for plant breeding.
+\textit{Plants}, 13, 758.
+https://doi.org/10.3390/plants13060758
 
-\bibitem[LeCun et al.(2015)]{lecun2015deep}
-Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
-\newblock Deep learning.
-\newblock {\em Nature}, 521(7553):436, 2015.
+\bibitem{Santiago2025MaizeDrought}
+Santiago, R., Malvar, R. A., Revilla, P., and Butr{\'o}n, A. (2025).
+Maize landraces as useful donors of genetic diversity for resilience to drought.
+\textit{Journal of Agriculture and Food Research}, 23, 102297.
+https://doi.org/10.1016/j.jafr.2025.102297
 
-\bibitem[Motiian et al.(2017)]{motiian2017unified}
-Saeid Motiian, Marco Piccirilli, Donald~A Adjeroh, and Gianfranco Doretto.
-\newblock Unified deep supervised domain adaptation and generalization.
-\newblock In {\em Proceedings of the IEEE International Conference on Computer Vision}, pages 5715--5725, 2017.
+\bibitem{Kou2026RiceLandraces}
+Kou, S., Ci, Z., Liu, W., Wu, Z., Peng, H., Yuan, P., Jiang, C., Li, H., Mansour, E., and Huang, P. (2026).
+Conservation and sustainable development of rice landraces for enhancing resilience to climate change, with a case study of {`Pantiange Heigu'} in China.
+\textit{Life}, 16, 143.
+https://doi.org/10.3390/life16010143
 
-\bibitem[Murphy(2012)]{murphy2012machine}
-Kevin~P Murphy.
-\newblock {\em Machine learning: A probabilistic perspective}.
-\newblock MIT press, 2012.
+\bibitem{Menamo2021SorghumClimate}
+Menamo, T., Kassahun, B., Borrell, A. K., Jordan, D. R., Tao, Y., Hunt, C., and Mace, E. (2021).
+Genetic diversity of Ethiopian sorghum reveals signatures of climatic adaptation.
+\textit{Theoretical and Applied Genetics}, 134, 731--742.
+https://doi.org/10.1007/s00122-020-03727-5
 
-\bibitem[American College of Sports Medicine et al.(2013)]{american2013acsm}
-American~College of~Sports~Medicine et~al.
-\newblock {\em ACSM's guidelines for exercise testing and prescription}.
-\newblock Lippincott Williams \& Wilkins, 2013.
+\bibitem{Pasam2014BarleyLandraces}
+Pasam, R. K., Sharma, R., Walther, A., {\"O}zkan, H., Graner, A., and Kilian, B. (2014).
+Genetic diversity and population structure in a legacy collection of spring barley landraces adapted to a wide range of climates.
+\textit{PLoS ONE}, 9(12), e116164.
+https://doi.org/10.1371/journal.pone.0116164
 
-\bibitem[Pyrkov et al.(2018)]{pyrkov2018quantitative}
-Timothy~V Pyrkov, Evgeny Getmantsev, Boris Zhurov, Konstantin Avchaciov, Mikhail Pyatnitskiy, Leonid Menshikov, Kristina Khodova, Andrei~V Gudkov, and Peter~O Fedichev.
-\newblock Quantitative characterization of biological age and frailty based on locomotor activity records.
-\newblock {\em Aging (Albany NY)}, 10(10):2973, 2018.
+\bibitem{Castilla2020ArabidopsisDifferentiation}
+Castilla, A. R., M{\'e}ndez-Vigo, B., Marcer, A., Mart{\'i}nez-Minaya, J., Conesa, D., Pic{\'o}, F. X., and Alonso-Blanco, C. (2020).
+Ecological, genetic and evolutionary drivers of regional genetic differentiation in \textit{Arabidopsis thaliana}.
+\textit{BMC Evolutionary Biology}, 20, 71.
+https://doi.org/10.1186/s12862-020-01635-2
 
-\bibitem[Rahman and Adjeroh(2019)]{rahman2019centroidb}
-Syed~Ashiqur Rahman and Donald Adjeroh.
-\newblock Centroid of age neighborhoods: A generalized approach to estimate biological age.
-\newblock In {\em 2019 IEEE EMBS International Conference on Biomedical \& Health Informatics (BHI)}, pages 1--4. IEEE, 2019.
+\bibitem{Cosio2009}
+Cosio, C., and Dunand, C. (2009).
+Specific functions of individual class III peroxidase genes.
+\textit{Journal of Experimental Botany}, 60, 391--408.
 
-\bibitem[Rav{\`\i} et al.(2016)]{ravi2016deep}
-Daniele Rav{\`\i}, Charence Wong, Fani Deligianni, Melissa Berthelot, Javier Andreu-Perez, Benny Lo, and Guang-Zhong Yang.
-\newblock Deep learning for health informatics.
-\newblock {\em IEEE {J}ournal of {B}iomedical and {H}ealth {I}nformatics}, 21(1):4--21, 2016.
+\bibitem{Du2023CDPK}
+Du, H., Chen, J., Zhan, H., Li, S., Wang, Y., Wang, W., and Hu, X. (2023).
+The roles of CDPKs as a convergence point of different signaling pathways in maize adaptation to abiotic stress.
+\textit{International Journal of Molecular Sciences}, 24, 2325.
 
-\bibitem[Wang et al.(2018)]{wang2018face}
-Zongwei Wang, Xu~Tang, Weixin Luo, and Shenghua Gao.
-\newblock Face aging with identity-preserved conditional generative adversarial networks.
-\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}, pages 7939--7947, 2018.
+\bibitem{Feng2022SnRK}
+Feng, X., Meng, Q., Zeng, J., Yu, Q., Xu, D., Dai, X., Ge, L., Ma, W., and Liu, W. (2022).
+Genome-wide identification of sucrose non-fermenting-1-related protein kinase genes in maize and their responses to abiotic stresses.
+\textit{Frontiers in Plant Science}, 13, 1087839.
 
-\bibitem[Zhang et al.(2018)]{zhang2018fine}
-Ke~Zhang, Na~Liu, Xingfang Yuan, Xinyao Guo, Ce~Gao, and Zhenbing Zhao.
-\newblock Fine-grained age estimation in the wild with attention {LSTM} networks.
-\newblock {\em arXiv preprint arXiv:1805.10445}, 2018.
+\bibitem{Guo2024SNAT}
+Guo, X., Ran, L., Huang, X., Wang, X., Zhu, J., Tan, Y., and Shu, Q. (2024).
+Identification and functional analysis of two serotonin N-acetyltransferase genes in maize and their transcriptional response to abiotic stresses.
+\textit{Frontiers in Plant Science}, 15, 1478200.
+
+\bibitem{Hiraga2001}
+Hiraga, S., Sasaki, K., Ito, H., Ohashi, Y., and Matsui, H. (2001).
+A large family of class III plant peroxidases.
+\textit{Plant and Cell Physiology}, 42, 462--468.
+
+\bibitem{Kidwai2020}
+Kidwai, M., Ahmad, I. Z., and Chakrabarty, D. (2020).
+Class III peroxidase: an indispensable enzyme for biotic/abiotic stress tolerance and a potent candidate for crop improvement.
+\textit{Plant Cell Reports}, 39, 1381--1393.
+
+\bibitem{Passardi2004}
+Passardi, F., Penel, C., and Dunand, C. (2004).
+Performing the paradoxical: how plant peroxidases modify the cell wall.
+\textit{Trends in Plant Science}, 9, 534--540.
+
+\bibitem{Wang2015Peroxidase}
+Wang, Y., Wang, Q., Zhao, Y., Han, G., and Zhu, S. (2015).
+Systematic analysis of maize class III peroxidase gene family reveals a conserved subfamily involved in abiotic stress response.
+\textit{Gene}, 566, 95--108.
+
+\bibitem{Yang2025LecRLK}
+Yang, X., Chen, Z., Lu, J., Wei, X., Yao, Y., Lv, W., Han, J., and Fei, J. (2025).
+Identification and characterization of the LecRLKs gene family in maize, and its role under biotic and abiotic stress.
+\textit{Biology}, 14, 20.
+
+\bibitem{Jia2023NRT}
+Jia, L., Hu, D., Wang, J., Liang, Y., Li, F., Wang, Y., and Han, Y. (2023).
+Genome-wide identification and functional analysis of nitrate transporter genes (NPF, NRT2 and NRT3) in maize.
+\textit{International Journal of Molecular Sciences}, 24, 12941.
+
+\bibitem{Wu2024ZmEREB97}
+Wu, Q., Xu, J., Zhao, Y., Wang, Y., Zhou, L., Ning, L., Shabala, S., and Zhao, H. (2024).
+Transcription factor ZmEREB97 regulates nitrate uptake in maize (\textit{Zea mays}) roots.
+\textit{Plant Physiology}, 196, 535--550.
+
+\bibitem{Xu2024NPFAMF}
+Xu, Q., Wang, Y., Sun, W., Li, Y., Xu, Y., Cheng, B., and Li, X. (2024).
+Genome-wide identification of nitrate transporter 1/peptide transporter family (NPF) induced by arbuscular mycorrhiza in the maize genome.
+\textit{Physiology and Molecular Biology of Plants}, 30, 757--774.
+
+\bibitem{Son2013OsRab11}
+Son, Y. S., Im, C. H., Kim, D. W., and Bahk, J. D. (2013).
+OsRab11 and OsGAP1 are essential for the vesicle trafficking of the vacuolar H+-ATPase OsVHA-a1 under high salinity conditions.
+\textit{Plant Science}, 198, 58--71.
+https://doi.org/10.1016/j.plantsci.2012.09.003
+
+\bibitem{Cho2014OsChI1}
+Cho, H. Y., Lee, C., Hwang, S.-G., Park, Y. C., Lim, H. L., and Jang, C. S. (2014).
+Overexpression of the OsChI1 gene, encoding a putative laccase precursor, increases tolerance to drought and salinity stress in transgenic Arabidopsis.
+\textit{Gene}, 552, 98--105.
+https://doi.org/10.1016/j.gene.2014.09.018
+
+\bibitem{Wang2009NRT11}
+Wang, R., Xing, X., Wang, Y., Tran, A., and Crawford, N. M. (2009).
+A genetic screen for nitrate regulatory mutants captures the nitrate transporter gene NRT1.1.
+\textit{Plant Physiology}, 151, 472--478.
+https://doi.org/10.1104/pp.109.140434
+
+\bibitem{Glass2013NRT11}
+Glass, A. D. M., and Kotur, Z. (2013).
+A reevaluation of the role of Arabidopsis NRT1.1 in high-affinity nitrate transport.
+\textit{Plant Physiology}, 163, 1103--1106.
+https://doi.org/10.1104/pp.113.229161
+
+\bibitem{Fang2016NRT11Proton}
+Fang, X. Z., Tian, W. H., Liu, X. X., Lin, X. Y., Jin, C. W., and Zheng, S. J. (2016).
+Alleviation of proton toxicity by nitrate uptake specifically depends on nitrate transporter 1.1 in Arabidopsis.
+\textit{New Phytologist}, 211, 149--158.
+https://doi.org/10.1111/nph.13892
+
+\bibitem{Medici2019NPSR}
+Medici, A., Szponarski, W., Dangeville, P., Safi, A., Dissanayake, I. M., Saenchai, C., Emanuel, A., Rubio, V., Lacombe, B., Ruffel, S., Tanurdzic, M., Rouached, H., and Krouk, G. (2019).
+Identification of molecular integrators shows that nitrogen actively controls the phosphate starvation response in plants.
+\textit{The Plant Cell}, 31, 1171--1184.
+https://doi.org/10.1105/tpc.18.00656
+
+\bibitem{Hachiya2011NRT11LowpH}
+Hachiya, T., and Noguchi, K. (2011).
+Mutation of NRT1.1 enhances ammonium/low pH-tolerance in \textit{Arabidopsis thaliana}.
+\textit{Plant Signaling \& Behavior}, 6(5), 706--708.
+https://doi.org/10.4161/psb.6.5.15068
+
+\bibitem{Zhu2019NRT11Lead}
+Zhu, J., Fang, X. Z., Dai, Y. J., Zhu, Y. X., Chen, H. S., Lin, X. Y., and Jin, C. W. (2019).
+Nitrate transporter 1.1 alleviates lead toxicity in Arabidopsis by preventing rhizosphere acidification.
+\textit{Journal of Experimental Botany}, 70(21), 6363--6374.
+https://doi.org/10.1093/jxb/erz374
+
+\bibitem{Krouk2010NRT11Auxin}
+Krouk, G., Lacombe, B., Bielach, A., Perrine-Walker, F., Malinska, K., Mounier, E., Hoyerova, K., Tillard, P., Leon, S., Ljung, K., Zazimalova, E., Benkova, E., Nacry, P., and Gojon, A. (2010).
+Nitrate-regulated auxin transport by NRT1.1 defines a mechanism for nutrient sensing in plants.
+\textit{Developmental Cell}, 18, 927--937.
+https://doi.org/10.1016/j.devcel.2010.05.008
+
+\bibitem{Krouk2006NRT11Demand}
+Krouk, G., Tillard, P., and Gojon, A. (2006).
+Regulation of the high-affinity NO3- uptake system by NRT1.1-mediated NO3- demand signaling in Arabidopsis.
+\textit{Plant Physiology}, 142, 1075--1086.
+https://doi.org/10.1104/pp.106.087510
+
+\bibitem[Zomer et~al.(2022)]{zomer2022aridity}
+Zomer, R. J., Xu, J., \& Trabucco, A. (2022).
+Version 3 of the global aridity index and potential evapotranspiration database.
+\textit{Scientific Data}, 9, 409.
+https://doi.org/10.1038/s41597-022-01493-1
+
+
+\bibitem{Remans2006NRT11Patch}
+Remans, T., Nacry, P., Pervent, M., Filleur, S., Diatloff, E., Mounier, E., Tillard, P., Forde, B. G., and Gojon, A. (2006).
+The Arabidopsis NRT1.1 transporter participates in the signaling pathway triggering root colonization of nitrate-rich patches.
+\textit{Proceedings of the National Academy of Sciences of the United States of America}, 103(50), 19206--19211.
+https://doi.org/10.1073/pnas.0605275103
+
+\bibitem{Karim2005AtPTR3}
+Karim, S., Lundh, D., Holmstr{\"o}m, K.-O., Mandal, A., and Pirhonen, M. (2005).
+Structural and functional characterization of AtPTR3, a stress-induced peptide transporter of Arabidopsis.
+\textit{Journal of Molecular Modeling}, 11, 226--236.
+https://doi.org/10.1007/s00894-005-0257-6
+
+\bibitem{Karim2007AtPTR3}
+Karim, S., Holmstr{\"o}m, K.-O., Mandal, A., Dahl, P., Hohmann, S., Brader, G., Palva, E. T., and Pirhonen, M. (2007).
+AtPTR3, a wound-induced peptide transporter needed for defence against virulent bacterial pathogens in Arabidopsis.
+\textit{Planta}, 225, 1431--1445.
+https://doi.org/10.1007/s00425-006-0451-5
+
+\bibitem{Wang2011NRT19}
+Wang, Y.-Y., and Tsay, Y.-F. (2011).
+Arabidopsis nitrate transporter NRT1.9 is important in phloem nitrate transport.
+\textit{The Plant Cell}, 23, 1945--1957.
+https://doi.org/10.1105/tpc.111.083618
+
+\bibitem{1001genomes2016}
+The 1001 Genomes Consortium. (2016).
+1,135 genomes reveal the global pattern of polymorphism in \textit{Arabidopsis thaliana}.
+\textit{Cell}, 166, 481--491.
+https://doi.org/10.1016/j.cell.2016.05.063
+
+\bibitem{romeroNavarro2017}
+Romero Navarro, J. A., Willcox, M., Burgue{\~n}o, J., Romay, C., Swarts, K., Trachsel, S., Preciado, E., Terron, A., Delgado, H. V., Vidal, V., Ortega, A., Banda, A. E., Montiel, N. O., Ortiz-Monasterio, I., Vicente, F. S., Espinoza, A. G., Atlin, G., Wenzl, P., Hearne, S., and Buckler, E. S. (2017).
+A study of allelic diversity underlying flowering-time adaptation in maize landraces.
+\textit{Nature Genetics}, 49, 476--480.
+https://doi.org/10.1038/ng.3784
+
+\bibitem{lasky2015}
+Lasky, J. R., Upadhyaya, H. D., Ramu, P., Deshpande, S., Hash, C. T., Bonnette, J., Juenger, T. E., Hyma, K., Acharya, C., Mitchell, S. E., Buckler, E. S., Brenton, Z., Kresovich, S., Morris, G. P., and Weltzien, E. (2015).
+Genome-environment associations in sorghum landraces predict adaptive traits.
+\textit{Science Advances}, 1, e1400218.
+https://doi.org/10.1126/sciadv.1400218
+
+\bibitem{rice3k2014}
+The 3,000 Rice Genomes Project. (2014).
+The 3,000 rice genomes project.
+\textit{GigaScience}, 3, 7.
+https://doi.org/10.1186/2047-217X-3-7
+
+\bibitem{wang2018}
+Wang, W., Mauleon, R., Hu, Z., Chebotarov, D., Tai, S., Wu, Z., Li, M., Zheng, T., Fuentes, R. R., Zhang, F., Mansueto, L., Copetti, D., Sanciangco, M., Palis, K. C., Xu, J., Sun, C., Fu, B., Zhang, H., Gao, Y., Zhao, X., Shen, F., Cui, X., Yu, H., Li, Z., Chen, M., Detras, J., Zhou, Y., Zhang, X., Zhao, Y., Kudrna, D., Wang, C., Li, R., Jia, B., Lu, J., He, X., Dong, Z., Xu, J., Li, Y., Wang, M., Shi, J., Li, J., Zhang, D., Lee, S., Hu, W., Poliakov, A., Dubchak, I., Ulat, V. J., Borja, F. N., Mendoza, J. R., Ali, J., Li, J., Gao, Q., Niu, Y., Yue, Z., Naredo, M. E. B., Talag, J., Wang, X., Li, J., Fang, X., Yin, Y., Glaszmann, J.-C., Zhang, J., Li, J., Hamilton, R. S., Wing, R. A., Ruan, J., Zhang, G., Wei, C., Alexandrov, N., McNally, K. L., Li, Z., and Leung, H. (2018).
+Genomic variation in 3,010 diverse accessions of Asian cultivated rice.
+\textit{Nature}, 557, 43--49.
+https://doi.org/10.1038/s41586-018-0063-9
+
+\bibitem{milner2019}
+Milner, S. G., Jost, M., Taketa, S., Maz{\'o}n, E. R., Himmelbach, A., Oppermann, M., Weise, S., Kn{\"u}pffer, H., Basterrechea, M., K{\"o}nig, P., Caccamo, M., Guo, G., Zhang, J., Herren, G., M{\"u}ller, T., Krattinger, S. G., Keller, B., Jiang, Y., Gonz{\'a}lez, M. Y., Zhao, Y., Habeku{\ss}, A., F{\"a}rber, S., Ordon, F., Lange, M., B{\"o}rner, A., Graner, A., and Reif, J. C. (2019).
+Genebank genomics highlights the diversity of a global barley collection.
+\textit{Nature Genetics}, 51, 319--326.
+https://doi.org/10.1038/s41588-018-0266-x
+
+\bibitem{konig2020}
+K{\"o}nig, P., Beier, S., Basterrechea, M., Himmelbach, A., Habeku{\ss}, A., Schweizer, G., Schreiber, M., Stein, N., Mascher, M., and Ordon, F. (2020).
+BRIDGE---A visual analytics web tool for barley genebank genomics.
+\textit{Frontiers in Plant Science}, 11, 701.
+https://doi.org/10.3389/fpls.2020.00701
+
+\bibitem[Fick and Hijmans(2017)]{fick2017worldclim}
+Fick, S. E., \& Hijmans, R. J. (2017).
+WorldClim 2: new 1-km spatial resolution climate surfaces for global land areas.
+\textit{International Journal of Climatology}, 37(12), 4302--4315.
+https://doi.org/10.1002/joc.5086
+
+\bibitem[Poggio et~al.(2021)]{poggio2021soilgrids}
+Poggio, L., de Sousa, L. M., Batjes, N. H., Heuvelink, G. B. M., Kempen, B., Ribeiro, E., \& Rossiter, D. (2021).
+SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty.
+\textit{SOIL}, 7, 217--240.
+https://doi.org/10.5194/soil-7-217-2021
+
+\bibitem[Barceló et~al.(2023)]{barcelo2023amf}
+Barceló, M., van Bodegom, P. M., \& Soudzilovskaia, N. A. (2023).
+Fine-resolution global maps of root biomass carbon colonized by arbuscular and ectomycorrhizal fungi.
+\textit{Scientific Data}, 10, 56.
+https://doi.org/10.1038/s41597-022-01913-2
+
 
 \end{thebibliography}
 
-%UNCOMMENT THE BELOW TWO LINES IN CASE YOU NEED NUMBERED FORMAT.
-%\bibliographystyle{oup-plain}
-%\bibliography{reference}
-
-%UNCOMMENT THE BELOW TWO LINES IN CASE YOU NEED AUTHOR YEAR FORMAT.
-%\bibliographystyle{oup-abbrvnat}
-%\bibliography{reference}
-
-%% sample for biography with author's image
-\begin{biography}{{\color{black!20}\rule{77pt}{57pt}}}{\author{Author Name.} This is sample author biography text. The values provided in the optional argument are meant for sample purposes. There is no need to include the width and height of an image in the optional argument for live articles. This is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text.}
-\end{biography}
-
-%% sample for biography without author's image
-\begin{biography}{}{\author{Author Name.} This is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text this is sample author biography text.}
-\end{biography}
 
 %%%%%%%%%%%%%%
 
 \begin{appendices}
 
-\section{Section title of first appendix}\label{sec11}
-
-Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero,
-pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna,
-vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante. Pellentesque
-a nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt
-urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mauris.
-
-\subsection{Subsection title of first appendix}\label{subsec4}
-
-Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero,
-pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna,
-vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante. Pellentesque
-a nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt
-urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mauris.
-
-\subsubsection{Subsubsection title of first appendix}\label{subsubsec3}
-
-Example for an unnumbered figure:
-
-\begin{figure}[!h]
-\centering
-{\color{black!20}\rule{85pt}{92pt}}
-\end{figure}
-
-Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus semper, leo velit ultricies tellus, ac
-venenatis arcu wisi vel nisl. Vestibulum diam. Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue
-quam, in hendrerit risus eros eget felis.
-
-\section{Section title of second appendix}\label{sec12}%
-
-Fusce mauris. Vestibulum luctus nibh at lectus. Sed bibendum, nulla a faucibus semper, leo velit ultricies tellus, ac
-venenatis arcu wisi vel nisl. Vestibulum diam. Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue
-quam, in hendrerit risus eros eget felis. Maecenas eget erat in sapien mattis porttitor. Vestibulum porttitor. Nulla
-facilisi. Sed a turpis eu lacus commodo facilisis. Morbi fringilla, wisi in dignissim interdum, justo lectus sagittis dui, et
-vehicula libero dui cursus dui. Mauris tempor ligula sed lacus. Duis cursus enim ut augue. Cras ac magna. Cras nulla.
-
-\begin{figure}[b]
-\centering
-{\color{black!20}\rule{217pt}{120pt}}
-\caption{This is an example for appendix figure\label{fig4}}
-\end{figure}
-
-\begin{table}[t]%
-\begin{center}
-\begin{minipage}{.52\columnwidth}
-\caption{This is an example of Appendix table showing food requirements of army, navy and airforce\label{tab4}}%
-\tabcolsep16pt
-\begin{tabular}{@{\extracolsep\fill}lcc@{}}%
-\toprule
-col1 head & col2 head & col3 head \\
-\midrule
-col1 text & col2 text & col3 text \\
-col1 text & col2 text & col3 text \\
-col1 text & col2 text & col3 text \\
-\botrule
-\end{tabular}
-\end{minipage}
-\end{center}
-\end{table}
-
-\subsection{Subsection title of second appendix}\label{subsec5}
-
-Sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio. Sed vehicula hendrerit sem. Duis non odio.
-Morbi ut dui. Sed accumsan risus eget odio. In hac habitasse platea dictumst. Pellentesque non elit. Fusce sed justo
-eu urna porta tincidunt. Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat. Morbi quis dolor. Donec
-pellentesque, erat ac sagittis semper, nunc dui lobortis purus, quis congue purus metus ultricies tellus. Proin et quam.
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Praesent sapien turpis,
-fermentum vel, eleifend faucibus, vehicula eu, lacus.
-
-Sed commodo posuere pede. Mauris ut est. Ut quis purus. Sed ac odio. Sed vehicula hendrerit sem. Duis non odio.
-Morbi ut dui. Sed accumsan risus eget odio. In hac habitasse platea dictumst. Pellentesque non elit. Fusce sed justo
-eu urna porta tincidunt. Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat. Morbi quis dolor. Donec
-pellentesque, erat ac sagittis semper, nunc dui lobortis purus, quis congue purus metus ultricies tellus. Proin et quam.
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Praesent sapien turpis,
-fermentum vel, eleifend faucibus, vehicula eu, lacus.
-
-\subsubsection{Subsubsection title of second appendix}\label{subsubsec4}
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae,
-felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec
-vehicula augue eu neque.
+\section{Nothing}\label{appendix}
 
 
-Example for an equation inside the appendix:
-\begin{align}
- p &= \frac{\gamma^{2} - (n_{C} -1)H}{(n_{C} - 1) + H - 2\gamma}, \label{1eq:hybobo:pfromgH} \\
- \theta &= \frac{(\gamma - H)^{2}(\gamma - n_{C} -1)^{2}}{(n_{C} - 1 + H - 2\gamma)^{2}} \label{2eq:hybobo:tfromgH}\; .
-\end{align}
-
-\section{Example of another appendix section}\label{sec13}%
-
-Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero,
-pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna,
-vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante. Pellentesque
-a nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt
-urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mauris
-\begin{equation}
-\mathcal{L} = i \bar{\psi} \gamma^\mu D_\mu \psi
-    - \frac{1}{4} F_{\mu\nu}^a F^{a\mu\nu} - m \bar{\psi} \psi.
-\label{eq26}
-\end{equation}
-
-Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tristique, libero. Vivamus
-viverra fermentum felis. Donec nonummy pellentesque ante. Phasellus adipiscing semper elit. Proin fermentum massa
-ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend
-at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia
-nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec
-bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum
-pellentesque felis eu massa.
-
-Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tristique, libero. Vivamus
-viverra fermentum felis. Donec nonummy pellentesque ante. Phasellus adipiscing semper elit. Proin fermentum massa
-ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend
-at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia
-nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec
-bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum
-pellentesque felis eu massa.
-
-Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tristique, libero. Vivamus
-viverra fermentum felis. Donec nonummy pellentesque ante. Phasellus adipiscing semper elit. Proin fermentum massa
-ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend
-at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia
-nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec
-bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum
-pellentesque felis eu massa.
-
-Nulla malesuada porttitor diam. Donec felis erat, congue non, volutpat at, tincidunt tristique, libero. Vivamus
-viverra fermentum felis. Donec nonummy pellentesque ante. Phasellus adipiscing semper elit. Proin fermentum massa
-ac quam. Sed diam turpis, molestie vitae, placerat a, molestie nec, leo. Maecenas lacinia. Nam ipsum ligula, eleifend
-at, accumsan nec, suscipit a, ipsum. Morbi blandit ligula feugiat magna. Nunc eleifend consequat lorem. Sed lacinia
-nulla vitae enim. Pellentesque tincidunt purus vel magna. Integer non enim. Praesent euismod nunc eu purus. Donec
-bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum
-pellentesque felis eu massa. Donec
-bibendum quam in tellus. Nullam cursus pulvinar lectus. Donec et mi. Nam vulputate metus eu enim. Vestibulum
-pellentesque felis eu massa.
-
-%% Example for unnumbered table inside appendix
-\begin{table}
-\begin{center}
-\begin{minipage}{.52\columnwidth}
-\caption{}{%
-\begin{tabular}{@{\extracolsep\fill}lcc}%
-\toprule
-col1 head & col2 head & col3 head \\
-\midrule
-col1 text & col2 text & col3 text \\
-col1 text & col2 text & col3 text \\
-col1 text & col2 text & col3 text \\
-\botrule
-\end{tabular}}{}
-\end{minipage}
-\end{center}
-\end{table}
 
 \end{appendices}
 
