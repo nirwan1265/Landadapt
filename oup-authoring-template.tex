@@ -167,53 +167,72 @@ Here, to adress this, we use a comparative environmental GWAS framework across m
 
 % This is an example of a new paragraph with a numbered footnote\footnote{\url{https://www.academic.oup.com/}} and a second footnote marker.\footnote{Example of footnote text.}
 
-\section{Results}
-We analyzed cross-species genotype--environment associations for soil nitrogen, soil pH, climate PCs (PC1--PC3), and AM fungal colonization traits. To keep interpretation clear, each subsection below first defines the phenotype and then summarizes the GWAS and shared-orthogroup results.
-
-\input{results/mixed_window_10kb_csv/cross_species_top0p5_mixed_window_10kb_sections.tex}
-
-
-%=======================================================================
-%=======================================================================
-%=======================================================================
-
 
 \section{Results}
+
 
 \subsection{Evolutionary divergence and global sampling of the five species}
 
-We first characterized the evolutionary history and the geographic distribution of the five species (Figure 1). The five taxa, including Arabidopsis, barley, rice, maize, and sorghum, span deep divergence events across major angiosperm clades (Figure 1A). Panel A comprises distantly related lineages with distinct evolutionary histories, rather than closely related species sharing a common adaptive background. Panel A further places these divergence events within a broader geological and atmospheric context, including major shifts in Earth history, such as variations in atmospheric oxygen and carbon dioxide, solar luminosity, and Earth impact frequency over time. Thus, the five taxa did not originate under a static environmental regime but rather adapted across a succession of distinct planetary conditions throughout evolutionary time. Such diversity allows us to test whether adaptation to environmental gradients shows repeated genomic patterns across species or mainly reflects species-specific genetic architecture.
+We first characterized the evolutionary history and geographic distribution of the five selected species (Fig. \ref{fig:fig1_timeline_map}). The five taxa, Arabidopsis, barley, rice, maize, and sorghum, span deep divergence events across major angiosperm clades (Fig. \ref{fig:fig1_timeline_map}A). These species therefore represent distantly related lineages with distinct evolutionary histories rather than a shared adaptive background. Panel A further places these divergence events within a broader geological and atmospheric context, including major shifts in Earth history such as changes in atmospheric oxygen and carbon dioxide, solar luminosity, and Earth impact frequency over time. Thus, these taxa originated and diversified under markedly different planetary conditions across evolutionary time.
 
-% If similar environmental variables are repeatedly associated with genomic signals across these divergent taxa, this would support parallel adaptive responses to shared ecological pressures. In contrast, taxon-specific environmental associations would suggest that local adaptation is shaped more by lineage-specific genetic architecture, demographic history, or crop-specific selection.
+The geographic distribution of accessions likewise reflects broad environmental coverage (Fig. \ref{fig:fig1_timeline_map}B). For all five taxa, genotypes occur on multiple continents and across broad elevational ranges, from lowlands to highlands, encompassing diverse climatic and edaphic conditions rather than a narrow geographic subset (Supp Table 2). This expansive sampling increases environmental contrast for environmental GWAS, including gradients related to climate, soil chemistry, and topography. Arabidopsis is a widely distributed model for natural genetic variation, whereas barley, rice, maize, and sorghum are major crops occupying contrasting agroecological zones. Together, this phylogenetic depth and geographic breadth provide a strong framework to test whether adaptation to environmental gradients shows repeated genomic patterns across species or mainly reflects species-specific genetic architecture.
 
-The geographic distribution of accessions likewise reflects a wide environmental coverage (Figure 1B). For all five taxa, genotypes occur on multiple continents and across broad elevational ranges, from lowlands to highlands, encompassing diverse climatic and edaphic conditions rather than a narrow geographic subset. This expansive sampling increases environmental contrast for environmental GWAS, including gradients related to climate, soil chemistry, and topography. Including five species broadens inference beyond any single plant species. Arabidopsis is a widely distributed model for natural genetic variation, whereas barley, rice, maize, and sorghum are major crops occupying contrasting agroecological zones. Joint analysis of these systems allows direct tests of whether environmental associations converge on similar variables across species or whether each species shows a distinct adaptive signature shaped by its own ecological and evolutionary context.
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig1/Fig1_timeline_map.png}
+    \caption{Phylogenetic breadth and global environmental distribution of the study taxa. (A) Evolutionary divergence of the five focal taxa across major angiosperm lineages, shown against a geological timescale and broad Earth-system context. (B) Global distribution of georeferenced accessions for Arabidopsis, barley, rice, maize, sorghum, and pearl millet. Together, these panels illustrate the deep evolutionary divergence and broad geographic sampling used to test whether adaptation to environmental gradients produces shared or species-specific genomic signals across plant lineages.}
+    \label{fig:fig1_timeline_map}
+\end{figure*}
 
 %=======================================================================
 %=======================================================================
 %=======================================================================
 
+\subsection{Observed cross-species orthogroup recurrence exceeds matched-null expectations}
 
-\subsection{Cross-species genome-wide associations with WorldClim principal components identify a small set of shared orthologous genes}
+To test whether the shared orthogroup patterns recovered from the upper-ranked association sets were greater than expected by chance, we compared the observed number of recurrent orthogroups against a matched candidate-universe null using 10{,}000 permutations (Fig.~\ref{fig:suppfig_null_permutation_orthogroup_recurrence}). For each trait, we quantified orthogroups shared across all five species and orthogroups shared across at least four species. Across all traits, the observed number of orthogroups shared across at least four species exceeded null expectations. For the WorldClim PCs, the observed $\geq$4-species counts were 15 for PC1, 17 for PC2, and 17 for PC3, compared with null means of 1.5616, 1.2311, and 1.0852, respectively (all empirical $P = 0.0001$). Soil pH and soil nitrogen also showed strong excess recurrence, with observed $\geq$4-species counts of 23 and 20 versus null means of 2.4619 and 1.5466, respectively (both $P = 0.0001$). The AM fungal phenotypes followed the same pattern, with observed $\geq$4-species counts of 12 for AM fungal relative abundance colonization and 18 for AM fungal roots colonized, compared with null means of 0.5256 and 0.7103 (both $P = 0.0001$). Aridity likewise showed elevated four-species recurrence, with 7 observed orthogroups versus a null mean of 0.2731 ($P = 0.0001$).
 
-To summarize broad climatic variation, we performed principal component analysis on the 19 WorldClim bioclimatic variables for each species separately and used the leading principal components as environmental phenotypes for GWAS. Across species, PC1 explained the largest fraction of variance (mean $38.3\% \pm 2.9$ SE), followed by PC2 ($25.9\% \pm 1.6$) and PC3 ($16.7\% \pm 0.8$), indicating that these axes captured the major dimensions of climatic variation. Because PCA sign can differ among independent analyses, we compared variables using absolute loading magnitudes. For PC1, Arabidopsis, barley, rice, and maize were mainly driven by temperature variables (BIO06, BIO07, BIO11, BIO04), whereas sorghum PC1 reflected warm-temperature and precipitation seasonality variables (BIO05, BIO10, BIO15, BIO08). For PC2, rice and maize were dominated by warm-temperature and precipitation variables (rice: BIO05, BIO10, BIO08; maize: BIO05, BIO14, BIO17, BIO15), while sorghum PC2 emphasized cold and seasonal temperature variables (BIO06, BIO11, BIO09, BIO04). For PC3, rice and sorghum were most influenced by precipitation during wet and dry periods (rice: BIO13, BIO16, BIO18, BIO12; sorghum: BIO16, BIO13, BIO12), whereas maize and barley retained mixed seasonality signals (maize: BIO03, BIO04, BIO14, BIO17; barley: BIO15, BIO03, BIO14, BIO17). Overall, these results indicate species-specific climatic architectures underlying the GWAS signals.
+For the stricter all-five-species overlap, observed counts also exceeded null expectations for PC1 (1 vs.\ 0.0146, $P = 0.0147$), PC2 (1 vs.\ 0.0099, $P = 0.0100$), PC3 (1 vs.\ 0.0014, $P = 0.0015$), soil pH (3 vs.\ 0.3445, $P = 0.0002$), soil nitrogen (2 vs.\ 0.0044, $P = 0.0001$), AM fungal relative abundance colonization (1 vs.\ 0.0016, $P = 0.0017$), and AM fungal roots colonized (2 vs.\ 0.0827, $P = 0.0001$), whereas aridity showed no all-five-species shared orthogroups (0 vs.\ 0.0000, $P = 1.0000$). Together, these results indicate that the observed recurrence of shared orthogroups is greater than expected under a matched candidate-universe null, supporting non-random cross-species recurrence.
 
-We next performed GWASs for WorldClim PC1, PC2, and PC3 using a mixed linear model with kinship correction in GEMMA. Under log10 $p$-value of 7, the number of significant SNPs was heterogeneous across species and across climate axes. For PC1, significant SNP counts were highest overall, with 38 in Arabidopsis, 602 in rice, 6 in sorghum, 8 in barley, and 1 in maize. For PC2, the Bonferroni-significant signal was weaker, with 13 in Arabidopsis, 0 in rice, 0 in sorghum, 1 in barley, and 1 in maize. For PC3, the distribution again differed among species, with 29 in Arabidopsis, 10 in rice, 80 in sorghum, 24 in barley, and 0 in maize. These results indicate that the strength of species-specific associations with broad climatic gradients varied substantially among both taxa and environmental axes. Since the environmental phenotypes were predicted from gridded global surfaces rather than measured directly for each accession, we also considered a less stringent comparative framework to capture upper-ranked signals that may remain informative despite noise in the environmental predictors for species comparison. We therefore retained the top 0.5\% of SNPs per species for each principal component and mapped nearby genes to identify orthologous candidate genes shared across species. For PC1, this yielded 5,699 Arabidopsis genes, 8,459 rice genes, 3,852 maize genes, 1,270 barley genes, and 1,283 sorghum genes. For PC2, the corresponding values were 5,108, 6,859, 3,953, 1,557, and 1,151 genes, respectively. For PC3, the gene sets included 5,597 Arabidopsis genes, 8,122 rice genes, 3,961 maize genes, 1,629 barley genes, and 554 sorghum genes. Orthogroup mapping yielded 5,946 unique orthologous genes for PC1 (Arabidopsis 1,784; rice 193; maize 2,403; barley 742; sorghum 824), 5,827 for PC2 (1,546; 167; 2,481; 891; 742), and 5,736 for PC3 (1,719; 216; 2,517; 952; 332).
+To place these recurrence patterns in the broader context of species-specific GWAS signal, we next summarized cross-trait variation in Bonferroni-significant SNP counts, mapped candidate-gene counts, and orthogroup overlap across all environmental phenotypes (Fig.~\ref{fig:figx_cross_species_gwas_summary}). Bonferroni-significant SNP counts varied substantially across both traits and species (Fig.~\ref{fig:figx_cross_species_gwas_summary}A), indicating strong heterogeneity in the magnitude of species-specific association signal. The number of genes recovered from the upper-ranked association sets also varied across species and traits, but remained consistently large enough to support downstream orthogroup-based comparisons (Fig.~\ref{fig:figx_cross_species_gwas_summary}B). Despite these large candidate-gene sets, only a small number of orthogroups were shared across all five species for any given trait (Fig.~\ref{fig:figx_cross_species_gwas_summary}C), whereas orthogroups shared across at least four species were more common and showed stronger cross-trait variation (Fig.~\ref{fig:figx_cross_species_gwas_summary}D). Soil pH and soil nitrogen showed the highest recurrence across four or more species, followed by AM fungal roots colonized and the WorldClim principal components, whereas aridity showed the weakest all-five-species overlap. These broad patterns provide the comparative context for the trait-specific results described below.
 
-Despite the large number of orthogroups identified within each analysis, only a small subset was shared across all five species. PC1 yielded two groups, whereas PC2 and PC3 each yielded one. PC1 and PC2 shared orthogroup \textit{5017799} at 2759, and recurrent genes included \textit{LOC\_Os04g04520} in rice and \textit{AT1G34750}/\textit{AT2G30020} in Arabidopsis, indicating the repeated involvement of a limited homologous core across correlated climate axes. These results indicate a narrow core of shared orthologous candidates across deeply diverged taxa, with stronger cross-axis recurrence between PC1 and PC2 than with PC3.
+Together, these results indicate that the observed recurrence of shared orthogroups is greater than expected under a matched candidate-universe null, supporting non-random cross-species recurrence while leaving open the need for future SNP-level null calibration.
 
+\subsubsection{Cross-species genome-wide associations with WorldClim principal components identify a small set of shared orthologous genes}
+
+To summarize broad climatic variation, we performed principal component analysis on the 19 WorldClim bioclimatic variables (Supp Table 1) for each species separately and used the leading principal components as environmental phenotypes for GWAS. Across species, PC1 explained the largest fraction of variance (mean $38.3\% \pm 2.9$ SE), followed by PC2 ($25.9\% \pm 1.6$) and PC3 ($16.7\% \pm 0.8$), indicating that these axes captured the major dimensions of climatic variation (Supp Fig. \ref{fig:suppfig1_worldclim_pca}A). Because PCA signs can differ among independent analyses, we compared variables using absolute loading magnitudes. For PC1, Arabidopsis, barley, rice, and maize were mainly driven by temperature variables (BIO06, BIO07, BIO11, BIO04), whereas sorghum PC1 reflected warm-temperature and precipitation seasonality variables (BIO05, BIO10, BIO15, BIO08) (Supp Fig. \ref{fig:suppfig1_worldclim_pca}B). For PC2, rice and maize were dominated by warm-temperature and precipitation variables (rice: BIO05, BIO10, BIO08; maize: BIO05, BIO14, BIO17, BIO15), while sorghum PC2 emphasized cold and seasonal temperature variables (BIO06, BIO11, BIO09, BIO04). For PC3, rice and sorghum were most influenced by precipitation during wet and dry periods (rice: BIO13, BIO16, BIO18, BIO12; sorghum: BIO16, BIO13, BIO12), whereas maize and barley retained mixed seasonality signals (maize: BIO03, BIO04, BIO14, BIO17; barley: BIO15, BIO03, BIO14, BIO17). Overall, these results indicate species-specific climatic architectures underlying the GWAS signals (Supp Fig. \ref{fig:suppfig2_worldclim_pca_3d}).
+
+We next performed GWASs for WorldClim PC1, PC2, and PC3 using a mixed linear model with kinship correction in GEMMA (Fig.~\ref{fig:fig2a_manhattan_pc1}; Fig.~\ref{fig:figX_cross_species_gwas_summary}; Supplementary Fig.~\ref{fig:suppfig3_qq_all_traits}; Supplementary Table~S5). As summarized in Fig.~\ref{fig:figX_cross_species_gwas_summary}, Bonferroni-significant SNP counts varied substantially across species and climate axes, with the strongest signal observed for rice in PC1 and for sorghum in PC3. Because the environmental phenotypes were derived from gridded global surfaces rather than measured directly for each accession, we also used the upper-ranked association set for cross-species comparison. Mapping nearby genes from these upper-ranked SNPs identified thousands of candidate genes in each species and thousands of orthogroup-linked genes per climate axis. Despite these large candidate sets, only a small number of shared orthologous groups were recovered across all five species (Supplementary Tables~S3A,B). PC1 yielded two shared groups, whereas PC2 and PC3 each yielded one (Table~\ref{tab:shared_genes_worldclim}). PC1 and PC2 shared orthogroup \textit{5017799at2759}, and recurrent genes included \textit{LOC\_Os04g04520} in rice and \textit{AT1G34750}/\textit{AT2G30020} in Arabidopsis, indicating repeated involvement of a limited homologous core across correlated climate axes. Together, these results indicate a narrow core of shared orthologous candidates across deeply diverged taxa, with stronger cross-axis recurrence between PC1 and PC2 than with PC3.
+
+
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig2/Fig2A_manhattan_plus_PC1.png}
+    \caption{WorldClim PC1 genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of WorldClim PC1 phenotype values. The plots illustrate marked heterogeneity in GWAS signal strength and phenotype spread across taxa for the leading climate axis.}
+    \label{fig:fig2a_manhattan_pc1}
+\end{figure*}
+
+Despite the large number of orthogroups for each species, only a small subset was shared across all five (Supplementary Table 3A and 3B). PC1 yielded two groups, whereas PC2 and PC3 each yielded one (Table \ref{tab:shared_genes_worldclim}). PC1 and PC2 shared orthogroup \textit{5017799at2759}, and recurrent genes included \textit{LOC\_Os04g04520} in rice and \textit{AT1G34750}/\textit{AT2G30020} in Arabidopsis, indicating the repeated involvement of a limited homologous core across correlated climate axes. These results indicate a narrow core of shared orthologous candidates across deeply diverged taxa, with stronger cross-axis recurrence between PC1 and PC2 than with PC3.
 
 
 \begin{table*}[t]
-\caption{Shared candidate genes across all five species from the top 0.5\% of SNPs for WorldClim principal components.}
-\label{tab:shared_genes_worldclim_pcs_combined}
+\caption{Shared candidate genes across all five species from the top 0.5\% of SNPs for WorldClim principal components. Putative functions are based on the maize anchor-gene ontology table.}
+\label{tab:shared_genes_worldclim}
 \scriptsize
 \tabcolsep=4pt
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllll@{}}
 \toprule
-Climate axis & Putative function & Maize genes & Sorghum genes & Rice genes & Barley genes & Arabidopsis genes \\
+Phenotype & Putative function & Maize genes & Sorghum genes & Rice genes & Barley genes & Arabidopsis genes \\
 \midrule
 
-PC1 & Protein phosphatases &
+PC1 &
+\begin{tabular}[t]{@{}l@{}}
+Protein-serine/threonine\\
+phosphatase
+\end{tabular}
+&
 \begin{tabular}[t]{@{}l@{}}
 Zm00001eb192230\\
 Zm00001eb204210
@@ -224,9 +243,13 @@ SORBI\_3005G087800\\
 SORBI\_3006G209400
 \end{tabular}
 &
+\begin{tabular}[t]{@{}l@{}}
 LOC\_Os04g04520
+\end{tabular}
 &
+\begin{tabular}[t]{@{}l@{}}
 HORVU.MOREX.r3.2HG0202320
+\end{tabular}
 &
 \begin{tabular}[t]{@{}l@{}}
 AT1G34750\\
@@ -235,18 +258,29 @@ AT2G30020
 \\
 \midrule
 
-PC2 & Protein phosphatases &
+PC2 &
+\begin{tabular}[t]{@{}l@{}}
+Protein-serine/threonine\\
+phosphatase
+\end{tabular}
+&
 \begin{tabular}[t]{@{}l@{}}
 Zm00001eb192230\\
 Zm00001eb258010\\
 Zm00001eb430620
 \end{tabular}
 &
+\begin{tabular}[t]{@{}l@{}}
 SORBI\_3010G180700
+\end{tabular}
 &
+\begin{tabular}[t]{@{}l@{}}
 LOC\_Os04g04520
+\end{tabular}
 &
+\begin{tabular}[t]{@{}l@{}}
 HORVU.MOREX.r3.4HG0384700
+\end{tabular}
 &
 \begin{tabular}[t]{@{}l@{}}
 AT1G22280\\
@@ -257,98 +291,27 @@ AT4G31750
 \\
 \midrule
 
-PC3 & Purple acid phosphatases &
+PC3 &
+Purple acid phosphatase
+&
+\begin{tabular}[t]{@{}l@{}}
 Zm00001eb202100
+\end{tabular}
 &
+\begin{tabular}[t]{@{}l@{}}
 SORBI\_3007G091100
+\end{tabular}
 &
+\begin{tabular}[t]{@{}l@{}}
 LOC\_Os12g01510
+\end{tabular}
 &
+\begin{tabular}[t]{@{}l@{}}
 HORVU.MOREX.r3.5HG0461970
+\end{tabular}
 &
+\begin{tabular}[t]{@{}l@{}}
 AT2G16430
-\\
-
-\bottomrule
-\end{tabular*}
-% \begin{tablenotes}%
-% \item Note: Shared candidates were identified by selecting the top 0.5\% of SNPs per species for each WorldClim principal component, mapping nearby genes to orthogroups, and retaining orthogroups represented in all five species. Arabidopsis and rice were annotated using $\pm$10 kb windows, whereas maize, sorghum, and barley were annotated using $\pm$25 kb windows.
-% \end{tablenotes}
-\end{table*}
-
-
-\subsection{Cross-species genome-wide associations with soil nitrogen (0--5 cm) identify shared orthologous genes across all species}
-
-Next, we performed GWAS for soil nitrogen predicted for a depth of 0--5 cm. Soil nitrogen was included as an environmental phenotype because nitrogen availability is a major determinant of plant growth, resource allocation, and root-system function, and can therefore impose strong selective pressures. Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 64, rice 202, sorghum 2, barley 4, maize 1). Similarly, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups. This yielded 5,034 Arabidopsis genes, 4,851 rice genes, 4,423 maize genes, 1,636 barley genes, and 990 sorghum genes. Among these soil nitrogen threshold genes, 5,922 genes mapped to orthogroups (Arabidopsis 1,481; rice 127; maize 2,738; barley 949; sorghum 627). Table~\ref{tab:shared_function_candidates_soilN_mixed10kb} summarizes shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values. 
-
-Only two orthogroups were shared across all five species (Table~\ref{tab:shared_function_candidates_soilN_mixed10kb}), including functional modules such as UDP-arabinose/UDP-galactose epimerase and leucine-rich repeat receptor-like kinase. When we reduced the filter to shared orthogroups present in at least four species (Supplementary Table~\ref{tab:soilN_shared_ge4_functions_dedup}), additional recurrent functional modules were recovered. Representative examples included peroxidase (\textit{Zm00001eb043110}), calcium-transporting ATPase (\textit{Zm00001eb030420}), protein kinase (\textit{Zm00001eb011650}), protein-serine/threonine phosphatase (\textit{Zm00001eb331410}), laccase (\textit{Zm00001eb148270}), chloride channel protein (\textit{Zm00001eb244120}), and exostosin family protein (\textit{Zm00001eb163690}). Together, these patterns support convergence on stress signaling, redox/cell-wall processes, and membrane transport under soil nitrogen-associated selection.
-
-
-\begin{table*}[t]
-\caption{Shared candidate genes across all five species from the top 0.5\% of SNPs for soil nitrogen (0--5 cm).}
-\label{tab:shared_genes_soilN_clean}
-\scriptsize
-\tabcolsep=4pt
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llllll@{}}
-\toprule
-Putative function & Maize genes & Sorghum genes & Rice genes & Barley genes & Arabidopsis genes \\
-\midrule
-
-% ===== GROUP 1 =====
-UDP-arabinose 4-epimerase 2/UDP-galactose 4-epimerase &
-\begin{tabular}[t]{@{}l@{}}
-Zm00001eb014110
-\end{tabular}
-&
-\begin{tabular}[t]{@{}l@{}}
-SORBI\_3006G217300
-\end{tabular}
-&
-\begin{tabular}[t]{@{}l@{}}
-LOC\_Os09g03230
-\end{tabular}
-&
-\begin{tabular}[t]{@{}l@{}}
-HORVU.MOREX.r3.2HG0195580
-\end{tabular}
-&
-\begin{tabular}[t]{@{}l@{}}
-AT1G12780
-\end{tabular}
-\\
-
-\midrule
-
-% ===== GROUP 2 =====
-Leucine-rich repeat receptor-like kinase &
-\begin{tabular}[t]{@{}l@{}}
-Zm00001eb032940\\
-Zm00001eb059050\\
-Zm00001eb066630\\
-Zm00001eb222050\\
-Zm00001eb303060\\
-Zm00001eb362650\\
-Zm00001eb378340\\
-Zm00001eb402940\\
-Zm00001eb403550
-\end{tabular}
-&
-\begin{tabular}[t]{@{}l@{}}
-SORBI\_3006G217900
-\end{tabular}
-&
-\begin{tabular}[t]{@{}l@{}}
-LOC\_Os02g01540
-\end{tabular}
-&
-\begin{tabular}[t]{@{}l@{}}
-HORVU.MOREX.r3.1HG0041440
-\end{tabular}
-&
-\begin{tabular}[t]{@{}l@{}}
-AT1G08590\\
-AT1G09970\\
-AT2G26330
 \end{tabular}
 \\
 
@@ -356,17 +319,22 @@ AT2G26330
 \end{tabular*}
 \end{table*}
 
+\subsubsection{Cross-species genome-wide associations with soil pH identify shared orthologous genes across all species}
 
-\subsection{Cross-species genome-wide associations with soil pH identify shared orthologous genes across all species}
+We also performed GWAS for soil pH (Fig.~\ref{fig:fig3_manhattan_ph}; Fig.~\ref{fig:figX_cross_species_gwas_summary}; Supplementary Fig.~\ref{fig:suppfig3_qq_all_traits}; Supplementary Table~S6). Soil pH is a major edaphic variable that affects nutrient availability, root function, and microbial interactions, and can therefore impose strong selective pressures on plant populations (ref). Species-specific GWAS signal for soil pH was heterogeneous across taxa, with the strongest Bonferroni-significant signal observed in rice and little or no signal in several other species (Fig.~\ref{fig:figX_cross_species_gwas_summary}A). Nevertheless, cross-species comparison recovered several shared candidate-gene groups across all five species (Table~\ref{tab:shared_genes_ph}), with recurring putative functional classes including RAB GTPase, laccase/diphenol oxidase family proteins, and peroxidase family proteins. When the comparison was expanded to orthogroups shared across at least four species, additional biologically relevant functional modules were recovered, including peroxidase (\textit{Zm00001eb043110}), calcium-transporting ATPase (\textit{Zm00001eb030420}), protein kinase (\textit{Zm00001eb011650}), protein-serine/threonine phosphatase (\textit{Zm00001eb331410}), laccase (\textit{Zm00001eb148270}), chloride channel protein (\textit{Zm00001eb244120}), and exostosin family protein (\textit{Zm00001eb163690}) (Supplementary Table~S4). Together, these patterns support convergence on stress signaling, redox and cell-wall processes, and membrane transport under soil pH-associated selection.
 
-We also performed GWAS for soil pH. Soil pH is a major edaphic variable that affects nutrient availability, root function, and microbial interactions and can therefore impose strong selective pressures on plant populations. Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 6, rice 383, sorghum 3, barley 6, maize 0). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,102 Arabidopsis genes, 9,635 rice genes, 3,937 maize genes, 1,526 barley genes, and 1,203 sorghum genes. Among these soil pH threshold genes, 5,909 genes mapped to orthogroups (Arabidopsis 1,551; rice 242; maize 2,434; barley 897; sorghum 785). Table~\ref{tab:shared_function_candidates_ph_mixed10kb} summarizes shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values. 
 
-When we expanded to shared orthogroups present in at least four species (Supplementary Table~\ref{tab:soilN_shared_ge4_functions_dedup}), additional recurrent functional modules were recovered. Representative examples included peroxidase (\textit{Zm00001eb043110}), calcium-transporting ATPase (\textit{Zm00001eb030420}), protein kinase (\textit{Zm00001eb011650}), protein-serine/threonine phosphatase (\textit{Zm00001eb331410}), laccase (\textit{Zm00001eb148270}), chloride channel protein (\textit{Zm00001eb244120}), and exostosin family protein (\textit{Zm00001eb163690}). Together, these patterns support convergence on stress signaling, redox/cell-wall processes, and membrane transport under soil nitrogen-associated selection.
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig3/Fig3_manhattan_plus_pH.png}
+    \caption{Soil pH genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of soil pH values. The plots illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for this major edaphic variable.}
+    \label{fig:fig3_manhattan_ph}
+\end{figure*}
 
 
 \begin{table*}[t]
 \caption{Unique shared candidate-gene groups across all five species from the top 0.5\% of SNPs for soil pH.}
-\label{tab:shared_genes_ph_unique_clean}
+\label{tab:shared_genes_ph}
 \scriptsize
 \tabcolsep=4pt
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llllll@{}}
@@ -475,14 +443,106 @@ AT5G15180
 \end{table*}
 
 
+\subsubsection{Cross-species genome-wide associations with soil nitrogen (0--5 cm) identify shared orthologous genes across all species}
 
-\subsection{Cross-species genome-wide associations with AM fungal phenotypes identify a limited set of shared orthologous genes}
+Next, we performed GWAS for soil nitrogen predicted at 0--5 cm depth (Fig.~\ref{fig:fig4_manhattan_soilN}; Fig.~\ref{fig:figX_cross_species_gwas_summary}; Supplementary Fig.~\ref{fig:suppfig3_qq_all_traits}; Supplementary Table~S7). Nitrogen availability is a major determinant of plant growth, resource allocation, and root-system function, and can therefore impose strong selective pressures (ref). As summarized in Fig.~\ref{fig:figX_cross_species_gwas_summary}, species-specific GWAS signal for soil nitrogen was heterogeneous across taxa. Nevertheless, cross-species comparison recovered two shared candidate-gene groups across all five species (Table~\ref{tab:shared_genes_soilN_clean}), corresponding to putative UDP-arabinose 4-epimerase 2/UDP-galactose 4-epimerase and leucine-rich repeat receptor-like kinase functional classes. When the comparison was expanded to orthogroups shared across at least four species, additional recurrent functional modules were recovered, including peroxidase (\textit{\seqsplit{Zm00001eb043110}}), calcium-transporting ATPase (\textit{\seqsplit{Zm00001eb030420}}), protein kinase (\textit{\seqsplit{Zm00001eb011650}}), protein-serine/threonine phosphatase (\textit{\seqsplit{Zm00001eb331410}}), laccase (\textit{\seqsplit{Zm00001eb148270}}), chloride channel protein (\textit{\seqsplit{Zm00001eb244120}}), and exostosin family protein (\textit{\seqsplit{Zm00001eb163690}}) (Supplementary Table~\ref{tab:supptable4_go_ontology_maize_genes}). Together, these patterns support convergence on stress signaling, redox and cell-wall processes, and membrane transport under soil nitrogen-associated selection.
 
-We also performed GWAS for AM fungal relative abundance colonization and AM fungal roots colonized.  AM fungal phenotypes are ecologically important because AM symbiosis can alter plant nutrient acquisition (especially P and N), root function, and drought-stress performance, making AM-associated loci plausible targets of environmental adaptation. Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species and between the two AM fungal phenotypes. For AM fungal relative abundance colonization, the number of significant SNPs was 824 in Arabidopsis, 268 in rice, 0 in sorghum, 9 in barley, and 1 in maize. For AM fungal roots colonized, the number of significant SNPs was higher overall, with 1160 in Arabidopsis, 1536 in rice, 4 in sorghum, 125 in barley, and 5 in maize. These results indicate that the strength of association with AM fungal phenotypes varied substantially among species and was generally greater for roots colonized than for relative abundance colonization.
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig4/Fig4_manhattan_plus_soilN.png}
+    \caption{Soil nitrogen (0--5 cm) genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of soil nitrogen phenotype values. The plots illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for this major edaphic variable.}
+    \label{fig:fig4_manhattan_soilN}
+\end{figure*}
 
-Similarly, we selected the top 0.5\% of SNPs per species for each AM fungal phenotype and mapped genes to orthogroups. For AM fungal relative abundance colonization, this yielded 5,613 Arabidopsis genes, 6,947 rice genes, 3,791 maize genes, 1,246 barley genes, and 994 sorghum genes. For AM fungal roots colonized, the corresponding values were 5,617 Arabidopsis genes, 5,975 rice genes, 3,934 maize genes, 1,153 barley genes, and 940 sorghum genes. Among these threshold genes, 5,693 genes from the relative abundance analysis and 5,726 genes from the roots colonized analysis mapped to orthogroups. Despite recovering many orthogroup-mapped genes for both traits (AM fungal relative abundance colonization: 5,693 total ortholog-mapped genes; Arabidopsis 1,730, rice 201, maize 2,301, barley 787, sorghum 674; AM fungal roots colonized: 5,726 total; Arabidopsis 1,814, rice 206, maize 2,352, barley 853, sorghum 501), only a very small all-five-species core was detected. For relative abundance colonization, a single all-five orthogroup (MYB-domain candidate set, Table~\ref{tab:shared_genes_amfungal_combined}) was shared. For roots colonized, four all-five orthogroup rows collapsed into two non-redundant functional groups: a peroxidase superfamily and a protein kinase superfamily. 
 
-Beyond the small all-five-species core, additional shared candidate modules were recovered when considering orthogroups present in at least four species (Supplementary Tables~\ref{tab:amrel_shared_ge4_functions_dedup} and \ref{tab:amroots_shared_ge4_functions_dedup}). For AM fungal relative abundance colonization, four-species shared groups were dominated by maize--sorghum--barley--Arabidopsis, with additional groups involving rice. Representative putative functions included peroxidase (\textit{Zm00001eb001560}), LRR receptor-like kinase (\textit{Zm00001eb016040}), NRT1/PTR-family transporter (\textit{Zm00001eb046210}), purple acid phosphatase (\textit{Zm00001eb151650}), amino acid permease (\textit{Zm00001eb145670}), and potassium transporter (\textit{Zm00001eb275630}). For AM fungal roots colonized, four-species shared groups were also substantial and included modules such as LRR receptor-like kinase (\textit{Zm00001eb002030}), laccase (\textit{Zm00001eb368580}), E3 ubiquitin ligase (\textit{Zm00001eb032800}), amino acid/oligopeptide transporters (\textit{\seqsplit{Zm00001eb178270}}, \textit{\seqsplit{Zm00001eb257490}}, \textit{\seqsplit{Zm00001eb033760}}), and trehalose-6-phosphate phosphatase (\textit{\seqsplit{Zm00001eb105040}}). Together, these AMF-associated shared modules indicate convergence on signaling, membrane transport, redox/cell-wall processes, and nutrient-response functions across taxa.
+\begin{table*}[t]
+\caption{Shared candidate genes across all five species from the top 0.5\% of SNPs for soil nitrogen (0--5 cm).}
+\label{tab:shared_genes_soilN}
+\scriptsize
+\tabcolsep=4pt
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llllll@{}}
+\toprule
+Putative function & Maize genes & Sorghum genes & Rice genes & Barley genes & Arabidopsis genes \\
+\midrule
+
+% ===== GROUP 1 =====
+UDP-arabinose 4-epimerase 2/UDP-galactose 4-epimerase &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb014110
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3006G217300
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+LOC\_Os09g03230
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.2HG0195580
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT1G12780
+\end{tabular}
+\\
+
+\midrule
+
+% ===== GROUP 2 =====
+Leucine-rich repeat receptor-like kinase &
+\begin{tabular}[t]{@{}l@{}}
+Zm00001eb032940\\
+Zm00001eb059050\\
+Zm00001eb066630\\
+Zm00001eb222050\\
+Zm00001eb303060\\
+Zm00001eb362650\\
+Zm00001eb378340\\
+Zm00001eb402940\\
+Zm00001eb403550
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+SORBI\_3006G217900
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+LOC\_Os02g01540
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+HORVU.MOREX.r3.1HG0041440
+\end{tabular}
+&
+\begin{tabular}[t]{@{}l@{}}
+AT1G08590\\
+AT1G09970\\
+AT2G26330
+\end{tabular}
+\\
+
+\bottomrule
+\end{tabular*}
+\end{table*}
+
+
+\subsubsection{Cross-species genome-wide associations with AM fungal phenotypes identify a limited set of shared orthologous genes}
+
+We also performed GWAS for AM fungal relative abundance colonization and AM fungal roots colonized (Fig.~\ref{fig:fig5a_manhattan_am_rel_abundance}; Fig.~\ref{fig:figX_cross_species_gwas_summary}; Supplementary Fig.~\ref{fig:suppfig3_qq_all_traits}; Supplementary Table~S8). AM fungal phenotypes are ecologically important because AM symbiosis can alter plant nutrient acquisition, especially phosphorus and nitrogen, as well as root function and drought responses, making AM-associated loci plausible targets of environmental adaptation (ref). As summarized in Fig.~\ref{fig:figX_cross_species_gwas_summary}, species-specific GWAS signal was heterogeneous across taxa and differed between the two AM fungal phenotypes, with generally stronger signal for AM fungal roots colonized than for AM fungal relative abundance colonization.
+
+Despite recovering large candidate-gene sets for both traits, only a very small all-five-species core was detected. For AM fungal relative abundance colonization, a single all-five-species candidate group was shared, corresponding to a MYB-domain-related set (Table~\ref{tab:shared_genes_amfungal_combined}). For AM fungal roots colonized, the all-five shared set corresponded to two recurring functional groups, a peroxidase superfamily and a protein kinase superfamily. When the comparison was expanded to orthogroups present in at least four species, additional biologically relevant modules were recovered. For AM fungal relative abundance colonization, representative putative functions included peroxidase (\textit{Zm00001eb001560}), LRR receptor-like kinase (\textit{Zm00001eb016040}), NRT1/PTR-family transporter (\textit{Zm00001eb046210}), purple acid phosphatase (\textit{Zm00001eb151650}), amino acid permease (\textit{Zm00001eb145670}), and potassium transporter (\textit{Zm00001eb275630}). For AM fungal roots colonized, shared modules also included LRR receptor-like kinase (\textit{Zm00001eb002030}), laccase (\textit{Zm00001eb368580}), E3 ubiquitin ligase (\textit{Zm00001eb032800}), amino acid/oligopeptide transporters (\textit{\seqsplit{Zm00001eb178270}}, \textit{\seqsplit{Zm00001eb257490}}, \textit{\seqsplit{Zm00001eb033760}}), and trehalose-6-phosphate phosphatase (\textit{\seqsplit{Zm00001eb105040}}) (Supplementary Table~S4). Together, these AM fungal-associated shared modules indicate convergence on signaling, membrane transport, redox and cell-wall processes, and nutrient-response functions across taxa.
+
+
+
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig5/Fig5A_manhattan_plus_AM_rel_abundance_colonization.png}
+    \caption{Genome-wide association results for arbuscular mycorrhizal (AM) fungal relative abundance colonization across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line indicating the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of AM relative abundance phenotype values. Together, these panels show heterogeneous GWAS signal strength and phenotype distributions across taxa for AM fungal relative abundance colonization.}
+    \label{fig:fig5a_manhattan_am_rel_abundance}
+\end{figure*}
 
 
 \begin{table*}[t]
@@ -603,20 +663,22 @@ AT2G41970
 \end{table*}
 
 
+\subsubsection{Cross-species genome-wide associations with aridity index identify shared orthologous genes across all species}
 
-\subsection{Cross-species genome-wide associations with aridity index identify shared orthologous genes across all species}
-
-Finally, we performed GWASs for the aridity index. Aridity index represents long-term water availability relative to atmospheric evaporative demand, providing an integrated climatic dryness gradient across sampling locations. Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 436, rice 0, sorghum 90, barley 1, maize 4). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,663 Arabidopsis genes, 9,209 rice genes, 1,573 maize genes, 807 barley genes, and 131 sorghum genes.
-
-Among these aridity index threshold genes, 3,413 genes mapped to orthogroups (Arabidopsis 1,684; rice 264; maize 917; barley 469; sorghum 79). Table~\ref{tab:shared_function_candidates_aridity_index_mixed10kb_common4} summarizes shared orthogroups represented in at least four species and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
-
-In addition to the four-species shared orthogroups summarized in Table~\ref{tab:shared_function_candidates_aridity_index_mixed10kb_common4}, we observed recurring functional modules across species combinations. Shared groups were present across maize--rice--barley--Arabidopsis, maize--sorghum--barley--Arabidopsis, and maize--sorghum--rice--Arabidopsis. Representative putative functions included peroxidase (\textit{Zm00001eb022050}; orthogroup 640662at2759), NRT1/PTR-family transporter (\textit{Zm00001eb046210}; 627237at2759), cation/H$^{+}$ antiporter (\textit{Zm00001eb031840}; 755348at2759), protein-serine/threonine phosphatase (\textit{Zm00001eb112250}; 5017799at2759), GDSL esterase/lipase (\textit{Zm00001eb426230}; 381908at2759), RAV-family DNA-binding protein (\textit{Zm00001eb156040}; 665330at2759), and carboxypeptidase (\textit{Zm00001eb113170}; 4805980at2759). Together, these aridity-associated shared modules support recurring contributions of stress signaling, membrane transport, and redox/cell-wall-associated pathways to adaptation along long-term climatic dryness gradients.
+Finally, we performed GWASs for the aridity index (\ref{fig:fig6_manhattan_aridity}; Supp Fig. \ref{fig:suppfig3_qq_all_traits}; Supp Table 9). Aridity index represents long-term water availability relative to atmospheric evaporative demand, providing an integrated climatic dryness gradient across sampling locations (ref). Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 436, rice 0, sorghum 90, barley 1, maize 4). Cross-species convergence yielded 5,663 Arabidopsis genes, 9,209 rice genes, 1,573 maize genes, 807 barley genes, and 131 sorghum genes. Among these aridity index threshold genes, 3,413 genes mapped to orthogroups (Arabidopsis 1,684; rice 264; maize 917; barley 469; sorghum 79). No orthogroups were shared across all five species. Table~\ref{tab:shared_aridity_index} summarizes the shared candidate-gene groups identified across at least four species for the aridity index, suggesting recurring functional classes associated with aridity-related adaptation, including GDSL-like lipase, serine carboxypeptidase-like proteins, protein phosphatase, nitrate transporter, peroxidase family protein, ABI3-VP1 transcription factor, and cation/H+ exchanger (ref).
 
 
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig6/Fig6_manhattan_plus_aridity_index.png}
+    \caption{Aridity index genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of aridity index values. Together, these panels illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for climatic aridity.}
+    \label{fig:fig6_manhattan_aridity}
+\end{figure*}
 
+Additional relevant functional modules were also recovered across the shared species (Supp Table 3). Shared groups were present across maize--rice--barley--Arabidopsis, maize--sorghum--barley--Arabidopsis, and maize--sorghum--rice--Arabidopsis. Representative putative functions included peroxidase (\textit{\seqsplit{Zm00001eb022050}}; orthogroup 640662at2759), NRT1/PTR-family transporter (\textit{\seqsplit{Zm00001eb046210}}; 627237at2759), cation/H$^{+}$ antiporter (\textit{\seqsplit{Zm00001eb031840}}; 755348at2759), protein-serine/threonine phosphatase (\textit{\seqsplit{Zm00001eb112250}}; 5017799at2759), GDSL esterase/lipase (\textit{\seqsplit{Zm00001eb426230}}; 381908at2759), RAV-family DNA-binding protein (\textit{\seqsplit{Zm00001eb156040}}; 665330at2759), and carboxypeptidase (\textit{\seqsplit{Zm00001eb113170}}; 4805980at2759) (Suppl Table 4). Together, these aridity-associated shared modules support recurring contributions of stress signaling, membrane transport, and redox/cell-wall-associated pathways to adaptation along long-term climatic dryness gradients.
 
 \begin{table*}[t]
-\caption{Shared candidate genes identified across at least four species from the top 0.5\% of SNPs for aridity index (Arabidopsis/Rice $\pm$10 kb; Maize/Sorghum/Barley $\pm$25 kb).\label{tab:shared_function_candidates_aridity_index_mixed10kb_common4}}
+\caption{Shared candidate genes identified across at least four species from the top 0.5\% of SNPs for aridity index (Arabidopsis/Rice $\pm$10 kb; Maize/Sorghum/Barley $\pm$25 kb).\label{tab:shared_aridity_index}}
 \scriptsize
 \tabcolsep=4pt
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llllll@{}}
@@ -749,6 +811,21 @@ AT5G58460
 \end{table*}
 
 
+\subsubsection{GO biological process enrichment highlights recurring functional themes among maize orthologs shared across at least three species}
+
+To further summarize pathway-level recurrence, we examined GO biological process enrichment for maize ortholog genes that were shared across at least three species and then grouped by phenotype class (Supplementary Fig.~\ref{fig:suppfig_go_maize_shared_ge3_bp_top10_fold}). Across phenotype groups, the enriched terms pointed to recurring stress-response, transport, signaling, and cell-wall-related processes, but the dominant themes differed among trait classes. For the WorldClim PC phenotypes, the top enriched terms included cellular response to brassinosteroid stimulus, response to steroid hormone, steroid hormone receptor signaling pathway, oligopeptide transmembrane transport, lignin biosynthetic process, and radial axis specification, indicating combined enrichment for hormone-responsive signaling, transport, and developmental or structural processes. For soil pH, enriched terms were dominated by stress and wall-remodeling functions, including response to salt, phenylpropanoid catabolic process, lignin catabolic process, lignin metabolic process, and intracellular signal transduction, together with multiple steroid- and brassinosteroid-related response terms. For soil nitrogen, the enriched terms emphasized intracellular movement and secretion, including vacuolar protein processing, plasmodesmata-mediated intercellular transport, intercellular transport, regulation of root development, cellulose catabolic process, beta-glucan catabolic process, exocytosis, and secretion by cell. By contrast, the AM fungal phenotype group was enriched for pigmentation- and transport-related processes, including pigment accumulation, pigment accumulation in response to UV light, anthocyanin accumulation in tissues in response to UV light, dipeptide transport, dipeptide transmembrane transport, alternative respiration, and positive regulation of brassinosteroid-mediated signaling. Together, these results suggest that pathway-level recurrence among shared orthologs is stronger than exact gene-level recurrence, with different environmental trait classes converging on distinct but overlapping biological themes.
+
+Together, these results indicate that shared orthologs recurring across species are associated with broader functional themes, with different environmental trait classes emphasizing partially distinct combinations of signaling, transport, stress-response, and cell-wall-related processes.
+
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Supplementary/SuppFig_GO_maize_shared_ge3_BP_top10_fold.png}
+    \caption{GO biological process enrichment for maize ortholog genes shared across at least three species. The top 10 FDR-significant overrepresented GO biological process terms per phenotype group are shown, ranked by fold enrichment. Point size indicates the number of input genes associated with each term, and color indicates enrichment significance as $-\log_{10}(\mathrm{FDR})$. Trait groups include WorldClim PCs, soil pH, soil nitrogen, and AM fungal phenotypes. The enriched terms indicate recurring functional themes related to hormone signaling, stress response, transport, secretion, cell-wall remodeling, and pigment-associated processes across environmental trait classes.}
+    \label{fig:suppfig_go_maize_shared_ge3_bp_top10_fold}
+\end{figure*}
+
+
 %=======================================================================
 %=======================================================================
 %=======================================================================
@@ -756,40 +833,72 @@ AT5G58460
 
 \section{Discussion}
 
-\subsection{Shared world climate-associated candidates point to conserved stress-response, signaling, and nutrient-transport pathways across traits}
+% \subsection{Shared world climate-associated candidates point to conserved stress-response, signaling, and nutrient-transport pathways across traits}
 
-The shared candidate gene analysis supports both a narrow core of ortholog gene-level convergence and broader functional convergence. Across species, only a limited set of orthogroups was repeatedly shared, but many additional candidates converged on similar stress-response annotations (Table). These modules were not limited to the World Climate PC phenotypes but also included other environmental phenotypes we used, indicating cross-trait reuse of related stress-response pathways.
+% The orthogroup-based analysis indicates both limited gene-level convergence and broader functional convergence across species. Although only a small number of orthogroups were repeatedly shared, many additional candidates converged on similar stress-response annotations (Supp Table 3; Supp Table 4). These modules were not confined to the WorldClim PC phenotypes, but also recurred across soil pH, soil nitrogen, AM fungal relative abundance, AM root colonization, and aridity, suggesting cross-trait reuse of related stress-response pathways. In the sections below, maize genes are used as representative examples, although corresponding orthogenes from any species could also be considered.
 
-One prominent functional module involved oxidative-stress regulation and cell-wall remodeling. The candidate set contained many peroxidase or plant heme peroxidase-domain genes, including \textit{\seqsplit{Zm00001eb067730}}, \textit{\seqsplit{Zm00001eb425840}}, \textit{\seqsplit{Zm00001eb068210}}, \textit{\seqsplit{Zm00001eb043110}}, \textit{\seqsplit{Zm00001eb195200}}, \textit{\seqsplit{Zm00001eb291850}}, and additional peroxidase-like genes. In the cross-trait orthogroup mapping, all six maize peroxidase candidates recurred in the same phenotype combination (PC1, PC2, PC3, pH, soilN, AM fungal relative abundance, and aridity), but not in AM roots colonized. They were repeatedly annotated with peroxidase and oxidoreductase activity, heme binding, response to oxidative stress, hydrogen peroxide catabolism, cellular oxidant detoxification, and extracellular and plant-type cell-wall localization. This pattern matches the known roles of class III peroxidases in reactive oxygen species homeostasis, apoplastic redox regulation, lignification, cell-wall modification, and biotic and abiotic stress responses \citep{Hiraga2001,Passardi2004,Cosio2009,Kidwai2020}. In maize, class III peroxidases form a large family, and selected \textit{ZmPRX} genes respond transcriptionally to hydrogen peroxide, salicylic acid, salt, and PEG-induced drought stress \citep{Wang2015Peroxidase}. Thus, recurrence of peroxidase candidates across climate axes and phenotypes likely reflects repeated recruitment of extracellular redox and cell-wall remodeling processes under environmental stress, rather than a single peroxidase gene.
+% One prominent functional module for the PCs involves oxidative-stress regulation and cell-wall remodeling. The gene set contained many peroxidase or plant heme peroxidase-domain genes, including \textit{\seqsplit{Zm00001eb067730}}, \textit{\seqsplit{Zm00001eb425840}}, \textit{\seqsplit{Zm00001eb068210}}, \textit{\seqsplit{Zm00001eb043110}}, \textit{\seqsplit{Zm00001eb195200}}, \textit{\seqsplit{Zm00001eb291850}}, and additional peroxidase-like genes. In maize, 143 genes were common to all three PCs, including the peroxidase candidate \textit{\seqsplit{Zm00001eb067730}}. In the cross-trait orthogroup mapping, all six maize peroxidase candidates recurred in the same phenotype combination (PC1, PC2, PC3, pH, soilN, AM fungal relative abundance, and aridity), but not in AM roots colonized. 
 
-A second recurring theme was stress perception and signal transduction. Several candidates were annotated as protein kinases, receptor-like kinases, calcium-dependent protein kinases, MAP kinases, phosphatases, or related signaling proteins, including the CBL-interacting protein kinase-like gene \textit{Zm00001eb041140}, the lectin-like receptor kinase \textit{Zm00001eb058940}, and calcium-dependent kinase-related candidates \textit{\seqsplit{Zm00001eb429270}}, \textit{\seqsplit{Zm00001eb117300}}, \textit{\seqsplit{Zm00001eb107190}}, \textit{\seqsplit{Zm00001eb093410}}, \textit{\seqsplit{Zm00001eb369270}}, \textit{\seqsplit{Zm00001eb408020}}, \textit{\seqsplit{Zm00001eb072810}}, and \textit{\seqsplit{Zm00001eb061860}}. Cross-trait mapping revealed heterogeneity within this module: the CDPK-like set (\textit{\seqsplit{Zm00001eb429270}}, \textit{\seqsplit{Zm00001eb117300}}, \textit{\seqsplit{Zm00001eb107190}}, \textit{\seqsplit{Zm00001eb093410}}, \textit{\seqsplit{Zm00001eb369270}}, \textit{\seqsplit{Zm00001eb408020}}, \textit{\seqsplit{Zm00001eb072810}}, \textit{\seqsplit{Zm00001eb061860}}) consistently mapped to PC1, PC2, PC3, pH, soilN, and AM roots colonized, whereas \textit{\seqsplit{Zm00001eb041140}} mapped only to PC1 plus AM fungal relative abundance and \textit{\seqsplit{Zm00001eb058940}} only to PC1. These genes were associated with protein kinase and serine/threonine kinase activity, calcium and calmodulin binding, ATP binding, intracellular signal transduction, plasma membrane localization, and receptor-mediated signaling. This is consistent with the role of calcium fluxes, membrane receptors, phosphorylation cascades, ABA-related pathways, and ROS signaling in perceiving abiotic stresses such as drought, heat, cold, salinity, and oxidative stress. Maize SnRK, LecRLK, and CDPK studies support this: SnRK genes respond to drought, salinity, temperature, and UV stress \citep{Feng2022SnRK}; LecRLKs mediate membrane-associated stress perception and respond to salt, drought, and combined drought–salt stress \citep{Yang2025LecRLK}; and CDPKs integrate calcium signaling with drought, heat, salinity, ABA, ROS, ion transport, heat-shock proteins, transcription factors, and MAPK pathways \citep{Du2023CDPK}. The candidate set also included genes linked to stress-buffering metabolism and transport. For example, \textit{Zm00001eb058360}, annotated as a GNAT15 acetyltransferase, is related to the GNAT/SNAT family involved in melatonin biosynthesis; maize \textit{ZmSNAT1} and \textit{ZmSNAT3} respond transcriptionally to drought and heat stress \citep{Guo2024SNAT}, and \textit{Zm00001eb058360} appeared in PC1 and pH in our cross-trait map.
+% These candidate genes were repeatedly associated with peroxidase and oxidoreductase activity, heme binding, oxidative-stress responses, hydrogen peroxide catabolism, cellular oxidant detoxification, and extracellular or plant-type cell-wall localization (ref). These annotations are consistent with the known functions of class III peroxidases in reactive oxygen species homeostasis, apoplastic redox regulation, lignification, cell-wall remodeling, and responses to biotic and abiotic stress \citep{Hiraga2001,Passardi2004,Cosio2009,Kidwai2020}. In maize, class III peroxidases form a large family, and selected \textit{ZmPRX} genes respond transcriptionally to hydrogen peroxide, salicylic acid, salt, and PEG-induced drought stress \citep{Wang2015Peroxidase}. Thus, recurrence of peroxidase candidates across climate axes and phenotypes likely reflects repeated recruitment of extracellular redox and cell-wall remodeling processes under environmental stress, rather than a single peroxidase gene.
 
-
-
-%=======================================================================
-%=======================================================================
-%=======================================================================
+% A second recurring theme was stress perception and signal transduction. Several candidates were annotated as protein kinases, receptor-like kinases, calcium-dependent protein kinases, MAP kinases, phosphatases, or related signaling proteins, including the CBL-interacting protein kinase-like gene \textit{Zm00001eb041140}, the lectin-like receptor kinase \textit{Zm00001eb058940}, and calcium-dependent kinase-related candidates \textit{\seqsplit{Zm00001eb429270}}, \textit{\seqsplit{Zm00001eb117300}}, \textit{\seqsplit{Zm00001eb107190}}, \textit{\seqsplit{Zm00001eb093410}}, \textit{\seqsplit{Zm00001eb369270}}, \textit{\seqsplit{Zm00001eb408020}}, \textit{\seqsplit{Zm00001eb072810}}, and \textit{\seqsplit{Zm00001eb061860}}. Cross-trait mapping revealed heterogeneity within this module: the CDPK-like set (\textit{\seqsplit{Zm00001eb429270}}, \textit{\seqsplit{Zm00001eb117300}}, \textit{\seqsplit{Zm00001eb107190}}, \textit{\seqsplit{Zm00001eb093410}}, \textit{\seqsplit{Zm00001eb369270}}, \textit{\seqsplit{Zm00001eb408020}}, \textit{\seqsplit{Zm00001eb072810}}, \textit{\seqsplit{Zm00001eb061860}}) consistently mapped to PC1, PC2, PC3, pH, soilN, and AM roots colonized, whereas \textit{\seqsplit{Zm00001eb041140}} mapped only to PC1 and AM fungal relative abundance and \textit{\seqsplit{Zm00001eb058940}} only to PC1. These genes were associated with protein kinase and serine/threonine kinase activity, calcium and calmodulin binding, ATP binding, intracellular signal transduction, plasma membrane localization, and receptor-mediated signaling. This is consistent with the role of calcium fluxes, membrane receptors, phosphorylation cascades, ABA-related pathways, and ROS signaling in perceiving abiotic stresses such as drought, heat, cold, salinity, and oxidative stress. Furthermore, maize SnRK, LecRLK, and CDPK studies support this. SnRK genes respond to drought, salinity, temperature, and UV stress \citep{Feng2022SnRK}. LecRLKs mediate membrane-associated stress perception and respond to salt, drought, and combined drought–salt stress \citep{Yang2025LecRLK}. CDPKs integrate calcium signaling with drought, heat, salinity, ABA, ROS, ion transport, heat-shock proteins, transcription factors, and MAPK pathways \citep{Du2023CDPK}. The candidate set also included genes linked to stress-buffering metabolism and transport. For example, \textit{Zm00001eb058360}, annotated as a GNAT15 acetyltransferase, is related to the GNAT/SNAT family involved in melatonin biosynthesis. Maize \textit{ZmSNAT1} and \textit{ZmSNAT3} respond transcriptionally to drought and heat stress \citep{Guo2024SNAT}, and \textit{Zm00001eb058360} appeared in PC1 and pH in our cross-trait map.
 
 
+\subsection{Shared climate-associated candidates point to recurring stress-response, signaling, and nutrient-transport themes across traits}
 
-\subsection{Soil pH-associated candidates implicate vesicle trafficking, proton transport, and cell-surface stress remodeling.}
+The orthogroup-based analysis suggests limited gene-level convergence but broader recurrence of related functional themes across species. Although only a small number of orthogroups were repeatedly shared, many additional candidates converged on similar stress-response annotations (Supp Table 3; Supp Table 4). These recurring themes were not confined to the WorldClim PC phenotypes, but also appeared across soil pH, soil nitrogen, AM fungal relative abundance, AM root colonization, and aridity, suggesting cross-trait reuse of related stress-response pathways. In the sections below, maize genes are used as representative examples, although corresponding orthogenes from any species could also be considered.
 
-For the soil pH GWAS, a notable candidate was \textit{Zm00001eb401400}, functionally similar to rice stress-response genes involved in ion homeostasis and cell-surface remodeling. A rice homolog, \textit{OsRab11}, mediates vesicle trafficking of the vacuolar H\textsuperscript{+}-ATPase subunit \textit{OsVHA-a1} under high salinity. In rice, \textit{OsVHA-a1}, \textit{OsGAP1}, and \textit{OsRab11} are transcriptionally induced by high salinity, and \textit{OsRab11} is required for trafficking \textit{OsVHA-a1} from the trans-Golgi network to the prevacuolar compartment and/or vacuole \citep{Son2013OsRab11}. This is relevant to soil pH adaptation because vacuolar H\textsuperscript{+}-ATPases generate proton gradients that drive vesicle acidification, vacuolar ion sequestration, cytosolic pH balance, and membrane trafficking under ionic stress. Thus, \textit{Zm00001eb401400} suggests that pH-associated adaptation may involve endomembrane trafficking and proton-coupled ion homeostasis, not only root-surface nutrient uptake.
+One prominent recurring theme for the PCs involved oxidative-stress regulation and cell-wall remodeling. The candidate set contained many peroxidase or plant heme peroxidase-domain genes, including \textit{\seqsplit{Zm00001eb067730}}, \textit{\seqsplit{Zm00001eb425840}}, \textit{\seqsplit{Zm00001eb068210}}, \textit{\seqsplit{Zm00001eb043110}}, \textit{\seqsplit{Zm00001eb195200}}, and \textit{\seqsplit{Zm00001eb291850}}, among other peroxidase-like genes. In maize, 143 genes were common to all three PCs, including the peroxidase candidate \textit{\seqsplit{Zm00001eb067730}}. In the cross-trait orthogroup mapping, six maize peroxidase candidates recurred in the same phenotype combination (PC1, PC2, PC3, pH, soilN, AM fungal relative abundance, and aridity), but not in AM roots colonized.
 
-A second functional link involves rice \textit{OsChI1}, which encodes a putative laccase precursor induced by chilling, dehydration, and high salinity. \textit{OsChI1} localizes to the plasma membrane in rice protoplasts, and its overexpression in Arabidopsis increases drought and salinity tolerance \citep{Cho2014OsChI1}. Laccase-like multicopper oxidases are associated with lignin polymerization, phenolic oxidation, cell-wall modification, and oxidative-stress responses, all of which can affect root interactions with chemically stressful soils. In the context of soil pH, these functions are plausible because acidic or alkaline conditions alter nutrient availability, ion toxicity, oxidative pressure, and cell-wall properties. Thus, \textit{Zm00001eb401400} may be a pH-associated candidate linking two stress-response processes: vacuolar trafficking/proton transport via an \textit{OsRab11}-like mechanism and plasma membrane or cell-wall stress remodeling via an \textit{OsChI1}-like laccase pathway. Together, these homology-based links suggest that soil pH adaptation partly reflects conserved mechanisms that maintain ion balance, vesicle trafficking, and root cell-wall integrity under chemically stressful soils.
+These candidate genes were repeatedly associated with peroxidase and oxidoreductase activity, heme binding, oxidative-stress responses, hydrogen peroxide catabolism, cellular oxidant detoxification, and extracellular or plant-type cell-wall localization (ref). These annotations are consistent with known functions of class III peroxidases in reactive oxygen species homeostasis, apoplastic redox regulation, lignification, cell-wall remodeling, and responses to biotic and abiotic stress \citep{Hiraga2001,Passardi2004,Cosio2009,Kidwai2020}. In maize, class III peroxidases form a large family, and selected \textit{ZmPRX} genes respond transcriptionally to hydrogen peroxide, salicylic acid, salt, and PEG-induced drought stress \citep{Wang2015Peroxidase}. Taken together, the recurrence of peroxidase-related candidates across climate axes and phenotypes is consistent with repeated involvement of extracellular redox and cell-wall remodeling processes under environmental stress, although these results do not identify a single conserved causal peroxidase gene.
 
+A second recurring theme involved stress perception and signal transduction. Several candidates were annotated as protein kinases, receptor-like kinases, calcium-dependent protein kinases, MAP kinases, phosphatases, or related signaling proteins, including the CBL-interacting protein kinase-like gene \textit{Zm00001eb041140}, the lectin-like receptor kinase \textit{Zm00001eb058940}, and calcium-dependent kinase-related candidates \textit{\seqsplit{Zm00001eb429270}}, \textit{\seqsplit{Zm00001eb117300}}, \textit{\seqsplit{Zm00001eb107190}}, \textit{\seqsplit{Zm00001eb093410}}, \textit{\seqsplit{Zm00001eb369270}}, \textit{\seqsplit{Zm00001eb408020}}, \textit{\seqsplit{Zm00001eb072810}}, and \textit{\seqsplit{Zm00001eb061860}}. Cross-trait mapping revealed heterogeneity within this broader signaling set: the CDPK-like candidates consistently mapped to PC1, PC2, PC3, pH, soilN, and AM roots colonized, whereas \textit{\seqsplit{Zm00001eb041140}} mapped only to PC1 and AM fungal relative abundance and \textit{\seqsplit{Zm00001eb058940}} only to PC1. These genes were associated with protein kinase and serine/threonine kinase activity, calcium and calmodulin binding, ATP binding, intracellular signal transduction, plasma membrane localization, and receptor-mediated signaling. These annotations are consistent with known roles of calcium signaling, membrane receptors, phosphorylation cascades, ABA-related pathways, and ROS-linked signaling in plant abiotic-stress responses. Maize SnRK, LecRLK, and CDPK studies support the plausibility of these broader themes: SnRK genes respond to drought, salinity, temperature, and UV stress \citep{Feng2022SnRK}; LecRLKs mediate membrane-associated stress perception and respond to salt and drought \citep{Yang2025LecRLK}; and CDPKs integrate calcium signaling with drought, heat, salinity, ABA, ROS, ion transport, heat-shock proteins, transcription factors, and MAPK pathways \citep{Du2023CDPK}. Together, these loci should be viewed as candidate signaling modules consistent with conserved physiological themes, rather than as established conserved adaptive mechanisms.
 
 %=======================================================================
 %=======================================================================
 %=======================================================================
 
-\subsection{Recurrent NRT1/PTR-family candidates suggest conserved roles for nitrate sensing, peptide transport, and vascular nutrient partitioning}
 
-Several recurrent NRT1/PTR-family candidates were associated with environmental phenotypes, suggesting that adaptation to climate, aridity, soil chemistry, and belowground interactions involves coordinated transport mechanisms rather than a single nitrate-uptake pathway. The strongest and most frequent signal was the NRT1.1-like orthogroup containing \textit{AT1G12110} in \textit{Arabidopsis} and \textit{Zm00001eb126980} in maize. This orthogroup occurred in four species (\textit{Arabidopsis}, barley, maize, and sorghum) and was associated with four environmental phenotypes: WorldClim PC1, PC2, PC3, and aridity index. Its recurrence across climate axes is consistent with the known biology of \textit{Arabidopsis} NRT1.1 (CHL1), which acts as a nitrate transceptor that integrates nitrate uptake, signaling, lateral-root plasticity, auxin transport, and rhizosphere stress responses \citep{Wang2009NRT11,Glass2013NRT11,Krouk2010NRT11Auxin}. In \textit{Arabidopsis}, NRT1.1 is required for full induction of nitrate-responsive genes such as \textit{NIA1}, \textit{NiR}, and \textit{NRT2.1}, supporting its role as a nitrate sensor \citep{Wang2009NRT11}. It promotes root colonization of nitrate-rich patches via an ANR1-linked nitrate-signaling pathway, driving local root proliferation where nitrate is abundant \citep{Remans2006NRT11Patch}. NRT1.1 also links nitrate availability to auxin transport, because nitrate inhibits NRT1.1-dependent auxin movement, thereby coupling external nitrate status to lateral-root auxin accumulation and root-system architecture \citep{Krouk2010NRT11Auxin}. In addition, NRT1.1 connects nitrate transport to chemically stressful soils: its mediated nitrate uptake can alleviate proton toxicity by alkalifying the rhizosphere, \textit{nrt1.1} mutation alters ammonium/low-pH tolerance, and NRT1.1-dependent uptake can limit rhizosphere acidification under lead stress \citep{Fang2016NRT11Proton,Hachiya2011NRT11LowpH,Zhu2019NRT11Lead}. Together, the \textit{AT1G12110}--\textit{Zm00001eb126980} signal supports a model in which climate and aridity adaptation involves conserved nitrate-transceptor pathways coordinating nutrient sensing, root foraging, auxin-mediated development, and rhizosphere chemical buffering.
 
-A second recurrent NRT1/PTR-family signal was the PTR-family 5.2 candidate \textit{Zm00001eb046210}. This locus was shared across \textit{Arabidopsis}, barley, maize, and sorghum and associated with three phenotypes: AM fungal relative abundance colonization, AM roots colonized, and aridity index. Unlike the NRT1.1-like signal, best explained by nitrate-transceptor biology, the PTR-family 5.2 signal more directly implicates peptide transport, stress responses, and defense-related nitrogen transport. Evidence from \textit{Arabidopsis} supports this view. \textit{AtPTR3}, a stress-induced PTR-type peptide transporter, was identified as a wound-induced, proton-dependent oligopeptide transporter with 12 transmembrane domains, typical of major facilitator superfamily/PTR proteins \citep{Karim2005AtPTR3}. \textit{AtPTR3} expression is induced by amino acids and strongly by salt stress, and \textit{atptr3} knockouts show reduced germination on salt-containing medium, indicating a role in early stress tolerance \citep{Karim2005AtPTR3}. A later study showed that \textit{AtPTR3} transports di- and tripeptides in yeast and is regulated by salicylic acid, methyl jasmonate, abscisic acid, and wounding; \textit{atptr3} mutants were more susceptible to virulent bacteria and accumulated more reactive oxygen species under oxidative stress \citep{Karim2007AtPTR3}. These findings support a broad role for PTR3-like peptide transporters in stress and defense physiology. In this context, the recurrence of \textit{Zm00001eb046210} across aridity and AM colonization traits is plausible: aridity imposes osmotic stress, alters root C and N allocation, and reshapes belowground interactions, while AM colonization depends on nutrient exchange, membrane transport, and stress-responsive root remodeling. This PTR-family candidate may therefore reflect peptide or nitrogen transport involved in root stress adaptation, ROS regulation, defense, and symbiotic-interface function.
+% \subsection{Soil pH-associated candidates implicate vesicle trafficking, proton transport, and cell-surface stress remodeling.}
 
-A third recurrent signal was the NRT1.9-like candidate, \textit{AT1G18880} in \textit{Arabidopsis} and \textit{Zm00001eb053220} in maize, suggesting a role in long-distance nitrate redistribution rather than direct sensing or peptide transport. In \textit{Arabidopsis}, \textit{NRT1.9} encodes a low-affinity NRT1/PTR nitrate transporter: \textit{Xenopus} oocyte assays showed nitrate but no dipeptide transport, and reporter/GFP analyses placed it mainly in root phloem companion cells, consistent with vascular rather than soil nitrate uptake \citep{Wang2011NRT19}. In \textit{nrt1.9} mutants, nitrate content in root phloem exudates and downward nitrate transport decreased, indicating that NRT1.9 loads nitrate into the root phloem, while loss of \textit{NRT1.9} increased root-to-shoot nitrate transport and shoot nitrate accumulation under high nitrate, implying that phloem loading shapes the balance between downward root redistribution and upward xylem flow \citep{Wang2011NRT19}. Thus, the \textit{AT1G18880}--\textit{Zm00001eb053220} signal may reflect adaptive nitrate partitioning, tuning root–shoot fluxes to external heterogeneity. Overall, the NRT1.1-, PTR3-, and NRT1.9-like candidates show that recurrent NRT1/PTR-family signals are not redundant but reflect complementary functions—nitrate sensing and root foraging, peptide/stress-associated transport, and vascular nitrate partitioning—supporting a central role for nutrient sensing, root–shoot nitrogen economy, rhizosphere chemical buffering, and stress-responsive transport in adaptation to heterogeneous climatic and edaphic conditions.
+% For the soil pH GWAS, a notable candidate was \textit{Zm00001eb401400}, functionally similar to rice stress-response genes involved in ion homeostasis and cell-surface remodeling. A rice homolog, \textit{OsRab11}, mediates vesicle trafficking of the vacuolar H\textsuperscript{+}-ATPase subunit \textit{OsVHA-a1} under high salinity. In rice, \textit{OsVHA-a1}, \textit{OsGAP1}, and \textit{OsRab11} are transcriptionally induced by high salinity, and \textit{OsRab11} is required for trafficking \textit{OsVHA-a1} from the trans-Golgi network to the prevacuolar compartment and/or vacuole \citep{Son2013OsRab11}. This is relevant to soil pH adaptation because vacuolar H\textsuperscript{+}-ATPases generate proton gradients that drive vesicle acidification, vacuolar ion sequestration, cytosolic pH balance, and membrane trafficking under ionic stress (ref). Thus, \textit{Zm00001eb401400} suggests that pH-associated adaptation may involve endomembrane trafficking and proton-coupled ion homeostasis, not only root-surface nutrient uptake.
+
+% A second candidate gene is the rice \textit{OsChI1}, which encodes a putative laccase precursor induced by chilling, dehydration, and high salinity. \textit{OsChI1} localizes to the plasma membrane in rice protoplasts, and its overexpression in Arabidopsis increases drought and salinity tolerance \citep{Cho2014OsChI1}. Laccase-like multicopper oxidases are associated with lignin polymerization, phenolic oxidation, cell-wall modification, and oxidative-stress responses, all of which can affect root interactions with chemically stressful soils. In the context of soil pH, these functions are plausible because acidic or alkaline conditions alter nutrient availability, ion toxicity, oxidative pressure, and cell-wall properties (ref). Thus, \textit{Zm00001eb401400} may be a pH-associated candidate linking two stress-response processes including vacuolar trafficking/proton transport via an \textit{OsRab11}-like mechanism and plasma membrane or cell-wall stress remodeling via an \textit{OsChI1}-like laccase pathway. Together, these homology-based links suggest that soil pH adaptation partly reflects conserved mechanisms that maintain ion balance, vesicle trafficking, and root cell-wall integrity under chemically stressful soils.
+
+
+
+
+    
+\subsection{Soil pH-associated candidates implicate vesicle trafficking, proton transport, and cell-surface stress remodeling}
+
+For the soil pH GWAS, one notable candidate was \textit{Zm00001eb401400}, which is functionally similar to rice stress-response genes involved in ion homeostasis and cell-surface remodeling. In rice, the homologous \textit{OsRab11} pathway contributes to vesicle trafficking of the vacuolar H\textsuperscript{+}-ATPase subunit \textit{OsVHA-a1} under high salinity. \textit{OsVHA-a1}, \textit{OsGAP1}, and \textit{OsRab11} are transcriptionally induced by salinity, and \textit{OsRab11} is required for trafficking \textit{OsVHA-a1} from the trans-Golgi network to the prevacuolar compartment and/or vacuole \citep{Son2013OsRab11}. These functions are relevant to soil pH-associated stress because vacuolar H\textsuperscript{+}-ATPases contribute to proton gradients that influence vesicle acidification, vacuolar ion sequestration, cytosolic pH balance, and membrane trafficking under ionic stress (ref). Thus, \textit{Zm00001eb401400} is consistent with the possibility that pH-associated candidate loci include components of endomembrane trafficking and proton-coupled ion homeostasis, rather than only root-surface nutrient uptake.
+
+A second recurring pH-associated theme involved laccase-like cell-surface and cell-wall remodeling functions. The rice gene \textit{OsChI1}, which encodes a putative laccase precursor, is induced by chilling, dehydration, and high salinity, localizes to the plasma membrane in rice protoplasts, and increases drought and salinity tolerance when overexpressed in Arabidopsis \citep{Cho2014OsChI1}. More broadly, laccase-like multicopper oxidases are associated with lignin polymerization, phenolic oxidation, cell-wall modification, and oxidative-stress responses, all of which could plausibly influence root interactions with chemically stressful soils. In the context of soil pH, these functions are relevant because acidic or alkaline conditions alter nutrient availability, ion toxicity, oxidative pressure, and cell-wall properties (ref). Taken together, these homology-based links are consistent with soil pH-associated candidate loci contributing to processes such as vesicle trafficking, proton transport, and cell-surface or cell-wall stress remodeling. However, these results should be interpreted as hypothesis-generating evidence for conserved physiological themes rather than as proof of conserved causal mechanisms.
+
+%=======================================================================
+%=======================================================================
+%=======================================================================
+
+% \subsection{Recurrent NRT1/PTR-family candidates suggest conserved roles for nitrate sensing, peptide transport, and vascular nutrient partitioning}
+
+% Several recurrent NRT1/PTR-family candidates were associated with environmental phenotypes, suggesting that adaptation to climate, aridity, soil chemistry, and below-ground interactions involves coordinated transport mechanisms rather than a single nitrate-uptake pathway. The strongest and most frequent signal was the NRT1.1-like orthogroup containing \textit{AT1G12110} in \textit{Arabidopsis} and \textit{Zm00001eb126980} in maize. This orthogroup occurred in four species (\textit{Arabidopsis}, barley, maize, and sorghum) and was associated with four environmental phenotypes: WorldClim PC1, PC2, PC3, and aridity index. Its recurrence across climate axes is consistent with the known biology of \textit{Arabidopsis} NRT1.1 (CHL1), which acts as a nitrate transporter that integrates nitrate uptake, signaling, lateral-root plasticity, auxin transport, and rhizosphere stress responses \citep{Wang2009NRT11,Glass2013NRT11,Krouk2010NRT11Auxin}. In \textit{Arabidopsis}, NRT1.1 is required for the full induction of nitrate-responsive genes such as \textit{NIA1}, \textit{NiR}, and \textit{NRT2.1}, supporting its role as a nitrate sensor \citep{Wang2009NRT11}. It promotes root colonization of nitrate-rich patches via an ANR1-linked nitrate-signaling pathway, driving local root proliferation where nitrate is abundant \citep{Remans2006NRT11Patch}. NRT1.1 also links nitrate availability to auxin transport, because nitrate inhibits NRT1.1-dependent auxin movement, thereby coupling external nitrate status to lateral-root auxin accumulation and root-system architecture \citep{Krouk2010NRT11Auxin}. In addition, NRT1.1 connects nitrate transport to chemically stressful soils. Its mediated nitrate uptake can alleviate proton toxicity by alkalifying the rhizosphere, \textit{nrt1.1} mutation alters ammonium/low-pH tolerance, and NRT1.1-dependent uptake can limit rhizosphere acidification under lead stress \citep{Fang2016NRT11Proton,Hachiya2011NRT11LowpH,Zhu2019NRT11Lead}. Together, the \textit{NRT1.1} signal supports a model in which climate and aridity adaptation involves conserved nitrate-transceptor pathways coordinating nutrient sensing, root foraging, auxin-mediated development, and rhizosphere chemical buffering.
+
+% A second recurrent NRT1/PTR-family signal was the PTR-family 5.2 candidate \textit{Zm00001eb046210}. This locus was shared across \textit{Arabidopsis}, barley, maize, and sorghum and associated with three phenotypes: AM fungal relative abundance colonization, AM roots colonized, and aridity index. Unlike the NRT1.1-like signal, the PTR-family 5.2 signal more directly implicates peptide transport, stress responses, and defense-related nitrogen transport. Evidence from \textit{Arabidopsis} supports this view. \textit{AtPTR3}, a stress-induced PTR-type peptide transporter, was identified as a wound-induced, proton-dependent oligopeptide transporter with 12 transmembrane domains, typical of major facilitator superfamily/PTR proteins \citep{Karim2005AtPTR3}. \textit{AtPTR3} expression is induced by amino acids and strongly by salt stress, and \textit{atptr3} knockouts show reduced germination on salt-containing medium, indicating a role in early stress tolerance \citep{Karim2005AtPTR3}. Another study showed that \textit{AtPTR3} transports di- and tripeptides in yeast and is regulated by salicylic acid, methyl jasmonate, abscisic acid, and wounding. The \textit{atptr3} mutants were more susceptible to virulent bacteria and accumulated more reactive oxygen species under oxidative stress \citep{Karim2007AtPTR3}. These findings support a broad role for PTR3-like peptide transporters in stress and defense physiology. In this context, the recurrence of \textit{Zm00001eb046210} across aridity and AM colonization traits is explainable because aridity imposes osmotic stress, alters root C and N allocation, and reshapes below-ground interactions, while AM colonization depends on nutrient exchange, membrane transport, and stress-responsive root remodeling. This PTR-family candidate may therefore reflect peptide or nitrogen transport involved in root stress adaptation, ROS regulation, defense, and symbiotic-interface function.
+
+% A third recurrent signal was the NRT1.9-like candidate, \textit{AT1G18880} in \textit{Arabidopsis} and \textit{Zm00001eb053220} in maize, suggesting a role in long-distance nitrate redistribution rather than direct sensing or peptide transport. In \textit{Arabidopsis}, \textit{NRT1.9} encodes a low-affinity NRT1/PTR nitrate transporter. \textit{Xenopus} oocyte assays showed nitrate but no dipeptide transport, and reporter/GFP analyses placed it mainly in root phloem companion cells, consistent with vascular rather than soil nitrate uptake \citep{Wang2011NRT19}. In \textit{nrt1.9} mutants, nitrate content in root phloem exudates and downward nitrate transport decreased, indicating that NRT1.9 loads nitrate into the root phloem, while loss of \textit{NRT1.9} increased root-to-shoot nitrate transport and shoot nitrate accumulation under high nitrate, implying that phloem loading shapes the balance between downward root redistribution and upward xylem flow \citep{Wang2011NRT19}. Thus, this signal may reflect adaptive nitrate partitioning, tuning root–shoot fluxes to external heterogeneity. 
+
+% Overall, the NRT1.1-, PTR3-, and NRT1.9-like candidates show that recurrent NRT1/PTR-family signals are not redundant but reflect complementary functions—nitrate sensing and root foraging, peptide/stress-associated transport, and vascular nitrate partitioning—supporting a central role for nutrient sensing, root–shoot nitrogen economy, rhizosphere chemical buffering, and stress-responsive transport in adaptation to heterogeneous climatic and edaphic conditions.
+
+\subsection{Recurrent NRT1/PTR-family candidates are consistent with roles in nitrate sensing, peptide transport, and vascular nutrient partitioning}
+
+Several recurrent NRT1/PTR-family candidates were associated with environmental phenotypes, suggesting that adaptation to climate, aridity, soil chemistry, and below-ground interactions may involve related transport functions rather than a single nitrate-uptake pathway. The strongest and most frequent signal was the NRT1.1-like orthogroup containing \textit{AT1G12110} in \textit{Arabidopsis} and \textit{Zm00001eb126980} in maize. This orthogroup occurred in four species (\textit{Arabidopsis}, barley, maize, and sorghum) and was associated with four environmental phenotypes: WorldClim PC1, PC2, PC3, and aridity index. Its recurrence across climate axes is consistent with the known biology of \textit{Arabidopsis} NRT1.1 (CHL1), which acts as a nitrate transporter and sensor integrating nitrate uptake, signaling, lateral-root plasticity, auxin transport, and rhizosphere responses \citep{Wang2009NRT11,Glass2013NRT11,Krouk2010NRT11Auxin}. In \textit{Arabidopsis}, NRT1.1 is required for the full induction of nitrate-responsive genes such as \textit{NIA1}, \textit{NiR}, and \textit{NRT2.1}, supporting its role as a nitrate sensor \citep{Wang2009NRT11}. It promotes root colonization of nitrate-rich patches via an ANR1-linked nitrate-signaling pathway, driving local root proliferation where nitrate is abundant \citep{Remans2006NRT11Patch}. NRT1.1 also links nitrate availability to auxin transport, because nitrate inhibits NRT1.1-dependent auxin movement and thereby couples external nitrate status to lateral-root auxin accumulation and root-system architecture \citep{Krouk2010NRT11Auxin}. In addition, NRT1.1-dependent nitrate uptake can modulate rhizosphere pH and contribute to responses under chemically stressful soils \citep{Fang2016NRT11Proton,Hachiya2011NRT11LowpH,Zhu2019NRT11Lead}. Taken together, the recurrence of this NRT1.1-like signal is consistent with repeated involvement of nitrate-transceptor-related processes linking nutrient sensing, root foraging, auxin-mediated development, and rhizosphere chemical buffering.
+
+A second recurrent NRT1/PTR-family signal was the PTR-family 5.2 candidate \textit{Zm00001eb046210}. This locus was shared across \textit{Arabidopsis}, barley, maize, and sorghum and associated with three phenotypes: AM fungal relative abundance colonization, AM roots colonized, and aridity index. Relative to the NRT1.1-like signal, this candidate is more consistent with peptide transport and stress-associated nitrogen transport functions. Evidence from \textit{Arabidopsis} supports this broader interpretation. \textit{AtPTR3}, a stress-induced PTR-type peptide transporter, was identified as a wound-induced, proton-dependent oligopeptide transporter with 12 transmembrane domains, typical of major facilitator superfamily/PTR proteins \citep{Karim2005AtPTR3}. \textit{AtPTR3} expression is induced by amino acids and strongly by salt stress, and \textit{atptr3} knockouts show reduced germination on salt-containing medium, consistent with a role in early stress tolerance \citep{Karim2005AtPTR3}. Another study showed that \textit{AtPTR3} transports di- and tripeptides in yeast and is regulated by salicylic acid, methyl jasmonate, abscisic acid, and wounding; \textit{atptr3} mutants were also more susceptible to virulent bacteria and accumulated more reactive oxygen species under oxidative stress \citep{Karim2007AtPTR3}. These findings support a broad role for PTR3-like peptide transporters in stress and defense physiology. In this context, recurrence of \textit{Zm00001eb046210} across aridity and AM colonization traits is consistent with peptide or nitrogen transport functions related to root stress responses, redox balance, defense, and symbiotic-interface physiology.
+
+A third recurrent signal was the NRT1.9-like candidate, \textit{AT1G18880} in \textit{Arabidopsis} and \textit{Zm00001eb053220} in maize, which is more consistent with long-distance nitrate redistribution than with direct sensing or peptide transport. In \textit{Arabidopsis}, \textit{NRT1.9} encodes a low-affinity NRT1/PTR nitrate transporter. \textit{Xenopus} oocyte assays showed nitrate but no dipeptide transport, and reporter/GFP analyses placed it mainly in root phloem companion cells, consistent with vascular rather than soil nitrate uptake \citep{Wang2011NRT19}. In \textit{nrt1.9} mutants, nitrate content in root phloem exudates and downward nitrate transport decreased, indicating that NRT1.9 loads nitrate into the root phloem, while loss of \textit{NRT1.9} increased root-to-shoot nitrate transport and shoot nitrate accumulation under high nitrate \citep{Wang2011NRT19}. Thus, recurrence of this signal is consistent with candidate roles in adaptive nitrate partitioning and root--shoot nutrient redistribution under environmentally heterogeneous conditions.
+
+Overall, the NRT1.1-, PTR3-, and NRT1.9-like candidates suggest that recurrent NRT1/PTR-family signals may reflect complementary transport-related themes, including nitrate sensing and root foraging, peptide/stress-associated transport, and vascular nitrate partitioning. These associations are best interpreted as hypothesis-generating evidence for conserved physiological themes in nutrient sensing and transport, rather than as proof of conserved causal adaptive mechanisms.
 
 %=======================================================================
 %=======================================================================
@@ -824,6 +933,9 @@ For each GWAS, we first evaluated species-specific association signals using the
 
 Candidate SNPs were assigned to nearby genes based on species-specific genome annotations. Gene models were obtained from corresponding genome annotation files (e.g. GFF3-format annotations), and SNPs were mapped to genes using species-specific genomic coordinates. For Arabidopsis and rice, SNP-to-gene assignment was performed using a $\pm$10 kb window around each candidate SNP, whereas for maize, sorghum, and barley, a $\pm$25 kb window was used. For downstream orthology analysis, genes linked to the top 0.5\% SNPs were subsequently grouped using orthogroup relationships to identify shared candidate-gene sets across species.
 
+
+
+To evaluate whether cross-species orthogroup recurrence exceeded expectations from candidate-set size and gene-family structure, we performed matched candidate-universe permutations for each environmental phenotype. For each trait, the observed candidate set for each species was defined as the orthogroup-mapped genes recovered from the top 0.5\% SNP threshold under the mixed-window annotation scheme used in the main analysis. We then constructed a species-specific background consisting of the study-wide orthogroup-mapped gene universe recovered across all analyzed traits. For each species, random gene sets were sampled without replacement to match the observed number of candidate genes for that trait. To preserve broad differences in recurrence propensity, sampling was matched by (i) the number of traits in which a gene appeared in the orthogroup-mapped background and (ii) the global multiplicity of orthogroup-row assignments for that gene across the study-wide background. For each of 10{,}000 permutations, we recalculated the number of shared orthogroup rows observed across all five species and across at least four species using the same final deduplicated supplementary orthogroup tables as in the manuscript. Empirical $P$ values were calculated as $P = (1 + \sum I[X_{\mathrm{null}} \geq X_{\mathrm{obs}}])/(B+1)$, where $B=10{,}000$.
 
 
 
@@ -1134,12 +1246,96 @@ https://doi.org/10.1038/s41597-022-01913-2
 
 \begin{appendices}
 
-\section{Nothing}\label{appendix}
+\section{Supplementary Figures}\label{appendix}
 
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Supplementary/SuppFig1_WorldClim_PCA.png}
+    \caption{Species-wise summaries of WorldClim principal component structure. (A) Shared scree profile across Arabidopsis, barley, rice, maize, and sorghum, showing the mean variance explained by each principal component across species. PC1, PC2, and PC3 captured the largest proportion of climatic variation, supporting their use as broad composite climate phenotypes in downstream analyses. Error bars indicate standard error across species. (B) Heatmaps of absolute loading magnitudes for the 19 WorldClim bioclimatic variables on PC1, PC2, and PC3 in each species. Darker shading indicates stronger contribution of a given BIO variable to the corresponding principal component. The heatmaps show that although the first three PCs explain similar proportions of total variance across species, the variables contributing most strongly to each axis differ among taxa, indicating that similarly numbered PCs do not necessarily represent identical climatic gradients across species.}
+    \label{fig:suppfig1_worldclim_pca}
+\end{figure*}
+
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Supplementary/SuppFig2_WorldClim_PCA_species_3D.png}
+    \caption{Species-wise WorldClim PCA loading vectors for the first three principal components. Each panel shows the loading vectors of the top WorldClim bioclimatic variables in the three-dimensional PC1--PC2--PC3 space for Arabidopsis, barley, rice, maize, and sorghum. Arrows indicate the direction and magnitude of variable contributions to the first three climate principal components within each species. The differing orientations and clustering of vectors among species illustrate that, although PC1--PC3 capture the major climatic structure in all taxa, the combinations of temperature, precipitation, and seasonality variables contributing to these axes differ across species. This supports the interpretation that similarly numbered PCs are not directly equivalent across taxa, but instead represent species-specific climatic gradients.}
+    \label{fig:suppfig2_worldclim_pca_3d}
+\end{figure*}
+
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Supplementary/SuppFig3_QQ_all_traits_species_overlay.png}
+    \caption{QQ plots of GWAS test statistics across environmental traits and species. For each phenotype, observed versus expected $-\log_{10}(P)$ values are shown for Arabidopsis, barley, rice, maize, and sorghum, with the dashed line indicating the null expectation. Deviations above the null line indicate enrichment of association signal. The extent of deviation varied substantially across traits and species, consistent with heterogeneous GWAS signal strength among environmental phenotypes and taxa.}
+    \label{fig:suppfig3_qq_all_traits}
+\end{figure*}
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Supplementary/SuppFig_null_permutation_orthogroup_recurrence.png}
+    \caption{Observed shared orthogroup recurrence compared with a matched candidate-universe permutation null across environmental phenotypes. For each trait, null distributions were generated from 10{,}000 permutations in which random gene sets of the same size as the observed orthogroup-mapped candidate sets were sampled within species from the study-wide orthogroup-mapped gene universe. Sampling preserved broad recurrence propensity by matching genes according to the number of traits in which they appeared and the multiplicity of orthogroup-row assignments across the study-wide background. Red diamonds indicate the observed number of shared orthogroup rows, black points indicate null means, and black error bars indicate the central 95\% of the null distribution. Violins show the full permutation distributions. (A) Shared orthogroup rows present across all five species. (B) Shared orthogroup rows present across at least four species. AM rel = AM fungal relative abundance colonization; AM roots = AM fungal roots colonized.}
+    \label{fig:suppfig_null_permutation_orthogroup_recurrence}
+\end{figure*}
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/FigX/FigX_cross_species_gwas_summary.png}
+    \caption{Cross-species environmental GWAS summary across traits. (A) Heatmap of Bonferroni-significant SNP counts for each species and phenotype, with colors scaled as $\log_{10}(\mathrm{count}+1)$. (B) Heatmap of the numbers of mapped candidate genes recovered from the top 0.5\% SNP threshold for each species and phenotype, again shown on a $\log_{10}(\mathrm{count}+1)$ scale. (C) Numbers of shared orthogroup rows recovered across all five species for each phenotype. (D) Numbers of shared orthogroup rows recovered across at least four species for each phenotype. Together, these panels summarize heterogeneity in species-specific GWAS signal strength and show that strict all-five-species convergence is rare, whereas broader four-species recurrence is more common across environmental traits. AM rel = AM fungal relative abundance colonization; AM roots = AM fungal roots colonized.}
+    \label{fig:figX_cross_species_gwas_summary}
+\end{figure*}
 
 
 \end{appendices}
 
+\[
+\hat{y}_{ij} = \mu + E_j + A_i + GE_{ij}
+\]
 
+\[
+GE_{ij} = \left(\widehat{\mathbf{g}}_{i}^{PC}\mathbf{R}^{-1}\right)_j
+\]
+
+\[
+\hat{y}_{ij} = \mu + E_j + A_i + \left(\widehat{\mathbf{g}}_{i}^{PC}\mathbf{R}^{-1}\right)_j
+\]
+
+
+\[
+\hat{y}_{ij}
+\]
+is the predicted phenotype for genotype \(i\) in environment \(j\);
+
+\[
+\mu
+\]
+is the overall mean phenotype;
+
+\[
+E_j
+\]
+is the fixed effect of environment \(j\);
+
+\[
+A_i
+\]
+is the additive genomic effect for genotype \(i\);
+
+\[
+\widehat{\mathbf{g}}_{i}^{PC}
+\]
+is the vector of predicted genomic breeding values for the GGE principal component axes for genotype \(i\);
+
+\[
+\mathbf{R}^{-1}
+\]
+is the inverse rotation matrix used to transform PC-space predictions back to the original environment space;
+
+and
+
+\[
+\left(\widehat{\mathbf{g}}_{i}^{PC} \mathbf{R}^{-1}\right)_j
+\]
+is the predicted genotype-by-environment contribution for genotype \(i\) in environment \(j\).
 
 \end{document}

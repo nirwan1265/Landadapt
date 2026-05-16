@@ -4,214 +4,70 @@
 
 Soil nitrogen (0--5 cm) represents near-surface nitrogen availability in the root-active topsoil layer, integrating local nutrient supply conditions that can drive adaptive differentiation among accessions.
 
-We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 64, rice 202, sorghum 2, barley 4, maize 1). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using \pm10 kb annotation for Arabidopsis and rice and \pm25 kb annotation for maize, sorghum, and barley. This yielded 5,034 Arabidopsis genes, 4,851 rice genes, 4,423 maize genes, 1,636 barley genes, and 990 sorghum genes.
+We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 64, rice 202, sorghum 2, barley 4, maize 1). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,034 Arabidopsis genes, 4,851 rice genes, 4,423 maize genes, 1,636 barley genes, and 990 sorghum genes.
 
 Orthogroup integration identified 24,212 total orthogroups, with 4 orthogroups represented in all five species. Table~\ref{tab:shared_function_candidates_soilN_mixed10kb} summarizes these shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
 
-\begin{table*}[t]
-\caption{Shared orthogroups across all five species from the top 0.5\% of SNPs for soil nitrogen (0--5 cm) (Arabidopsis/Rice \pm10 kb; Maize/Sorghum/Barley \pm25 kb).\label{tab:shared_function_candidates_soilN_mixed10kb}}
-\scriptsize
-\tabcolsep=3pt
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllllllll@{}}
-\toprule
-Orthogroup & Maize genes & $-\log_{10}(P)$ & Sorghum genes & $-\log_{10}(P)$ & Rice genes & $-\log_{10}(P)$ & Barley genes & $-\log_{10}(P)$ & Arabidopsis genes & $-\log_{10}(P)$ \\
-\midrule
-4725244at2759 & Zm00001eb014110 & 3.20 & SORBI\_3006G217300 & 5.01 & LOC\_Os09g03230 & 5.18 & HORVU.MOREX.r3.2HG0195580 & 5.69 & AT1G12780 & 2.51 \\
-643341at2759 & Zm00001eb032940;Zm00001eb059050;Zm00001eb066630;Zm00001eb222050;Zm00001eb303060;Zm00001eb362650;Zm00001eb378340;Zm00001eb402940;Zm00001eb403550 & 3.11;2.39;2.73;3.75;3.42;3.07;3.17;3.08;2.86 & SORBI\_3006G217900 & 2.87 & LOC\_Os02g01540 & 3.54 & HORVU.MOREX.r3.1HG0041440 & 3.95 & AT1G08590;AT1G09970;AT2G26330 & 2.49;2.52;3.28 \\
-643341at33090 & Zm00001eb032940;Zm00001eb059050;Zm00001eb066630;Zm00001eb222050;Zm00001eb303060;Zm00001eb378340;Zm00001eb402940;Zm00001eb403550 & 3.11;2.39;2.73;3.75;3.42;3.17;3.08;2.86 & SORBI\_3006G217900 & 2.87 & LOC\_Os02g01540 & 3.54 & HORVU.MOREX.r3.1HG0041440 & 3.95 & AT1G08590;AT1G09970;AT2G26330 & 2.49;2.52;3.28 \\
-756860at33090 & Zm00001eb014110 & 3.20 & SORBI\_3006G217300 & 5.01 & LOC\_Os09g03230 & 5.18 & HORVU.MOREX.r3.2HG0195580 & 5.69 & AT1G12780 & 2.51 \\
-\botrule
-\end{tabular*}
-\begin{tablenotes}%
-\item Note: All genes detected per species within each orthogroup are shown (semicolon-separated), alongside semicolon-separated $-\log_{10}(P)$ values in matching order.
-\end{tablenotes}
-\end{table*}
+
 
 \subsection{Cross-species genome-wide associations with WorldClim PC1 identify shared orthologous genes across all species}
 
 WorldClim PC1 is the first principal climate axis and captures the dominant broad-scale climatic gradient across sampling locations (typically reflecting combined temperature--precipitation structure).
 
-We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 38, rice 602, sorghum 6, barley 8, maize 1). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using \pm10 kb annotation for Arabidopsis and rice and \pm25 kb annotation for maize, sorghum, and barley. This yielded 5,699 Arabidopsis genes, 8,459 rice genes, 3,852 maize genes, 1,270 barley genes, and 1,283 sorghum genes.
+We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 38, rice 602, sorghum 6, barley 8, maize 1). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,699 Arabidopsis genes, 8,459 rice genes, 3,852 maize genes, 1,270 barley genes, and 1,283 sorghum genes.
 
 Among these PC1 threshold genes, 5,946 genes mapped to orthogroups (Arabidopsis 1,784; rice 193; maize 2,403; barley 742; sorghum 824). Table~\ref{tab:shared_function_candidates_pc1_worldclim_mixed10kb} summarizes shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
 
-\begin{table*}[t]
-\caption{Shared orthogroups across all five species from the top 0.5\% of SNPs for WorldClim PC1 (Arabidopsis/Rice \pm10 kb; Maize/Sorghum/Barley \pm25 kb).\label{tab:shared_function_candidates_pc1_worldclim_mixed10kb}}
-\scriptsize
-\tabcolsep=3pt
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllllllll@{}}
-\toprule
-Orthogroup & Maize genes & $-\log_{10}(P)$ & Sorghum genes & $-\log_{10}(P)$ & Rice genes & $-\log_{10}(P)$ & Barley genes & $-\log_{10}(P)$ & Arabidopsis genes & $-\log_{10}(P)$ \\
-\midrule
-5017799at2759 & Zm00001eb192230;Zm00001eb204210 & 2.69;2.65 & SORBI\_3005G087800;SORBI\_3006G209400 & 2.68;4.01 & LOC\_Os04g04520 & 3.67 & HORVU.MOREX.r3.2HG0202320 & 2.98 & AT1G34750;AT2G30020 & 2.60;3.00 \\
-788776at33090 & Zm00001eb204210 & 2.65 & SORBI\_3005G087800;SORBI\_3006G209400 & 2.68;4.01 & LOC\_Os04g04520 & 3.67 & HORVU.MOREX.r3.2HG0202320 & 2.98 & AT1G34750;AT2G30020 & 2.60;3.00 \\
-\botrule
-\end{tabular*}
-\begin{tablenotes}%
-\item Note: All genes detected per species within each orthogroup are shown (semicolon-separated), alongside semicolon-separated $-\log_{10}(P)$ values in matching order.
-\end{tablenotes}
-\end{table*}
 
 \subsection{Cross-species genome-wide associations with WorldClim PC2 identify shared orthologous genes across all species}
 
 WorldClim PC2 is the second orthogonal climate axis and represents independent variation not explained by PC1, often related to seasonality or regional hydroclimate contrasts.
 
-We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 13, rice 0, sorghum 0, barley 1, maize 1). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using \pm10 kb annotation for Arabidopsis and rice and \pm25 kb annotation for maize, sorghum, and barley. This yielded 5,108 Arabidopsis genes, 6,859 rice genes, 3,953 maize genes, 1,557 barley genes, and 1,151 sorghum genes.
+We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 13, rice 0, sorghum 0, barley 1, maize 1). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,108 Arabidopsis genes, 6,859 rice genes, 3,953 maize genes, 1,557 barley genes, and 1,151 sorghum genes.
 
 Among these PC2 threshold genes, 5,827 genes mapped to orthogroups (Arabidopsis 1,546; rice 167; maize 2,481; barley 891; sorghum 742). Table~\ref{tab:shared_function_candidates_pc2_worldclim_mixed10kb} summarizes shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
 
-\begin{table*}[t]
-\caption{Shared orthogroups across all five species from the top 0.5\% of SNPs for WorldClim PC2 (Arabidopsis/Rice \pm10 kb; Maize/Sorghum/Barley \pm25 kb).\label{tab:shared_function_candidates_pc2_worldclim_mixed10kb}}
-\scriptsize
-\tabcolsep=3pt
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllllllll@{}}
-\toprule
-Orthogroup & Maize genes & $-\log_{10}(P)$ & Sorghum genes & $-\log_{10}(P)$ & Rice genes & $-\log_{10}(P)$ & Barley genes & $-\log_{10}(P)$ & Arabidopsis genes & $-\log_{10}(P)$ \\
-\midrule
-5017799at2759 & Zm00001eb192230;Zm00001eb258010;Zm00001eb430620 & 2.99;2.85;2.69 & SORBI\_3010G180700 & 2.90 & LOC\_Os04g04520 & 2.94 & HORVU.MOREX.r3.4HG0384700 & 2.88 & AT1G22280;AT1G34750;AT2G30020;AT4G31750 & 3.08;2.74;3.18;2.71 \\
-\botrule
-\end{tabular*}
-\begin{tablenotes}%
-\item Note: All genes detected per species within each orthogroup are shown (semicolon-separated), alongside semicolon-separated $-\log_{10}(P)$ values in matching order.
-\end{tablenotes}
-\end{table*}
 
 \subsection{Cross-species genome-wide associations with WorldClim PC3 identify shared orthologous genes across all species}
 
 WorldClim PC3 is the third climate axis and captures additional, finer-scale climatic structure that is independent of PC1 and PC2.
 
-We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 29, rice 10, sorghum 80, barley 24, maize 0). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using \pm10 kb annotation for Arabidopsis and rice and \pm25 kb annotation for maize, sorghum, and barley. This yielded 5,597 Arabidopsis genes, 8,122 rice genes, 3,961 maize genes, 1,629 barley genes, and 554 sorghum genes.
+We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 29, rice 10, sorghum 80, barley 24, maize 0). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,597 Arabidopsis genes, 8,122 rice genes, 3,961 maize genes, 1,629 barley genes, and 554 sorghum genes.
 
 Among these PC3 threshold genes, 5,736 genes mapped to orthogroups (Arabidopsis 1,719; rice 216; maize 2,517; barley 952; sorghum 332). Table~\ref{tab:shared_function_candidates_pc3_worldclim_mixed10kb} summarizes shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
 
-\begin{table*}[t]
-\caption{Shared orthogroups across all five species from the top 0.5\% of SNPs for WorldClim PC3 (Arabidopsis/Rice \pm10 kb; Maize/Sorghum/Barley \pm25 kb).\label{tab:shared_function_candidates_pc3_worldclim_mixed10kb}}
-\scriptsize
-\tabcolsep=3pt
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllllllll@{}}
-\toprule
-Orthogroup & Maize genes & $-\log_{10}(P)$ & Sorghum genes & $-\log_{10}(P)$ & Rice genes & $-\log_{10}(P)$ & Barley genes & $-\log_{10}(P)$ & Arabidopsis genes & $-\log_{10}(P)$ \\
-\midrule
-4809112at2759 & Zm00001eb202100 & 3.23 & SORBI\_3007G091100 & 7.42 & LOC\_Os12g01510 & 2.70 & HORVU.MOREX.r3.5HG0461970 & 2.76 & AT2G16430 & 2.60 \\
-\botrule
-\end{tabular*}
-\begin{tablenotes}%
-\item Note: All genes detected per species within each orthogroup are shown (semicolon-separated), alongside semicolon-separated $-\log_{10}(P)$ values in matching order.
-\end{tablenotes}
-\end{table*}
 
 \subsection{Cross-species genome-wide associations with soil pH identify shared orthologous genes across all species}
 
 Soil pH quantifies soil acidity/alkalinity and is a major ecological filter affecting nutrient chemistry, ion toxicity, and rhizosphere microbial processes relevant to local adaptation.
 
-We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 6, rice 383, sorghum 3, barley 6, maize 0). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using \pm10 kb annotation for Arabidopsis and rice and \pm25 kb annotation for maize, sorghum, and barley. This yielded 5,102 Arabidopsis genes, 9,635 rice genes, 3,937 maize genes, 1,526 barley genes, and 1,203 sorghum genes.
+We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 6, rice 383, sorghum 3, barley 6, maize 0). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,102 Arabidopsis genes, 9,635 rice genes, 3,937 maize genes, 1,526 barley genes, and 1,203 sorghum genes.
 
 Orthogroup integration identified 24,195 total orthogroups, with 6 orthogroups represented in all five species. Table~\ref{tab:shared_function_candidates_ph_mixed10kb} summarizes these shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
-
-\begin{table*}[t]
-\caption{Shared orthogroups across all five species from the top 0.5\% of SNPs for soil pH (Arabidopsis/Rice \pm10 kb; Maize/Sorghum/Barley \pm25 kb).\label{tab:shared_function_candidates_ph_mixed10kb}}
-\scriptsize
-\tabcolsep=3pt
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllllllll@{}}
-\toprule
-Orthogroup & Maize genes & $-\log_{10}(P)$ & Sorghum genes & $-\log_{10}(P)$ & Rice genes & $-\log_{10}(P)$ & Barley genes & $-\log_{10}(P)$ & Arabidopsis genes & $-\log_{10}(P)$ \\
-\midrule
-158457at33090 & Zm00001eb277700;Zm00001eb401400 & 2.87;2.59 & SORBI\_3009G003800 & 3.28 & LOC\_Os01g07500 & 3.52 & HORVU.MOREX.r3.1HG0002320;HORVU.MOREX.r3.5HG0471130 & 2.60;2.78 & AT1G16920;AT5G47960 & 2.41;2.45 \\
-179088at33090 & Zm00001eb195100;Zm00001eb254960;Zm00001eb368580;Zm00001eb384970 & 3.10;3.19;3.12;2.92 & SORBI\_3003G341500 & 2.54 & LOC\_Os07g01010 & 2.89 & HORVU.MOREX.r3.5HG0465270;HORVU.MOREX.r3.7HG0667290 & 2.82;2.56 & AT2G38080;AT4G39830;AT5G03260;AT5G60020 & 2.50;2.52;2.98;2.86 \\
-220610at3193 & Zm00001eb195100;Zm00001eb254960;Zm00001eb368580 & 3.10;3.19;3.12 & SORBI\_3003G341500 & 2.54 & LOC\_Os07g01010 & 2.89 & HORVU.MOREX.r3.5HG0465270;HORVU.MOREX.r3.7HG0667290 & 2.82;2.56 & AT2G38080;AT5G03260;AT5G60020 & 2.50;2.98;2.86 \\
-35153at2759 & Zm00001eb277700;Zm00001eb401400 & 2.87;2.59 & SORBI\_3009G003800 & 3.28 & LOC\_Os01g07500 & 3.52 & HORVU.MOREX.r3.1HG0002320;HORVU.MOREX.r3.5HG0471130 & 2.60;2.78 & AT1G16920;AT5G47960 & 2.41;2.45 \\
-4495752at2759 & Zm00001eb166100;Zm00001eb195100;Zm00001eb254960;Zm00001eb368580;Zm00001eb384970 & 2.33;3.10;3.19;3.12;2.92 & SORBI\_3003G341500 & 2.54 & LOC\_Os07g01010 & 2.89 & HORVU.MOREX.r3.5HG0465270;HORVU.MOREX.r3.7HG0667290 & 2.82;2.56 & AT2G38080;AT4G39830;AT5G03260;AT5G60020 & 2.50;2.52;2.98;2.86 \\
-640662at2759 & Zm00001eb067730;Zm00001eb068210;Zm00001eb118090;Zm00001eb280790;Zm00001eb291850;Zm00001eb390710 & 3.44;3.57;2.42;2.38;2.47;2.41 & SORBI\_3001G314000;SORBI\_3003G320800 & 2.87;3.31 & LOC\_Os05g01620;LOC\_Os08g03020 & 3.00;3.73 & HORVU.MOREX.r3.1HG0054280;HORVU.MOREX.r3.2HG0112720;HORVU.MOREX.r3.6HG0618250 & 2.87;3.53;3.32 & AT3G17070;AT4G30170;AT5G06720;AT5G15180 & 2.62;2.48;3.56;2.72 \\
-\botrule
-\end{tabular*}
-\begin{tablenotes}%
-\item Note: All genes detected per species within each orthogroup are shown (semicolon-separated), alongside semicolon-separated $-\log_{10}(P)$ values in matching order.
-\end{tablenotes}
-\end{table*}
 
 \subsection{Cross-species genome-wide associations with AM fungal relative abundance colonization identify shared orthologous genes across all species}
 
 AM fungal relative abundance colonization reflects the relative level of arbuscular mycorrhizal fungal colonization signal associated with host roots, representing variation in host--symbiont interaction intensity.
 
-We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 824, rice 268, sorghum 0, barley 9, maize 1). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using \pm10 kb annotation for Arabidopsis and rice and \pm25 kb annotation for maize, sorghum, and barley. This yielded 5,613 Arabidopsis genes, 6,947 rice genes, 3,791 maize genes, 1,246 barley genes, and 994 sorghum genes.
+We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 824, rice 268, sorghum 0, barley 9, maize 1). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,613 Arabidopsis genes, 6,947 rice genes, 3,791 maize genes, 1,246 barley genes, and 994 sorghum genes.
 
 Orthogroup integration identified 23,609 total orthogroups, with 1 orthogroups represented in all five species. Table~\ref{tab:shared_function_candidates_am_rel_abundance_colonization_mixed10kb} summarizes these shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
 
-\begin{table*}[t]
-\caption{Shared orthogroups across all five species from the top 0.5\% of SNPs for AM fungal relative abundance colonization (Arabidopsis/Rice \pm10 kb; Maize/Sorghum/Barley \pm25 kb).\label{tab:shared_function_candidates_am_rel_abundance_colonization_mixed10kb}}
-\scriptsize
-\tabcolsep=3pt
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllllllll@{}}
-\toprule
-Orthogroup & Maize genes & $-\log_{10}(P)$ & Sorghum genes & $-\log_{10}(P)$ & Rice genes & $-\log_{10}(P)$ & Barley genes & $-\log_{10}(P)$ & Arabidopsis genes & $-\log_{10}(P)$ \\
-\midrule
-447116at2759 & Zm00001eb045780;Zm00001eb103730;Zm00001eb289320 & 2.67;2.59;2.97 & SORBI\_3003G053200;SORBI\_3003G373000 & 3.11;3.08 & LOC\_Os08g05490 & 2.84 & HORVU.MOREX.r3.4HG0415430 & 3.97 & AT5G40330 & 3.60 \\
-\botrule
-\end{tabular*}
-\begin{tablenotes}%
-\item Note: All genes detected per species within each orthogroup are shown (semicolon-separated), alongside semicolon-separated $-\log_{10}(P)$ values in matching order.
-\end{tablenotes}
-\end{table*}
 
 \subsection{Cross-species genome-wide associations with AM fungal roots colonized identify shared orthologous genes across all species}
 
 AM fungal roots colonized represents the extent of root tissue colonized by arbuscular mycorrhizal fungi, capturing host differences in realized mycorrhizal association under field environments.
 
-We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 1160, rice 1536, sorghum 4, barley 125, maize 5). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using \pm10 kb annotation for Arabidopsis and rice and \pm25 kb annotation for maize, sorghum, and barley. This yielded 5,617 Arabidopsis genes, 5,975 rice genes, 3,934 maize genes, 1,153 barley genes, and 940 sorghum genes.
+We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 1160, rice 1536, sorghum 4, barley 125, maize 5). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,617 Arabidopsis genes, 5,975 rice genes, 3,934 maize genes, 1,153 barley genes, and 940 sorghum genes.
 
 Orthogroup integration identified 23,771 total orthogroups, with 4 orthogroups represented in all five species. Table~\ref{tab:shared_function_candidates_am_roots_colonized_mixed10kb} summarizes these shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
-
-\begin{table*}[t]
-\caption{Shared orthogroups across all five species from the top 0.5\% of SNPs for AM fungal roots colonized (Arabidopsis/Rice \pm10 kb; Maize/Sorghum/Barley \pm25 kb).\label{tab:shared_function_candidates_am_roots_colonized_mixed10kb}}
-\scriptsize
-\tabcolsep=3pt
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllllllll@{}}
-\toprule
-Orthogroup & Maize genes & $-\log_{10}(P)$ & Sorghum genes & $-\log_{10}(P)$ & Rice genes & $-\log_{10}(P)$ & Barley genes & $-\log_{10}(P)$ & Arabidopsis genes & $-\log_{10}(P)$ \\
-\midrule
-640662at2759 & Zm00001eb001560;Zm00001eb022050;Zm00001eb102470;Zm00001eb194740;Zm00001eb276250;Zm00001eb281180;Zm00001eb330530;Zm00001eb390710;Zm00001eb395060 & 4.16;3.34;4.09;2.98;3.50;2.61;2.99;3.60;3.06 & SORBI\_3001G080200;SORBI\_3001G293000 & 2.41;2.45 & LOC\_Os04g06510;LOC\_Os05g01620;LOC\_Os12g01120 & 3.85;3.46;4.57 & HORVU.MOREX.r3.2HG0112720;HORVU.MOREX.r3.7HG0667610;HORVU.MOREX.r3.7HG0667620 & 3.41;4.06;6.24 & AT1G14540;AT1G68850;AT2G38380;AT4G11290;AT5G40150;AT5G58390 & 7.04;7.51;3.56;6.42;4.39;3.53 \\
-717421at2759 & Zm00001eb144570 & 2.90 & SORBI\_3004G185000 & 2.85 & LOC\_Os01g08990 & 3.78 & HORVU.MOREX.r3.4HG0338070 & 3.34 & AT1G06700;AT2G41970 & 3.69;6.56 \\
-717421at3193 & Zm00001eb144570 & 2.90 & SORBI\_3004G185000 & 2.85 & LOC\_Os01g08990 & 3.78 & HORVU.MOREX.r3.4HG0338070 & 3.34 & AT1G06700;AT2G41970 & 3.69;6.56 \\
-717421at33090 & Zm00001eb144570 & 2.90 & SORBI\_3004G185000 & 2.85 & LOC\_Os01g08990 & 3.78 & HORVU.MOREX.r3.4HG0338070 & 3.34 & AT1G06700;AT2G41970 & 3.69;6.56 \\
-\botrule
-\end{tabular*}
-\begin{tablenotes}%
-\item Note: All genes detected per species within each orthogroup are shown (semicolon-separated), alongside semicolon-separated $-\log_{10}(P)$ values in matching order.
-\end{tablenotes}
-\end{table*}
 
 \subsection{Cross-species genome-wide associations with aridity index identify shared orthologous genes across all species}
 
 Aridity index represents long-term water availability relative to atmospheric evaporative demand, providing an integrated climatic dryness gradient across sampling locations.
 
-We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 436, rice 0, sorghum 90, barley 1, maize 4). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using \pm10 kb annotation for Arabidopsis and rice and \pm25 kb annotation for maize, sorghum, and barley. This yielded 5,663 Arabidopsis genes, 9,209 rice genes, 1,573 maize genes, 807 barley genes, and 131 sorghum genes.
+We performed GWAS in Arabidopsis, barley, rice, maize, and sorghum using a mixed linear model and kinship correction in GEMMA. Under Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 436, rice 0, sorghum 90, barley 1, maize 4). To evaluate cross-species convergence beyond the Bonferroni tail, we selected the top 0.5\% of SNPs per species and mapped nearby genes to orthogroups, using $\pm$10 kb annotation for Arabidopsis and rice and $\pm$25 kb annotation for maize, sorghum, and barley. This yielded 5,663 Arabidopsis genes, 9,209 rice genes, 1,573 maize genes, 807 barley genes, and 131 sorghum genes.
 
 Orthogroup integration identified 15,210 total orthogroups, with 13 orthogroups represented in at least four species. Table~\ref{tab:shared_function_candidates_aridity_index_mixed10kb_common4} summarizes these shared orthogroups and reports, for each species, the full gene list within each orthogroup and corresponding $-\log_{10}(P)$ values.
 
-\begin{table*}[t]
-\caption{Shared orthogroups across at least four species from the top 0.5\% of SNPs for aridity index (Arabidopsis/Rice \pm10 kb; Maize/Sorghum/Barley \pm25 kb).\label{tab:shared_function_candidates_aridity_index_mixed10kb_common4}}
-\scriptsize
-\tabcolsep=3pt
-\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllllllllll@{}}
-\toprule
-Orthogroup & Maize genes & $-\log_{10}(P)$ & Sorghum genes & $-\log_{10}(P)$ & Rice genes & $-\log_{10}(P)$ & Barley genes & $-\log_{10}(P)$ & Arabidopsis genes & $-\log_{10}(P)$ \\
-\midrule
-381908at2759 & Zm00001eb426230 & 2.65 & SORBI\_3001G003600 & 4.61 & NA & NA & HORVU.MOREX.r3.2HG0198640 & 2.73 & AT2G30310;AT5G63170 & 3.76;3.55 \\
-4805980at2759 & Zm00001eb113170;Zm00001eb131190 & 2.65;2.43 & SORBI\_3008G073700 & 4.42 & NA & NA & HORVU.MOREX.r3.4HG0411760;HORVU.MOREX.r3.6HG0623790 & 2.87;2.55 & AT2G35780;AT3G07990 & 3.87;3.46 \\
-5017799at2759 & Zm00001eb112250;Zm00001eb396970 & 2.43;2.39 & SORBI\_3008G071300 & 4.80 & LOC\_Os04g04520 & 2.45 & NA & NA & AT1G34750;AT4G28400;AT4G31750 & 3.01;3.83;2.96 \\
-627237at2759 & Zm00001eb046210;Zm00001eb053220;Zm00001eb126980 & 2.53;2.90;5.28 & SORBI\_3004G276200 & 6.08 & NA & NA & HORVU.MOREX.r3.1HG0041600 & 3.63 & AT1G12110;AT1G32450;AT1G59740;AT3G45680;AT5G62680 & 3.42;3.44;3.35;3.87;3.16 \\
-629188at33090 & Zm00001eb046210;Zm00001eb053220;Zm00001eb126980 & 2.53;2.90;5.28 & SORBI\_3004G276200 & 6.08 & NA & NA & HORVU.MOREX.r3.1HG0041600 & 3.63 & AT1G12110;AT1G32450;AT1G59740;AT3G45680;AT5G62680 & 3.42;3.44;3.35;3.87;3.16 \\
-630100at33090 & Zm00001eb113170;Zm00001eb131190 & 2.65;2.43 & SORBI\_3008G073700 & 4.42 & NA & NA & HORVU.MOREX.r3.4HG0411760;HORVU.MOREX.r3.6HG0623790 & 2.87;2.55 & AT2G35780;AT3G07990 & 3.87;3.46 \\
-640662at2759 & Zm00001eb022050;Zm00001eb067730;Zm00001eb068210;Zm00001eb425840 & 3.10;3.15;2.42;2.52 & NA & NA & LOC\_Os01g07870;LOC\_Os08g03020 & 2.45;2.74 & HORVU.MOREX.r3.1HG0054280;HORVU.MOREX.r3.5HG0446790;HORVU.MOREX.r3.6HG0546360;HORVU.MOREX.r3.6HG0615810;HORVU.MOREX.r3.6HG0618250 & 2.62;3.06;2.63;2.91;2.59 & AT4G11290;AT4G30170;AT4G37520;AT5G05340 & 3.44;2.96;3.27;3.40 \\
-665330at2759 & Zm00001eb156040 & 3.58 & NA & NA & LOC\_Os01g01410 & 2.46 & HORVU.MOREX.r3.3HG0227830 & 2.59 & AT1G68840 & 3.03 \\
-665330at3193 & Zm00001eb156040 & 3.58 & NA & NA & LOC\_Os01g01410 & 2.46 & HORVU.MOREX.r3.3HG0227830 & 2.59 & AT1G68840 & 3.03 \\
-665330at33090 & Zm00001eb156040 & 3.58 & NA & NA & LOC\_Os01g01410 & 2.46 & HORVU.MOREX.r3.3HG0227830 & 2.59 & AT1G68840 & 3.03 \\
-755348at2759 & Zm00001eb031840 & 2.78 & NA & NA & LOC\_Os05g04850 & 2.54 & HORVU.MOREX.r3.2HG0206000 & 2.63 & AT5G58460 & 3.92 \\
-755348at33090 & Zm00001eb031840 & 2.78 & NA & NA & LOC\_Os05g04850 & 2.54 & HORVU.MOREX.r3.2HG0206000 & 2.63 & AT5G58460 & 3.92 \\
-788776at33090 & Zm00001eb112250;Zm00001eb396970 & 2.43;2.39 & SORBI\_3008G071300 & 4.80 & LOC\_Os04g04520 & 2.45 & NA & NA & AT1G34750;AT4G28400;AT4G31750 & 3.01;3.83;2.96 \\
-\botrule
-\end{tabular*}
-\begin{tablenotes}%
-\item Note: All genes detected per species within each orthogroup are shown (semicolon-separated), alongside semicolon-separated $-\log_{10}(P)$ values in matching order.
-\end{tablenotes}
-\end{table*}
+
