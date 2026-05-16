@@ -185,34 +185,48 @@ The geographic distribution of accessions likewise reflects broad environmental 
     \label{fig:fig1_timeline_map}
 \end{figure*}
 
+
 %=======================================================================
 %=======================================================================
 %=======================================================================
 
 \subsection{Observed cross-species orthogroup recurrence exceeds matched-null expectations}
-
-To test whether the shared orthogroup patterns recovered from the upper-ranked association sets were greater than expected by chance, we compared the observed number of recurrent orthogroups against a matched candidate-universe null using 10{,}000 permutations (Fig.~\ref{fig:suppfig_null_permutation_orthogroup_recurrence}). For each trait, we quantified orthogroups shared across all five species and orthogroups shared across at least four species. Across all traits, the observed number of orthogroups shared across at least four species exceeded null expectations. For the WorldClim PCs, the observed $\geq$4-species counts were 15 for PC1, 17 for PC2, and 17 for PC3, compared with null means of 1.5616, 1.2311, and 1.0852, respectively (all empirical $P = 0.0001$). Soil pH and soil nitrogen also showed strong excess recurrence, with observed $\geq$4-species counts of 23 and 20 versus null means of 2.4619 and 1.5466, respectively (both $P = 0.0001$). The AM fungal phenotypes followed the same pattern, with observed $\geq$4-species counts of 12 for AM fungal relative abundance colonization and 18 for AM fungal roots colonized, compared with null means of 0.5256 and 0.7103 (both $P = 0.0001$). Aridity likewise showed elevated four-species recurrence, with 7 observed orthogroups versus a null mean of 0.2731 ($P = 0.0001$).
+To test whether the shared orthogroup patterns recovered from the upper-ranked association sets were greater than expected by chance, we compared the observed number of recurrent orthogroups against a matched candidate-universe null using 10{,}000 permutations (Fig.~\ref{fig:Null_permutation_orthogroup_recurrence}). For each trait, we quantified orthogroups shared across all five species and orthogroups shared across at least four species. Across all traits, the observed number of orthogroups shared across at least four species exceeded null expectations. For the WorldClim PCs, the observed $\geq$4-species counts were 15 for PC1, 17 for PC2, and 17 for PC3, compared with null means of 1.5616, 1.2311, and 1.0852, respectively (all empirical $P = 0.0001$). Soil pH and soil nitrogen also showed strong excess recurrence, with observed $\geq$4-species counts of 23 and 20 versus null means of 2.4619 and 1.5466, respectively (both $P = 0.0001$). The AM fungal phenotypes followed the same pattern, with observed $\geq$4-species counts of 12 for AM fungal relative abundance colonization and 18 for AM fungal roots colonized, compared with null means of 0.5256 and 0.7103 (both $P = 0.0001$). Aridity likewise showed elevated four-species recurrence, with 7 observed orthogroups versus a null mean of 0.2731 ($P = 0.0001$).
 
 For the stricter all-five-species overlap, observed counts also exceeded null expectations for PC1 (1 vs.\ 0.0146, $P = 0.0147$), PC2 (1 vs.\ 0.0099, $P = 0.0100$), PC3 (1 vs.\ 0.0014, $P = 0.0015$), soil pH (3 vs.\ 0.3445, $P = 0.0002$), soil nitrogen (2 vs.\ 0.0044, $P = 0.0001$), AM fungal relative abundance colonization (1 vs.\ 0.0016, $P = 0.0017$), and AM fungal roots colonized (2 vs.\ 0.0827, $P = 0.0001$), whereas aridity showed no all-five-species shared orthogroups (0 vs.\ 0.0000, $P = 1.0000$). Together, these results indicate that the observed recurrence of shared orthogroups is greater than expected under a matched candidate-universe null, supporting non-random cross-species recurrence.
 
-To place these recurrence patterns in the broader context of species-specific GWAS signal, we next summarized cross-trait variation in Bonferroni-significant SNP counts, mapped candidate-gene counts, and orthogroup overlap across all environmental phenotypes (Fig.~\ref{fig:figx_cross_species_gwas_summary}). Bonferroni-significant SNP counts varied substantially across both traits and species (Fig.~\ref{fig:figx_cross_species_gwas_summary}A), indicating strong heterogeneity in the magnitude of species-specific association signal. The number of genes recovered from the upper-ranked association sets also varied across species and traits, but remained consistently large enough to support downstream orthogroup-based comparisons (Fig.~\ref{fig:figx_cross_species_gwas_summary}B). Despite these large candidate-gene sets, only a small number of orthogroups were shared across all five species for any given trait (Fig.~\ref{fig:figx_cross_species_gwas_summary}C), whereas orthogroups shared across at least four species were more common and showed stronger cross-trait variation (Fig.~\ref{fig:figx_cross_species_gwas_summary}D). Soil pH and soil nitrogen showed the highest recurrence across four or more species, followed by AM fungal roots colonized and the WorldClim principal components, whereas aridity showed the weakest all-five-species overlap. These broad patterns provide the comparative context for the trait-specific results described below.
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig2/Fig2_null_permutation_orthogroup_recurrence.png}
+    \caption{Observed shared orthogroup recurrence compared with a matched candidate-universe permutation null across environmental phenotypes. For each trait, null distributions were generated from 10{,}000 permutations in which random gene sets of the same size as the observed orthogroup-mapped candidate sets were sampled within species from the study-wide orthogroup-mapped gene universe. Sampling preserved broad recurrence propensity by matching genes according to the number of traits in which they appeared and the multiplicity of orthogroup-row assignments across the study-wide background. Red diamonds indicate the observed number of shared orthogroup rows, black points indicate null means, and black error bars indicate the central 95\% of the null distribution. Violins show the full permutation distributions. (A) Shared orthogroup rows present across all five species. (B) Shared orthogroup rows present across at least four species. AM rel = AM fungal relative abundance colonization; AM roots = AM fungal roots colonized.}
+    \label{fig:Null_permutation_orthogroup_recurrence}
+\end{figure*}
 
-Together, these results indicate that the observed recurrence of shared orthogroups is greater than expected under a matched candidate-universe null, supporting non-random cross-species recurrence while leaving open the need for future SNP-level null calibration.
+\subsection{Cross-trait summary of species-specific GWAS signal and orthogroup recurrence}
+
+To place these recurrence patterns in the broader context of species-specific GWAS signal, we next summarized cross-trait variation in Bonferroni-significant SNP counts, mapped candidate-gene counts, and orthogroup overlap across all environmental phenotypes (Fig.~\ref{fig:cross_species_gwas_summary}). Bonferroni-significant SNP counts varied substantially across both traits and species (Fig.~\ref{fig:cross_species_gwas_summary}A), indicating strong heterogeneity in the magnitude of species-specific association signal. The number of genes recovered from the upper-ranked association sets also varied across species and traits, but remained consistently large enough to support downstream orthogroup-based comparisons (Fig.~\ref{fig:cross_species_gwas_summary}B). Despite these large candidate-gene sets, only a small number of orthogroups were shared across all five species for any given trait (Fig.~\ref{fig:cross_species_gwas_summary}C), whereas orthogroups shared across at least four species were more common and showed stronger cross-trait variation (Fig.~\ref{fig:cross_species_gwas_summary}D). Soil pH and soil nitrogen showed the highest recurrence across four or more species, followed by AM fungal roots colonized and the WorldClim principal components, whereas aridity showed the weakest all-five-species overlap. These broad patterns provide the comparative context for the trait-specific results described below.
+
+
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig3/Fig3_cross_species_gwas_summary.png}
+    \caption{Cross-species environmental GWAS summary across traits. (A) Heatmap of Bonferroni-significant SNP counts for each species and phenotype, with colors scaled as $\log_{10}(\mathrm{count}+1)$. (B) Heatmap of the numbers of mapped candidate genes recovered from the top 0.5\% SNP threshold for each species and phenotype, again shown on a $\log_{10}(\mathrm{count}+1)$ scale. (C) Numbers of shared orthogroup rows recovered across all five species for each phenotype. (D) Numbers of shared orthogroup rows recovered across at least four species for each phenotype. Together, these panels summarize heterogeneity in species-specific GWAS signal strength and show that strict all-five-species convergence is rare, whereas broader four-species recurrence is more common across environmental traits. AM rel = AM fungal relative abundance colonization; AM roots = AM fungal roots colonized.}
+    \label{fig:cross_species_gwas_summary}
+\end{figure*}
+
+
+
 
 \subsubsection{Cross-species genome-wide associations with WorldClim principal components identify a small set of shared orthologous genes}
 
 To summarize broad climatic variation, we performed principal component analysis on the 19 WorldClim bioclimatic variables (Supp Table 1) for each species separately and used the leading principal components as environmental phenotypes for GWAS. Across species, PC1 explained the largest fraction of variance (mean $38.3\% \pm 2.9$ SE), followed by PC2 ($25.9\% \pm 1.6$) and PC3 ($16.7\% \pm 0.8$), indicating that these axes captured the major dimensions of climatic variation (Supp Fig. \ref{fig:suppfig1_worldclim_pca}A). Because PCA signs can differ among independent analyses, we compared variables using absolute loading magnitudes. For PC1, Arabidopsis, barley, rice, and maize were mainly driven by temperature variables (BIO06, BIO07, BIO11, BIO04), whereas sorghum PC1 reflected warm-temperature and precipitation seasonality variables (BIO05, BIO10, BIO15, BIO08) (Supp Fig. \ref{fig:suppfig1_worldclim_pca}B). For PC2, rice and maize were dominated by warm-temperature and precipitation variables (rice: BIO05, BIO10, BIO08; maize: BIO05, BIO14, BIO17, BIO15), while sorghum PC2 emphasized cold and seasonal temperature variables (BIO06, BIO11, BIO09, BIO04). For PC3, rice and sorghum were most influenced by precipitation during wet and dry periods (rice: BIO13, BIO16, BIO18, BIO12; sorghum: BIO16, BIO13, BIO12), whereas maize and barley retained mixed seasonality signals (maize: BIO03, BIO04, BIO14, BIO17; barley: BIO15, BIO03, BIO14, BIO17). Overall, these results indicate species-specific climatic architectures underlying the GWAS signals (Supp Fig. \ref{fig:suppfig2_worldclim_pca_3d}).
 
-We next performed GWASs for WorldClim PC1, PC2, and PC3 using a mixed linear model with kinship correction in GEMMA (Fig.~\ref{fig:fig2a_manhattan_pc1}; Fig.~\ref{fig:figX_cross_species_gwas_summary}; Supplementary Fig.~\ref{fig:suppfig3_qq_all_traits}; Supplementary Table~S5). As summarized in Fig.~\ref{fig:figX_cross_species_gwas_summary}, Bonferroni-significant SNP counts varied substantially across species and climate axes, with the strongest signal observed for rice in PC1 and for sorghum in PC3. Because the environmental phenotypes were derived from gridded global surfaces rather than measured directly for each accession, we also used the upper-ranked association set for cross-species comparison. Mapping nearby genes from these upper-ranked SNPs identified thousands of candidate genes in each species and thousands of orthogroup-linked genes per climate axis. Despite these large candidate sets, only a small number of shared orthologous groups were recovered across all five species (Supplementary Tables~S3A,B). PC1 yielded two shared groups, whereas PC2 and PC3 each yielded one (Table~\ref{tab:shared_genes_worldclim}). PC1 and PC2 shared orthogroup \textit{5017799at2759}, and recurrent genes included \textit{LOC\_Os04g04520} in rice and \textit{AT1G34750}/\textit{AT2G30020} in Arabidopsis, indicating repeated involvement of a limited homologous core across correlated climate axes. Together, these results indicate a narrow core of shared orthologous candidates across deeply diverged taxa, with stronger cross-axis recurrence between PC1 and PC2 than with PC3.
+We next performed GWASs for WorldClim PC1, PC2, and PC3 using a mixed linear model with kinship correction in GEMMA (Fig.~\ref{fig:fig2a_manhattan_pc1}; Fig.~\ref{fig:fig3_cross_species_gwas_summary}; Supplementary Fig.~\ref{fig:suppfig3_qq_all_traits}; Supplementary Table~S5). As summarized in Fig.~\ref{fig:figX_cross_species_gwas_summary}, Bonferroni-significant SNP counts varied substantially across species and climate axes, with the strongest signal observed for rice in PC1 and for sorghum in PC3. Because the environmental phenotypes were derived from gridded global surfaces rather than measured directly for each accession, we also used the upper-ranked association set for cross-species comparison. Mapping nearby genes from these upper-ranked SNPs identified thousands of candidate genes in each species and thousands of orthogroup-linked genes per climate axis. Despite these large candidate sets, only a small number of shared orthologous groups were recovered across all five species (Supplementary Tables~S3A,B). PC1 yielded two shared groups, whereas PC2 and PC3 each yielded one (Table~\ref{tab:shared_genes_worldclim}). PC1 and PC2 shared orthogroup \textit{5017799at2759}, and recurrent genes included \textit{LOC\_Os04g04520} in rice and \textit{AT1G34750}/\textit{AT2G30020} in Arabidopsis, indicating repeated involvement of a limited homologous core across correlated climate axes. Together, these results indicate a narrow core of shared orthologous candidates across deeply diverged taxa, with stronger cross-axis recurrence between PC1 and PC2 than with PC3.
 
 
 
-\begin{figure*}[!t]
-    \centering
-    \includegraphics[width=\textwidth]{Figs/Fig2/Fig2A_manhattan_plus_PC1.png}
-    \caption{WorldClim PC1 genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of WorldClim PC1 phenotype values. The plots illustrate marked heterogeneity in GWAS signal strength and phenotype spread across taxa for the leading climate axis.}
-    \label{fig:fig2a_manhattan_pc1}
-\end{figure*}
+
 
 Despite the large number of orthogroups for each species, only a small subset was shared across all five (Supplementary Table 3A and 3B). PC1 yielded two groups, whereas PC2 and PC3 each yielded one (Table \ref{tab:shared_genes_worldclim}). PC1 and PC2 shared orthogroup \textit{5017799at2759}, and recurrent genes included \textit{LOC\_Os04g04520} in rice and \textit{AT1G34750}/\textit{AT2G30020} in Arabidopsis, indicating the repeated involvement of a limited homologous core across correlated climate axes. These results indicate a narrow core of shared orthologous candidates across deeply diverged taxa, with stronger cross-axis recurrence between PC1 and PC2 than with PC3.
 
@@ -324,12 +338,7 @@ AT2G16430
 We also performed GWAS for soil pH (Fig.~\ref{fig:fig3_manhattan_ph}; Fig.~\ref{fig:figX_cross_species_gwas_summary}; Supplementary Fig.~\ref{fig:suppfig3_qq_all_traits}; Supplementary Table~S6). Soil pH is a major edaphic variable that affects nutrient availability, root function, and microbial interactions, and can therefore impose strong selective pressures on plant populations (ref). Species-specific GWAS signal for soil pH was heterogeneous across taxa, with the strongest Bonferroni-significant signal observed in rice and little or no signal in several other species (Fig.~\ref{fig:figX_cross_species_gwas_summary}A). Nevertheless, cross-species comparison recovered several shared candidate-gene groups across all five species (Table~\ref{tab:shared_genes_ph}), with recurring putative functional classes including RAB GTPase, laccase/diphenol oxidase family proteins, and peroxidase family proteins. When the comparison was expanded to orthogroups shared across at least four species, additional biologically relevant functional modules were recovered, including peroxidase (\textit{Zm00001eb043110}), calcium-transporting ATPase (\textit{Zm00001eb030420}), protein kinase (\textit{Zm00001eb011650}), protein-serine/threonine phosphatase (\textit{Zm00001eb331410}), laccase (\textit{Zm00001eb148270}), chloride channel protein (\textit{Zm00001eb244120}), and exostosin family protein (\textit{Zm00001eb163690}) (Supplementary Table~S4). Together, these patterns support convergence on stress signaling, redox and cell-wall processes, and membrane transport under soil pH-associated selection.
 
 
-\begin{figure*}[!t]
-    \centering
-    \includegraphics[width=\textwidth]{Figs/Fig3/Fig3_manhattan_plus_pH.png}
-    \caption{Soil pH genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of soil pH values. The plots illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for this major edaphic variable.}
-    \label{fig:fig3_manhattan_ph}
-\end{figure*}
+
 
 
 \begin{table*}[t]
@@ -537,12 +546,7 @@ Despite recovering large candidate-gene sets for both traits, only a very small 
 
 
 
-\begin{figure*}[!t]
-    \centering
-    \includegraphics[width=\textwidth]{Figs/Fig5/Fig5A_manhattan_plus_AM_rel_abundance_colonization.png}
-    \caption{Genome-wide association results for arbuscular mycorrhizal (AM) fungal relative abundance colonization across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line indicating the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of AM relative abundance phenotype values. Together, these panels show heterogeneous GWAS signal strength and phenotype distributions across taxa for AM fungal relative abundance colonization.}
-    \label{fig:fig5a_manhattan_am_rel_abundance}
-\end{figure*}
+
 
 
 \begin{table*}[t]
@@ -666,14 +670,6 @@ AT2G41970
 \subsubsection{Cross-species genome-wide associations with aridity index identify shared orthologous genes across all species}
 
 Finally, we performed GWASs for the aridity index (\ref{fig:fig6_manhattan_aridity}; Supp Fig. \ref{fig:suppfig3_qq_all_traits}; Supp Table 9). Aridity index represents long-term water availability relative to atmospheric evaporative demand, providing an integrated climatic dryness gradient across sampling locations (ref). Under the same Bonferroni correction, the number of significant SNPs was heterogeneous across species (Arabidopsis 436, rice 0, sorghum 90, barley 1, maize 4). Cross-species convergence yielded 5,663 Arabidopsis genes, 9,209 rice genes, 1,573 maize genes, 807 barley genes, and 131 sorghum genes. Among these aridity index threshold genes, 3,413 genes mapped to orthogroups (Arabidopsis 1,684; rice 264; maize 917; barley 469; sorghum 79). No orthogroups were shared across all five species. Table~\ref{tab:shared_aridity_index} summarizes the shared candidate-gene groups identified across at least four species for the aridity index, suggesting recurring functional classes associated with aridity-related adaptation, including GDSL-like lipase, serine carboxypeptidase-like proteins, protein phosphatase, nitrate transporter, peroxidase family protein, ABI3-VP1 transcription factor, and cation/H+ exchanger (ref).
-
-
-\begin{figure*}[!t]
-    \centering
-    \includegraphics[width=\textwidth]{Figs/Fig6/Fig6_manhattan_plus_aridity_index.png}
-    \caption{Aridity index genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of aridity index values. Together, these panels illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for climatic aridity.}
-    \label{fig:fig6_manhattan_aridity}
-\end{figure*}
 
 Additional relevant functional modules were also recovered across the shared species (Supp Table 3). Shared groups were present across maize--rice--barley--Arabidopsis, maize--sorghum--barley--Arabidopsis, and maize--sorghum--rice--Arabidopsis. Representative putative functions included peroxidase (\textit{\seqsplit{Zm00001eb022050}}; orthogroup 640662at2759), NRT1/PTR-family transporter (\textit{\seqsplit{Zm00001eb046210}}; 627237at2759), cation/H$^{+}$ antiporter (\textit{\seqsplit{Zm00001eb031840}}; 755348at2759), protein-serine/threonine phosphatase (\textit{\seqsplit{Zm00001eb112250}}; 5017799at2759), GDSL esterase/lipase (\textit{\seqsplit{Zm00001eb426230}}; 381908at2759), RAV-family DNA-binding protein (\textit{\seqsplit{Zm00001eb156040}}; 665330at2759), and carboxypeptidase (\textit{\seqsplit{Zm00001eb113170}}; 4805980at2759) (Suppl Table 4). Together, these aridity-associated shared modules support recurring contributions of stress signaling, membrane transport, and redox/cell-wall-associated pathways to adaptation along long-term climatic dryness gradients.
 
@@ -1256,6 +1252,11 @@ https://doi.org/10.1038/s41597-022-01913-2
 \end{figure*}
 
 
+
+
+
+
+
 \begin{figure*}[t]
     \centering
     \includegraphics[width=\textwidth]{Figs/Supplementary/SuppFig2_WorldClim_PCA_species_3D.png}
@@ -1271,20 +1272,37 @@ https://doi.org/10.1038/s41597-022-01913-2
     \label{fig:suppfig3_qq_all_traits}
 \end{figure*}
 
-\begin{figure*}[t]
+
+\begin{figure*}[!t]
     \centering
-    \includegraphics[width=\textwidth]{Figs/Supplementary/SuppFig_null_permutation_orthogroup_recurrence.png}
-    \caption{Observed shared orthogroup recurrence compared with a matched candidate-universe permutation null across environmental phenotypes. For each trait, null distributions were generated from 10{,}000 permutations in which random gene sets of the same size as the observed orthogroup-mapped candidate sets were sampled within species from the study-wide orthogroup-mapped gene universe. Sampling preserved broad recurrence propensity by matching genes according to the number of traits in which they appeared and the multiplicity of orthogroup-row assignments across the study-wide background. Red diamonds indicate the observed number of shared orthogroup rows, black points indicate null means, and black error bars indicate the central 95\% of the null distribution. Violins show the full permutation distributions. (A) Shared orthogroup rows present across all five species. (B) Shared orthogroup rows present across at least four species. AM rel = AM fungal relative abundance colonization; AM roots = AM fungal roots colonized.}
-    \label{fig:suppfig_null_permutation_orthogroup_recurrence}
+    \includegraphics[width=\textwidth]{Figs/Fig2/Fig2A_manhattan_plus_PC1.png}
+    \caption{WorldClim PC1 genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of WorldClim PC1 phenotype values. The plots illustrate marked heterogeneity in GWAS signal strength and phenotype spread across taxa for the leading climate axis.}
+    \label{fig:fig2a_manhattan_pc1}
 \end{figure*}
 
-\begin{figure*}[t]
+
+\begin{figure*}[!t]
     \centering
-    \includegraphics[width=\textwidth]{Figs/FigX/FigX_cross_species_gwas_summary.png}
-    \caption{Cross-species environmental GWAS summary across traits. (A) Heatmap of Bonferroni-significant SNP counts for each species and phenotype, with colors scaled as $\log_{10}(\mathrm{count}+1)$. (B) Heatmap of the numbers of mapped candidate genes recovered from the top 0.5\% SNP threshold for each species and phenotype, again shown on a $\log_{10}(\mathrm{count}+1)$ scale. (C) Numbers of shared orthogroup rows recovered across all five species for each phenotype. (D) Numbers of shared orthogroup rows recovered across at least four species for each phenotype. Together, these panels summarize heterogeneity in species-specific GWAS signal strength and show that strict all-five-species convergence is rare, whereas broader four-species recurrence is more common across environmental traits. AM rel = AM fungal relative abundance colonization; AM roots = AM fungal roots colonized.}
-    \label{fig:figX_cross_species_gwas_summary}
+    \includegraphics[width=\textwidth]{Figs/Fig3/Fig3_manhattan_plus_pH.png}
+    \caption{Soil pH genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of soil pH values. The plots illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for this major edaphic variable.}
+    \label{fig:fig3_manhattan_ph}
 \end{figure*}
 
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig5/Fig5A_manhattan_plus_AM_rel_abundance_colonization.png}
+    \caption{Genome-wide association results for arbuscular mycorrhizal (AM) fungal relative abundance colonization across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line indicating the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of AM relative abundance phenotype values. Together, these panels show heterogeneous GWAS signal strength and phenotype distributions across taxa for AM fungal relative abundance colonization.}
+    \label{fig:fig5a_manhattan_am_rel_abundance}
+\end{figure*}
+
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig6/Fig6_manhattan_plus_aridity_index.png}
+    \caption{Aridity index genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of aridity index values. Together, these panels illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for climatic aridity.}
+    \label{fig:fig6_manhattan_aridity}
+\end{figure*}
 
 \end{appendices}
 
