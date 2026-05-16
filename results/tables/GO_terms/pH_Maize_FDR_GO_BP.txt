@@ -1,0 +1,51 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.XXXX/zenodo.XXXXXXXX Released 2025-10-05
+Analyzed List:	Client Text Box Input (Zea mays)
+Reference List:	background_Maize_all_GWAS_mappable_genes.txt (Zea mays)
+Test Type:	FISHER
+Correction:	FDR
+GO biological process complete	background_Maize_all_GWAS_mappable_genes.txt - REFLIST (34395)	Client Text Box Input (210)	Client Text Box Input (expected)	Client Text Box Input (over/under)	Client Text Box Input (fold Enrichment)	Client Text Box Input (raw P-value)	Client Text Box Input (FDR)
+response to salt (GO:1902074)	10	3	.06	+	49.14	2.61E-05	3.64E-03
+lignin catabolic process (GO:0046274)	21	4	.13	+	31.20	7.45E-06	1.27E-03
+phenylpropanoid catabolic process (GO:0046271)	21	4	.13	+	31.20	7.45E-06	1.21E-03
+lignin metabolic process (GO:0009808)	41	4	.25	+	15.98	1.15E-04	1.24E-02
+regulation of intracellular signal transduction (GO:1902531)	93	7	.57	+	12.33	1.74E-06	4.00E-04
+brassinosteroid mediated signaling pathway (GO:0009742)	76	5	.46	+	10.78	1.05E-04	1.33E-02
+cellular response to steroid hormone stimulus (GO:0071383)	76	5	.46	+	10.78	1.05E-04	1.28E-02
+cellular response to brassinosteroid stimulus (GO:0071367)	76	5	.46	+	10.78	1.05E-04	1.24E-02
+steroid hormone receptor signaling pathway (GO:0043401)	76	5	.46	+	10.78	1.05E-04	1.21E-02
+response to steroid hormone (GO:0048545)	76	5	.46	+	10.78	1.05E-04	1.17E-02
+response to brassinosteroid (GO:0009741)	86	5	.53	+	9.52	1.89E-04	1.99E-02
+regulation of cell communication (GO:0010646)	243	10	1.48	+	6.74	2.77E-06	5.70E-04
+regulation of signaling (GO:0023051)	243	10	1.48	+	6.74	2.77E-06	5.42E-04
+regulation of signal transduction (GO:0009966)	243	10	1.48	+	6.74	2.77E-06	5.16E-04
+secondary metabolic process (GO:0019748)	193	7	1.18	+	5.94	1.95E-04	2.00E-02
+hormone-mediated signaling pathway (GO:0009755)	488	15	2.98	+	5.03	3.84E-07	1.25E-04
+cellular response to hormone stimulus (GO:0032870)	491	15	3.00	+	5.00	4.15E-07	1.25E-04
+cellular response to endogenous stimulus (GO:0071495)	492	15	3.00	+	4.99	4.25E-07	1.19E-04
+regulation of response to stimulus (GO:0048583)	475	14	2.90	+	4.83	1.55E-06	3.78E-04
+cellular response to chemical stimulus (GO:0070887)	804	20	4.91	+	4.07	1.32E-07	5.72E-05
+response to hormone (GO:0009725)	727	16	4.44	+	3.60	1.16E-05	1.74E-03
+response to endogenous stimulus (GO:0009719)	728	16	4.44	+	3.60	1.17E-05	1.70E-03
+response to oxygen-containing compound (GO:1901700)	523	11	3.19	+	3.44	4.04E-04	4.05E-02
+signaling (GO:0023052)	1382	29	8.44	+	3.44	7.36E-09	9.59E-06
+signal transduction (GO:0007165)	1382	29	8.44	+	3.44	7.36E-09	7.19E-06
+cell communication (GO:0007154)	1386	29	8.46	+	3.43	7.85E-09	6.13E-06
+response to chemical (GO:0042221)	1329	27	8.11	+	3.33	4.94E-08	3.22E-05
+cellular response to stimulus (GO:0051716)	2232	36	13.63	+	2.64	8.56E-08	4.78E-05
+transmembrane transport (GO:0055085)	1430	22	8.73	+	2.52	7.05E-05	9.18E-03
+transport (GO:0006810)	2508	35	15.31	+	2.29	5.82E-06	1.03E-03
+establishment of localization (GO:0051234)	2613	35	15.95	+	2.19	1.02E-05	1.60E-03
+response to stimulus (GO:0050896)	3725	48	22.74	+	2.11	5.14E-07	1.34E-04
+localization (GO:0051179)	2730	35	16.67	+	2.10	2.81E-05	3.78E-03
+regulation of biological process (GO:0050789)	4857	59	29.65	+	1.99	1.30E-07	6.34E-05
+biological regulation (GO:0065007)	5093	60	31.10	+	1.93	2.58E-07	9.17E-05
+regulation of cellular process (GO:0050794)	4652	54	28.40	+	1.90	2.22E-06	4.83E-04
+cellular process (GO:0009987)	13370	119	81.63	+	1.46	2.37E-07	9.28E-05
+biological_process (GO:0008150)	16762	144	102.34	+	1.41	6.23E-09	1.22E-05
+Unclassified (UNCLASSIFIED)	17633	66	107.66	-	.61	6.23E-09	2.44E-05

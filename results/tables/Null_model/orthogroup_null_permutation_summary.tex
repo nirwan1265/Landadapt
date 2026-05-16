@@ -1,0 +1,24 @@
+\begin{table}[t]
+\caption{Observed shared-orthogroup recurrence compared with a matched candidate-universe permutation null (10{,}000 permutations).}
+\label{tab:orthogroup_null_permutation_summary}
+\centering
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Trait & Obs. all-5 & Null mean all-5 & Emp. $P$ all-5 & Obs. $\geq$4 & Null mean $\geq$4 & Emp. $P$ $\geq$4 \\
+\midrule
+PC1      & 1 & 0.0146 & 0.0147 & 15 & 1.5616 & 0.0001 \\
+PC2      & 1 & 0.0099 & 0.0100 & 17 & 1.2311 & 0.0001 \\
+PC3      & 1 & 0.0014 & 0.0015 & 17 & 1.0852 & 0.0001 \\
+pH       & 3 & 0.3445 & 0.0002 & 23 & 2.4619 & 0.0001 \\
+soilN    & 2 & 0.0044 & 0.0001 & 20 & 1.5466 & 0.0001 \\
+AM\_rel   & 1 & 0.0016 & 0.0017 & 12 & 0.5256 & 0.0001 \\
+AM\_roots & 2 & 0.0827 & 0.0001 & 18 & 0.7103 & 0.0001 \\
+aridity  & 0 & 0.0000 & 1.0000 &  7 & 0.2731 & 0.0001 \\
+\bottomrule
+\end{tabular}
+
+\vspace{4pt}
+\parbox{0.96\linewidth}{\footnotesize
+\textit{Explanation:} For each phenotype, observed recurrence was compared with a matched candidate-universe null in which random gene sets of the same size as the observed orthogroup-mapped candidate sets were sampled within species from the study-wide orthogroup-mapped gene universe. Sampling preserved broad recurrence propensity by matching genes according to the number of traits in which they appeared and the multiplicity of orthogroup-row assignments across the study-wide background. ``Obs. all-5'' and ``Obs. $\geq$4'' denote the observed numbers of shared orthogroup rows across all five species or across at least four species, respectively. ``Null mean'' denotes the mean count across 10{,}000 permutations, and empirical $P$ values were calculated as $P = (1 + \sum I[X_{\mathrm{null}} \geq X_{\mathrm{obs}}])/(10{,}000+1)$.}
+\end{table}

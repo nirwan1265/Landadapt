@@ -1,0 +1,96 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.XXXX/zenodo.XXXXXXXX Released 2025-10-05
+Analyzed List:	Client Text Box Input (Zea mays)
+Reference List:	background_Maize_all_GWAS_mappable_genes.txt (Zea mays)
+Test Type:	FISHER
+Correction:	FDR
+GO molecular function complete	background_Maize_all_GWAS_mappable_genes.txt - REFLIST (34395)	Client Text Box Input (313)	Client Text Box Input (expected)	Client Text Box Input (over/under)	Client Text Box Input (fold Enrichment)	Client Text Box Input (raw P-value)	Client Text Box Input (FDR)
+dipeptide transmembrane transporter activity (GO:0071916)	6	3	.05	+	54.94	1.46E-05	8.78E-04
+tripeptide transmembrane transporter activity (GO:0042937)	6	3	.05	+	54.94	1.46E-05	8.58E-04
+ubiquinol:oxygen oxidoreductase activity (GO:0102721)	5	2	.05	+	43.96	8.11E-04	2.73E-02
+alternative oxidase activity (GO:0009916)	5	2	.05	+	43.96	8.11E-04	2.70E-02
+superoxide-generating NADPH oxidase activity (GO:0106292)	5	2	.05	+	43.96	8.11E-04	2.66E-02
+cellulase activity (GO:0008810)	23	8	.21	+	38.22	1.87E-11	7.69E-09
+superoxide-generating NAD(P)H oxidase activity (GO:0016175)	6	2	.05	+	36.63	1.21E-03	3.82E-02
+metal ion sequestering activity (GO:0140487)	9	3	.08	+	36.63	6.02E-05	2.91E-03
+iron ion sequestering activity (GO:0140315)	9	3	.08	+	36.63	6.02E-05	2.85E-03
+UDP-galactose transmembrane transporter activity (GO:0005459)	13	4	.12	+	33.81	4.51E-06	2.85E-04
+dihydrolipoyllysine-residue acetyltransferase activity (GO:0004742)	7	2	.06	+	31.40	1.68E-03	4.99E-02
+S-acetyltransferase activity (GO:0016418)	7	2	.06	+	31.40	1.68E-03	4.93E-02
+molecular sequestering activity (GO:0140313)	11	3	.10	+	29.97	1.17E-04	4.87E-03
+MAP kinase activity (GO:0004707)	18	4	.16	+	24.42	1.86E-05	1.07E-03
+calcium/calmodulin-dependent protein kinase activity (GO:0004683)	53	10	.48	+	20.73	4.66E-11	1.64E-08
+calcium-dependent protein serine/threonine kinase activity (GO:0009931)	53	10	.48	+	20.73	4.66E-11	1.43E-08
+manganese ion transmembrane transporter activity (GO:0005384)	23	4	.21	+	19.11	5.20E-05	2.56E-03
+pyrimidine nucleotide-sugar transmembrane transporter activity (GO:0015165)	29	5	.26	+	18.95	6.00E-06	3.69E-04
+iron ion transmembrane transporter activity (GO:0005381)	19	3	.17	+	17.35	6.49E-04	2.25E-02
+nucleotide-sugar transmembrane transporter activity (GO:0005338)	37	5	.34	+	14.85	2.07E-05	1.16E-03
+nitrate transmembrane transporter activity (GO:0015112)	26	3	.24	+	12.68	1.66E-03	4.99E-02
+amino acid transmembrane transporter activity (GO:0015171)	81	9	.74	+	12.21	5.61E-08	4.76E-06
+serine-type carboxypeptidase activity (GO:0004185)	48	5	.44	+	11.45	7.51E-05	3.36E-03
+kinase binding (GO:0019900)	40	4	.36	+	10.99	4.75E-04	1.75E-02
+oligopeptide transmembrane transporter activity (GO:0035673)	40	4	.36	+	10.99	4.75E-04	1.72E-02
+lactoperoxidase activity (GO:0140825)	121	11	1.10	+	9.99	1.56E-08	1.92E-06
+organophosphate ester transmembrane transporter activity (GO:0015605)	68	6	.62	+	9.70	3.69E-05	1.89E-03
+serine-type exopeptidase activity (GO:0070008)	57	5	.52	+	9.64	1.72E-04	6.93E-03
+carboxypeptidase activity (GO:0004180)	60	5	.55	+	9.16	2.19E-04	8.56E-03
+xylan O-acetyltransferase activity (GO:1990538)	49	4	.45	+	8.97	1.03E-03	3.30E-02
+symporter activity (GO:0015293)	75	6	.68	+	8.79	6.43E-05	2.99E-03
+nucleobase-containing compound transmembrane transporter activity (GO:0015932)	76	6	.69	+	8.68	6.93E-05	3.16E-03
+carbohydrate derivative transmembrane transporter activity (GO:1901505)	79	6	.72	+	8.35	8.61E-05	3.66E-03
+amide transmembrane transporter activity (GO:0042887)	54	4	.49	+	8.14	1.49E-03	4.52E-02
+oxidoreductase activity, acting on peroxide as acceptor (GO:0016684)	176	11	1.60	+	6.87	7.18E-07	5.20E-05
+peroxidase activity (GO:0004601)	176	11	1.60	+	6.87	7.18E-07	5.05E-05
+calmodulin binding (GO:0005516)	197	12	1.79	+	6.69	2.96E-07	2.28E-05
+antioxidant activity (GO:0016209)	207	11	1.88	+	5.84	3.50E-06	2.40E-04
+acetyltransferase activity (GO:0016407)	120	6	1.09	+	5.49	8.30E-04	2.69E-02
+secondary active transmembrane transporter activity (GO:0015291)	295	14	2.68	+	5.22	6.43E-07	4.79E-05
+serine hydrolase activity (GO:0017171)	196	9	1.78	+	5.05	8.43E-05	3.71E-03
+serine-type peptidase activity (GO:0008236)	196	9	1.78	+	5.05	8.43E-05	3.64E-03
+calcium ion binding (GO:0005509)	299	13	2.72	+	4.78	4.22E-06	2.74E-04
+transmembrane transporter activity (GO:0022857)	1329	54	12.09	+	4.46	2.22E-20	1.82E-17
+active transmembrane transporter activity (GO:0022804)	527	21	4.80	+	4.38	2.12E-08	2.27E-06
+antiporter activity (GO:0015297)	179	7	1.63	+	4.30	1.32E-03	4.13E-02
+transporter activity (GO:0005215)	1385	54	12.60	+	4.28	1.40E-19	8.61E-17
+metal ion transmembrane transporter activity (GO:0046873)	240	9	2.18	+	4.12	3.82E-04	1.45E-02
+hydrolase activity, hydrolyzing O-glycosyl compounds (GO:0004553)	374	12	3.40	+	3.53	1.84E-04	7.30E-03
+protein serine/threonine kinase activity (GO:0004674)	1068	32	9.72	+	3.29	4.52E-09	7.95E-07
+heme binding (GO:0020037)	448	13	4.08	+	3.19	2.66E-04	1.02E-02
+protein kinase activity (GO:0004672)	1408	40	12.81	+	3.12	2.15E-10	5.89E-08
+hydrolase activity, acting on glycosyl bonds (GO:0016798)	430	12	3.91	+	3.07	6.41E-04	2.26E-02
+tetrapyrrole binding (GO:0046906)	475	13	4.32	+	3.01	4.63E-04	1.73E-02
+phosphotransferase activity, alcohol group as acceptor (GO:0016773)	1583	42	14.41	+	2.92	5.76E-10	1.29E-07
+kinase activity (GO:0016301)	1761	43	16.03	+	2.68	4.24E-09	8.02E-07
+ribonucleoside triphosphate phosphatase activity (GO:0017111)	679	16	6.18	+	2.59	5.55E-04	1.98E-02
+transferase activity, transferring phosphorus-containing groups (GO:0016772)	1985	45	18.06	+	2.49	2.42E-08	2.49E-06
+oxidoreductase activity (GO:0016491)	1538	31	14.00	+	2.21	4.23E-05	2.13E-03
+ATP binding (GO:0005524)	2779	55	25.29	+	2.17	4.97E-08	4.37E-06
+purine ribonucleoside triphosphate binding (GO:0035639)	3083	61	28.06	+	2.17	6.57E-09	8.98E-07
+purine nucleotide binding (GO:0017076)	3308	64	30.10	+	2.13	6.21E-09	9.56E-07
+ribonucleotide binding (GO:0032553)	3211	62	29.22	+	2.12	1.26E-08	1.64E-06
+adenyl nucleotide binding (GO:0030554)	3004	58	27.34	+	2.12	4.79E-08	4.37E-06
+purine ribonucleotide binding (GO:0032555)	3172	61	28.87	+	2.11	1.95E-08	2.29E-06
+adenyl ribonucleotide binding (GO:0032559)	2868	55	26.10	+	2.11	1.47E-07	1.17E-05
+carbohydrate derivative binding (GO:0097367)	3254	62	29.61	+	2.09	2.71E-08	2.67E-06
+nucleotide binding (GO:0000166)	3541	67	32.22	+	2.08	6.01E-09	9.87E-07
+nucleoside phosphate binding (GO:1901265)	3548	67	32.29	+	2.08	6.39E-09	9.25E-07
+catalytic activity, acting on a protein (GO:0140096)	3326	62	30.27	+	2.05	4.39E-08	4.15E-06
+heterocyclic compound binding (GO:1901363)	3700	68	33.67	+	2.02	1.99E-08	2.23E-06
+anion binding (GO:0043168)	3695	66	33.63	+	1.96	1.01E-07	8.30E-06
+protein binding (GO:0005515)	1940	33	17.65	+	1.87	7.44E-04	2.54E-02
+hydrolase activity (GO:0016787)	3420	55	31.12	+	1.77	3.62E-05	1.90E-03
+transferase activity (GO:0016740)	4605	72	41.91	+	1.72	3.53E-06	2.35E-04
+catalytic activity (GO:0003824)	10384	162	94.50	+	1.71	1.93E-15	9.51E-13
+small molecule binding (GO:0036094)	7452	116	67.81	+	1.71	4.98E-10	1.23E-07
+metal ion binding (GO:0046872)	4134	64	37.62	+	1.70	2.27E-05	1.24E-03
+ion binding (GO:0043167)	7313	113	66.55	+	1.70	1.49E-09	3.06E-07
+cation binding (GO:0043169)	4147	64	37.74	+	1.70	2.34E-05	1.25E-03
+molecular_function (GO:0003674)	18910	251	172.08	+	1.46	8.85E-21	2.18E-17
+binding (GO:0005488)	12413	146	112.96	+	1.29	1.46E-04	5.98E-03
+Unclassified (UNCLASSIFIED)	15485	62	140.92	-	.44	8.85E-21	1.09E-17
+RNA binding (GO:0003723)	1832	5	16.67	-	.30	1.37E-03	4.21E-02

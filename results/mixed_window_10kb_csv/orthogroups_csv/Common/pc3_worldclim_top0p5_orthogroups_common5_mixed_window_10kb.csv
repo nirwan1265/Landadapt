@@ -1,0 +1,2 @@
+Orthogroup,Gene_count,Maize_gene,Maize_pvalue_max,Sorghum_gene,Sorghum_pvalue_max,Rice_gene,Rice_pvalue_max,Barley_gene,Barley_pvalue_max,Arabidopsis_gene,Arabidopsis_pvalue_max
+4809112at2759,5,Zm00001eb202100,Zm00001eb202100:0.000592079,SORBI_3007G091100,SORBI_3007G091100:3.80207e-08,LOC_Os12g01510,LOC_Os12g01510:0.00198295,HORVU.MOREX.r3.5HG0461970,HORVU.MOREX.r3.5HG0461970:0.00174082,AT2G16430,AT2G16430:0.00249193

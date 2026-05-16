@@ -1,0 +1,22 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.XXXX/zenodo.XXXXXXXX Released 2025-10-05
+Analyzed List:	Client Text Box Input (Zea mays)
+Reference List:	background_Maize_all_GWAS_mappable_genes.txt (Zea mays)
+Test Type:	FISHER
+Correction:	FDR
+GO molecular function complete	background_Maize_all_GWAS_mappable_genes.txt - REFLIST (34395)	Client Text Box Input (48)	Client Text Box Input (expected)	Client Text Box Input (over/under)	Client Text Box Input (fold Enrichment)	Client Text Box Input (raw P-value)	Client Text Box Input (FDR)
+protein-cysteine S-acyltransferase activity (GO:0019707)	33	3	.05	+	65.14	1.35E-05	3.33E-02
+protein-cysteine S-palmitoyltransferase activity (GO:0019706)	33	3	.05	+	65.14	1.35E-05	1.66E-02
+S-acyltransferase activity (GO:0016417)	43	3	.06	+	49.99	3.03E-05	1.86E-02
+palmitoyltransferase activity (GO:0016409)	54	3	.08	+	39.81	6.02E-05	2.47E-02
+RNA endonuclease activity (GO:0004521)	76	3	.11	+	28.29	1.67E-04	4.57E-02
+lactoperoxidase activity (GO:0140825)	121	4	.17	+	23.69	2.52E-05	2.06E-02
+oxidoreductase activity, acting on peroxide as acceptor (GO:0016684)	176	4	.25	+	16.29	1.08E-04	3.80E-02
+peroxidase activity (GO:0004601)	176	4	.25	+	16.29	1.08E-04	3.33E-02
+antioxidant activity (GO:0016209)	207	4	.29	+	13.85	2.02E-04	4.96E-02
+catalytic activity (GO:0003824)	10384	28	14.49	+	1.93	5.54E-05	2.73E-02
