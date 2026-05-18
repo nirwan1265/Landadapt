@@ -456,12 +456,7 @@ AT5G15180
 
 Next, we performed GWAS for soil nitrogen predicted at 0--5 cm depth (Fig.~\ref{fig:fig4_manhattan_soilN}; Fig.~\ref{fig:figX_cross_species_gwas_summary}; Supplementary Fig.~\ref{fig:suppfig3_qq_all_traits}; Supplementary Table~S7). Nitrogen availability is a major determinant of plant growth, resource allocation, and root-system function, and can therefore impose strong selective pressures (ref). As summarized in Fig.~\ref{fig:figX_cross_species_gwas_summary}, species-specific GWAS signal for soil nitrogen was heterogeneous across taxa. Nevertheless, cross-species comparison recovered two shared candidate-gene groups across all five species (Table~\ref{tab:shared_genes_soilN_clean}), corresponding to putative UDP-arabinose 4-epimerase 2/UDP-galactose 4-epimerase and leucine-rich repeat receptor-like kinase functional classes. When the comparison was expanded to orthogroups shared across at least four species, additional recurrent functional modules were recovered, including peroxidase (\textit{\seqsplit{Zm00001eb043110}}), calcium-transporting ATPase (\textit{\seqsplit{Zm00001eb030420}}), protein kinase (\textit{\seqsplit{Zm00001eb011650}}), protein-serine/threonine phosphatase (\textit{\seqsplit{Zm00001eb331410}}), laccase (\textit{\seqsplit{Zm00001eb148270}}), chloride channel protein (\textit{\seqsplit{Zm00001eb244120}}), and exostosin family protein (\textit{\seqsplit{Zm00001eb163690}}) (Supplementary Table~\ref{tab:supptable4_go_ontology_maize_genes}). Together, these patterns support convergence on stress signaling, redox and cell-wall processes, and membrane transport under soil nitrogen-associated selection.
 
-\begin{figure*}[!t]
-    \centering
-    \includegraphics[width=\textwidth]{Figs/Fig4/Fig4_manhattan_plus_soilN.png}
-    \caption{Soil nitrogen (0--5 cm) genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of soil nitrogen phenotype values. The plots illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for this major edaphic variable.}
-    \label{fig:fig4_manhattan_soilN}
-\end{figure*}
+
 
 
 \begin{table*}[t]
@@ -896,7 +891,49 @@ A third recurrent signal was the NRT1.9-like candidate, \textit{AT1G18880} in \t
 
 Overall, the NRT1.1-, PTR3-, and NRT1.9-like candidates suggest that recurrent NRT1/PTR-family signals may reflect complementary transport-related themes, including nitrate sensing and root foraging, peptide/stress-associated transport, and vascular nitrate partitioning. These associations are best interpreted as hypothesis-generating evidence for conserved physiological themes in nutrient sensing and transport, rather than as proof of conserved causal adaptive mechanisms.
 
-%=======================================================================
+
+
+\subsection{GO}
+WORLDCLIM
+
+radial axis specification
+
+The GO term radial axis specification describes how root tissues are organized from the central vasculature to the epidermis via coordinated asymmetric and periclinal divisions that establish cortex, endodermis, and vascular patterning \citep{DiMambro2019}. In Arabidopsis, this process depends on SHR/SCR signaling and the miR165/166–HD-ZIPIII module, which specify ground-tissue organization and xylem identity \citep{DiMambro2019, Bloch2019}. Endodermal differentiation is central to this architecture, as the endodermis forms Casparian strips that control water and solute movement across root tissues \citep{DiMambro2019}. This program is stress responsive: ABA signaling can modify radial xylem patterning by elevating miR165a/166b, reducing HD-ZIPIII transcripts, and inducing earlier or ectopic protoxylem differentiation \citep{Bloch2019}. Enrichment of radial axis specification in the shared ortholog set therefore supports repeated involvement of internal root-patterning processes in environmental adaptation \citep{Julkowska2017, Kaur2026}.
+
+protein-tetrapyrrole linkage
+
+
+Enrichment of \textit{protein-tetrapyrrole linkage} suggests recurrent involvement of tetrapyrrole-dependent stress physiology along climatic gradients. Tetrapyrroles such as chlorophyll and heme are central to photosynthesis and respiration, and also support abiotic-stress responses, particularly via the heme branch of the pathway \citep{Nagahatenna2015}. Under drought, heat, and related stresses, disturbed ROS balance makes this branch especially important because heme is a cofactor for ROS-detoxifying enzymes such as catalase and superoxide dismutase \citep{Nagahatenna2015}. Experiments show that increased tetrapyrrole flux, elevated Proto IX, or enhanced ferrochelatase activity can raise heme levels, boost ROS scavenging, and improve tolerance to drought, osmotic, and oxidative stress \citep{Allen2010, Thu-Ha2011, Kim2014}. The heme branch has also been implicated in plastid-to-nucleus stress signalling, coupling chloroplast status to nuclear transcriptional responses under drought and oxidative stress \citep{Nagai2007, Woodson2011, Woodson2013, Nagahatenna2015}. Overall, enrichment of \textit{protein-tetrapyrrole linkage} aligns with repeated roles for tetrapyrrole-dependent redox buffering and stress signalling in climatic adaptation.
+
+
+
+soil pH
+
+response to salt
+
+Enrichment of the Gene Ontology term \textit{response to salt stress} in the soil pH–associated candidate set is biologically plausible, as alkaline soils impose combined ionic and high-pH stresses rather than a discrete pH stress. In saline–alkali environments, high pH intensifies osmotic and ionic stress by disrupting cellular pH homeostasis, reducing root vitality, damaging membranes, and limiting nutrient availability and recycling, especially of nitrogen, phosphorus, and sulfur \citep{Fang2021, LuFricke2023}. Plants often mitigate these conditions by synthesizing and exuding organic acids that buffer the rhizosphere and help maintain intracellular pH and ionic balance; this response is linked to phosphoenolpyruvate carboxylase activity and proton transport by H$^{+}$-ATPases \citep{Fang2021}. Tolerance to saline–alkali stress also depends on maintaining Na$^{+}$/K$^{+}$ homeostasis via SOS1- and NHX-type exchangers, driven by proton gradients generated by H$^{+}$-ATPases and H$^{+}$-VPPases \citep{Fang2021, Zhao2020}. Saline–alkali conditions further promote reactive oxygen species accumulation, which plants counter through antioxidant defenses involving SOD, CAT, POD, APX, glutathione, and ascorbate \citep{Fang2021, Zhao2020}. Thus, pH-associated enrichment of \textit{response to salt stress} likely reflects shared adaptive mechanisms for ion homeostasis, pH buffering, and oxidative-stress mitigation in chemically stressful soils, rather than a narrow response to NaCl alone.
+
+
+
+Phenylpropanoid catabolic process
+Enrichment of the GO term \textit{phenylpropanoid catabolic process} suggests that adaptation to soil pH depends on regulated turnover of phenylpropanoid-derived metabolites rather than on their accumulation alone. Phenylpropanoids, a diverse class of secondary metabolites (phenolic acids, flavonoids, lignin precursors, coumarins, and related compounds), support structural integrity, oxidative stress mitigation, signaling, and rhizosphere interactions under abiotic stress \citep{Sharma2019}. These roles are salient under variable soil pH, which strongly influences phosphorus availability and metal solubility: in acidic soils, phosphorus is often immobilized in iron and aluminum complexes, prompting plants to remodel root architecture and exude organic anions and phosphatases to mobilize nutrients \citep{KaurSuseela2020}. Phenolics further shape rhizosphere processes by altering physicochemical conditions, promoting nutrient mineralization, and mediating metal chelation and nutrient uptake \citep{Sharma2019}. Because some phenolics become phytotoxic at high concentrations, their levels must be tightly regulated rather than simply maximized \citep{Sharma2019}. Thus, enrichment of a \textit{catabolic} phenylpropanoid GO term aligns with controlled degradation, turnover, or remodeling of these metabolites under pH-related stress, enabling plants to balance defense, detoxification, and resource allocation across contrasting soil chemistries.
+
+This interpretation is reinforced by the role of arbuscular mycorrhizal fungi (AMF) in resource acquisition and host metabolic reprogramming. AMF enhance phosphorus uptake through extensive extraradical hyphae, access poorly available nutrient pools, and increase host tolerance to drought, salinity, and heavy metal stress \citep{JajooMathur2021, KaurSuseela2020}. In acidic soils, where phosphorus availability is constrained by iron and aluminum chemistry, AMF symbiosis is therefore central to pH-associated adaptation \citep{KaurSuseela2020}. AMF also reconfigure plant secondary metabolism, including the phenylpropanoid pathway, increasing multiple phenolics, flavonoids, hydroxycinnamates, and antioxidant metabolites, while modulating salicylic acid- and jasmonic acid-dependent defense signaling \citep{KaurSuseela2020}. They transiently suppress host immune responses during colonization but later prime plants for enhanced resistance to biotic and abiotic stress via secondary-metabolite reprogramming \citep{KaurSuseela2020}. Overall, enrichment of \textit{phenylpropanoid catabolic process} is consistent with a model in which soil pH-associated adaptation involves dynamic regulation of phenylpropanoid pools, with AMF-mediated nutrient exchange and stress signaling providing key ecological and physiological context for this metabolic control.
+
+
+
+Lignin
+Enrichment of the GO terms \textit{lignin catabolic process} and \textit{lignin metabolic process} in the soil pH–associated candidate set suggests that pH-driven adaptation involves dynamic cell-wall remodeling rather than simply increasing lignin deposition. Lignin, a major phenolic of the secondary cell wall, provides mechanical support, hydrophobicity, and barrier functions, and its accumulation is widely linked to plant responses to abiotic stress \citep{Han2022, Jalal2025}. Under low pH, this is especially relevant because acidic soils increase aluminium solubility and toxicity, strongly limiting root elongation and disrupting cell-wall integrity and function \citep{Han2022}. Studies in woody species show that aluminium stress alters lignin metabolism in divergent, species-specific ways: excessive Al increases root lignification in \textit{Pinus sylvestris} and \textit{Melaleuca bracteata}, whereas in tea (\textit{Camellia sinensis}) it reduces lignin accumulation alongside lower PAL and POD activities and downregulation of \textit{F5H} \citep{Han2022}. These contrasts indicate that lignin pathways under pH-associated stress are highly plastic and species dependent, not uniformly directed toward stronger wall rigidification. More broadly, recent syntheses emphasize lignin as part of a dynamic wall matrix whose composition, architecture, and interactions with other polymers are extensively remodeled under environmental stress \citep{Han2022, Jalal2025}. Within this view, enrichment of lignin catabolic and metabolic GO terms supports a model in which adaptation to soil pH entails regulated reorganization of lignified domains, with consequences for root barrier properties, apoplastic metal binding, and mechanical acclimation in chemically stressful soils. Overall, these findings implicate lignin turnover and remodeling—rather than biosynthesis alone—as key components of pH-associated adaptive responses.
+
+
+soil N
+The soil nitrogen-associated GO profile indicates that adaptation to heterogeneous nitrogen involves coordinated control of vacuolar storage, intracellular trafficking, root developmental plasticity, and cell-wall remodeling. The enrichment of \textit{vacuolar protein processing} is notable because the vacuole is a major storage site for inorganic nitrogen, especially nitrate, and a key hub for protein turnover and nutrient recycling under fluctuating supply \citep{Martinoia2007, Han2016}. In \textit{Brassica napus}, reduced vacuolar nitrate sequestration in roots increases cytosolic nitrate, enhances root-to-shoot nitrate translocation via altered \textit{NRT1.5}/\textit{NRT1.8} activity, and is associated with higher nitrogen use efficiency, underscoring the tight coupling between vacuolar nitrogen partitioning and NUE \citep{Han2016}. Enrichment of \textit{plasmodesmata-mediated intercellular transport}, \textit{intercellular transport}, \textit{exocytosis}, and \textit{secretion by cell} further suggests active symplastic and vesicle-mediated redistribution of metabolites and signaling molecules among root tissues. Under nitrogen limitation, such processes are expected, as storage, mobilization, and allocation depend on efficient intra- and intercellular transport as well as uptake. The enrichment of \textit{regulation of root development} aligns with the central role of root architectural plasticity in nitrogen acquisition, whereas \textit{cellulose catabolic process} and \textit{beta-glucan catabolic process} indicate cell-wall remodeling linked to altered root growth or transport properties. Enrichment of receptor-mediated signaling terms, including \textit{enzyme-linked receptor protein signaling pathway} and \textit{cell surface receptor protein serine/threonine kinase signaling pathway}, indicates that these transport and developmental responses are actively regulated rather than passive consequences of nitrogen stress. Together, these GO categories support a model in which soil nitrogen adaptation depends on dynamic regulation of vacuolar nitrogen storage and remobilization, integrated with root growth modulation, cell-wall remodeling, and intercellular transport to optimize nitrogen use efficiency under variable nutrient supply.
+
+
+
+AMfungal phenotypes:
+The enrichment of the Gene Ontology term \textit{positive regulation of brassinosteroid-mediated signaling pathway} in the AM fungal phenotype gene set supports a role for brassinosteroid (BR) signaling in establishing and maintaining arbuscular mycorrhizal symbiosis. Experimental evidence is consistent with this view. In solanaceous hosts, genetic or pharmacological disruption of BR signaling alters AM colonization and arbuscule architecture, while exogenous epi-brassinolide increases colonization and improves organization of the symbiotic interface \citep{vonSivers2019}. In tomato, BR receptor mutants show reduced colonization and overexpression lines show increased colonization, linking BR perception capacity to AM symbiosis \citep{Ren2024}. The same study indicated that BR- and AM-inducible transcriptional responses converge on modules related to cell-wall modification, cytoskeletal reorganization, auxin and ethylene signaling, mineral nutrient transport, photosynthesis, and stress responses, and highlighted genes such as \textit{SlBR1} and \textit{SlIPD3} as candidates integrating BR signaling with early fungal entry and subsequent symbiotic development \citep{Ren2024}. BR application in \textit{Eucalyptus grandis} likewise enhanced AM-associated plant performance, supporting the idea that BR signaling is part of a broader hormonal network modulating mycorrhizal outcomes rather than an isolated pathway \citep{Ren2024}. Overall, this GO enrichment pattern points to recurrent involvement of BR-linked developmental and signaling processes in AM symbiosis—especially host permissiveness to colonization, arbuscule architecture, and downstream physiological performance—while underscoring that it reflects a general hormonal theme rather than a single, universally conserved causal mechanism.
+
 %=======================================================================
 %=======================================================================
 
@@ -921,6 +958,14 @@ To represent belowground biotic variation, we also extracted arbuscular mycorrhi
 
 Aridity index values were extracted from the Global Aridity Index and Potential Evapotranspiration Database (v3), which provides globally gridded estimates of climatic aridity derived from precipitation and atmospheric evaporative demand \citep{zomer2022aridity}.
 
+
+
+
+\subsection{Permutation-based null analysis of shared orthogroup recurrence}
+
+To test whether cross-species orthogroup recurrence exceeded expectations under a matched null, we performed a candidate-universe permutation analysis for each environmental phenotype. For each trait, the observed candidate set for each species was defined as the orthogroup-mapped genes recovered from the top 0.5\% SNP threshold under the same mixed-window annotation scheme used in the main analysis. The permutation background for each species was the study-wide orthogroup-mapped gene universe, defined as genes represented in the orthogroup-mapped candidate sets across all analyzed traits. For each of 10{,}000 permutations, we sampled random gene sets without replacement from this background while preserving the observed number of candidate genes for that species and trait, and then recalculated the numbers of shared orthogroup rows present across all five species and across at least four species. Shared-orthogroup counts were computed using the same final shared-orthogroup tables and deduplication criteria as in the main analysis. Empirical $P$ values were calculated as $P = (1 + \sum I[X_{\mathrm{null}} \geq X_{\mathrm{obs}}])/(B+1)$, where $X_{\mathrm{obs}}$ is the observed recurrence count, $X_{\mathrm{null}}$ is the permuted count, and $B=10{,}000$.
+
+
 \subsection{Genome-wide association studies}
 
 Genome-wide association studies (GWAS) were performed separately for each species and environmental phenotype using GEMMA under a mixed linear model (MLM) framework. To account for relatedness among accessions, we included a kinship matrix in all analyses.  Association testing was performed independently within each species for all environmental phenotypes considered in this study.
@@ -930,6 +975,8 @@ For each GWAS, we first evaluated species-specific association signals using the
 Candidate SNPs were assigned to nearby genes based on species-specific genome annotations. Gene models were obtained from corresponding genome annotation files (e.g. GFF3-format annotations), and SNPs were mapped to genes using species-specific genomic coordinates. For Arabidopsis and rice, SNP-to-gene assignment was performed using a $\pm$10 kb window around each candidate SNP, whereas for maize, sorghum, and barley, a $\pm$25 kb window was used. For downstream orthology analysis, genes linked to the top 0.5\% SNPs were subsequently grouped using orthogroup relationships to identify shared candidate-gene sets across species.
 
 
+
+\subsection{Permutation-based null analysis of shared orthogroup recurrence}
 
 To evaluate whether cross-species orthogroup recurrence exceeded expectations from candidate-set size and gene-family structure, we performed matched candidate-universe permutations for each environmental phenotype. For each trait, the observed candidate set for each species was defined as the orthogroup-mapped genes recovered from the top 0.5\% SNP threshold under the mixed-window annotation scheme used in the main analysis. We then constructed a species-specific background consisting of the study-wide orthogroup-mapped gene universe recovered across all analyzed traits. For each species, random gene sets were sampled without replacement to match the observed number of candidate genes for that trait. To preserve broad differences in recurrence propensity, sampling was matched by (i) the number of traits in which a gene appeared in the orthogroup-mapped background and (ii) the global multiplicity of orthogroup-row assignments for that gene across the study-wide background. For each of 10{,}000 permutations, we recalculated the number of shared orthogroup rows observed across all five species and across at least four species using the same final deduplicated supplementary orthogroup tables as in the manuscript. Empirical $P$ values were calculated as $P = (1 + \sum I[X_{\mathrm{null}} \geq X_{\mathrm{obs}}])/(B+1)$, where $B=10{,}000$.
 
@@ -1234,6 +1281,156 @@ Fine-resolution global maps of root biomass carbon colonized by arbuscular and e
 \textit{Scientific Data}, 10, 56.
 https://doi.org/10.1038/s41597-022-01913-2
 
+\bibitem[Bloch et~al.(2019)Bloch, Puli, Mosquna, and Yalovsky]{Bloch2019}
+Bloch, D., Puli, M.~R., Mosquna, A., and Yalovsky, S. (2019).
+Abiotic stress modulates root patterning via ABA-regulated microRNA expression in the endodermis initials.
+\textit{Development}, \textbf{146}, dev177097.
+doi:10.1242/dev.177097
+
+\bibitem[Di Mambro et~al.(2019)Di Mambro, Sabatini, and Dello Ioio]{DiMambro2019}
+Di Mambro, R., Sabatini, S., and Dello Ioio, R. (2019).
+Patterning the axes: a lesson from the root.
+\textit{Plants}, \textbf{8}, 8.
+doi:10.3390/plants8010008
+
+\bibitem[Julkowska et~al.(2017)Julkowska, Koevoets, Mol, Hoefsloot, Feron, Tester, Keurentjes, Korte, Haring, de Boer, and Testerink]{Julkowska2017}
+Julkowska, M.~M., Koevoets, I.~T., Mol, S., Hoefsloot, H., Feron, R., Tester, M.~A., Keurentjes, J.~J.~B., Korte, A., Haring, M.~A., de Boer, G.-J., and Testerink, C. (2017).
+Genetic components of root architecture remodeling in response to salt stress.
+\textit{The Plant Cell}, \textbf{29}, 3198--3213.
+
+\bibitem[Kaur et~al.(2026)Kaur, Yadav, Yadav, Madaan, Kheralia, and Chinnusamy]{Kaur2026}
+Kaur, V., Yadav, S.~K., Yadav, B., Madaan, S., Kheralia, M., and Chinnusamy, V. (2026).
+Root system architecture and drought adaptation: emerging tools and genetic insights.
+\textit{Frontiers in Plant Science}, \textbf{17}, 1753086.
+doi:10.3389/fpls.2026.1753086
+
+
+\bibitem[Allen et~al.(2010)Allen, Luck, Mullen, Sakai, Sivasankar, Tingey, and Williams]{Allen2010}
+Allen, S.~M., Luck, S., Mullen, J., Sakai, H., Sivasankar, S., Tingey, S.~V., and Williams, R.~W. (2010).
+Drought tolerant plants and related constructs and methods involving genes encoding ferrochelatases.
+\textit{United States Patent} US 7,812,223 B2.
+
+\bibitem[Kim et~al.(2014)Kim, Back, Lee, Lee, Phung, Grimm, and Jung]{Kim2014Tetrapyrrole}
+Kim, J.-G., Back, K., Lee, H.~Y., Lee, H.-J., Phung, T.-H., Grimm, B., and Jung, S. (2014).
+Increased expression of Fe-chelatase leads to increased metabolic flux into heme and confers protection against photodynamically induced oxidative stress.
+\textit{Plant Molecular Biology}, \textbf{86}, 271--287.
+
+\bibitem[Nagai et~al.(2007)Nagai, Koide, Takahashi, Kikuta, Aono, Sasaki-Sekimoto, Ohta, Takamiya, and Masuda]{Nagai2007}
+Nagai, S., Koide, M., Takahashi, S., Kikuta, A., Aono, M., Sasaki-Sekimoto, Y., Ohta, H., Takamiya, K., and Masuda, T. (2007).
+Induction of isoforms of tetrapyrrole biosynthetic enzymes, \textit{AtHEMA2} and \textit{AtFC1}, under stress conditions and their physiological functions in \textit{Arabidopsis}.
+\textit{Plant Physiology}, \textbf{144}, 1039--1051.
+
+\bibitem[Nagahatenna et~al.(2015)Nagahatenna, Langridge, and Whitford]{Nagahatenna2015}
+Nagahatenna, D.~S.~K., Langridge, P., and Whitford, R. (2015).
+Tetrapyrrole-based drought stress signalling.
+\textit{Plant Biotechnology Journal}, \textbf{13}, 447--459.
+doi:10.1111/pbi.12356
+
+\bibitem[Thu-Ha et~al.(2011)Thu-Ha, Jung, Park, Kim, Back, and Jung]{ThuHa2011}
+Thu-Ha, P., Jung, H.-I., Park, J.-H., Kim, J.-G., Back, K., and Jung, S. (2011).
+Porphyrin biosynthesis control under water stress: sustained porphyrin status correlates with drought tolerance in transgenic rice.
+\textit{Plant Physiology}, \textbf{157}, 1746--1764.
+
+\bibitem[Woodson et~al.(2011)Woodson, Perez-Ruiz, and Chory]{Woodson2011}
+Woodson, J.~D., Perez-Ruiz, J.~M., and Chory, J. (2011).
+Heme synthesis by plastid ferrochelatase I regulates nuclear gene expression in plants.
+\textit{Current Biology}, \textbf{21}, 897--903.
+
+\bibitem[Woodson et~al.(2013)Woodson, Perez-Ruiz, Schmitz, Ecker, and Chory]{Woodson2013}
+Woodson, J.~D., Perez-Ruiz, J.~M., Schmitz, R.~J., Ecker, J.~R., and Chory, J. (2013).
+Sigma factor-mediated plastid retrograde signals control nuclear gene expression.
+\textit{The Plant Journal}, \textbf{73}, 1--13.
+
+\bibitem[Xu et~al.(2011)Xu, Zhang, Cao, Ling, and Shen]{Xu2011}
+Xu, S., Zhang, B., Cao, Z.-Y., Ling, T.-F., and Shen, W.-B. (2011).
+Heme oxygenase is involved in cobalt chloride-induced lateral root development in tomato.
+\textit{Biometals}, \textbf{24}, 181--191.
+
+
+\bibitem[Fang et~al.(2021)Fang, Hou, and Liang]{Fang2021}
+Fang, S., Hou, X., and Liang, X. (2021).
+Response mechanisms of plants under saline-alkali stress.
+\textit{Frontiers in Plant Science}, \textbf{12}, 667458.
+doi:10.3389/fpls.2021.667458
+
+\bibitem[Lu and Fricke(2023)]{LuFricke2023}
+Lu, Y., and Fricke, W. (2023).
+Salt stress---regulation of root water uptake in a whole-plant and diurnal context.
+\textit{International Journal of Molecular Sciences}, \textbf{24}, 8070.
+doi:10.3390/ijms24098070
+
+\bibitem[Zhao et~al.(2020)Zhao, Zhang, Song, Zhu, and Shabala]{Zhao2020}
+Zhao, C., Zhang, H., Song, C., Zhu, J.-K., and Shabala, S. (2020).
+Mechanisms of plant responses and adaptation to soil salinity.
+\textit{The Innovation}, \textbf{1}, 100017.
+doi:10.1016/j.xinn.2020.100017
+
+
+\bibitem[Han et~al.(2022)Han, Zhao, Chen, Xu, Jiang, Wang, Zhuo, Lu, and Zhang]{Han2022}
+Han, X., Zhao, Y., Chen, Y., Xu, J., Jiang, C., Wang, X., Zhuo, R., Lu, M.-Z., and Zhang, J. (2022).
+Lignin biosynthesis and accumulation in response to abiotic stresses in woody plants.
+\textit{Forestry Research}, \textbf{2}, 9.
+doi:10.48130/FR-2022-0009
+
+\bibitem[Jalal et~al.(2025)Jalal, Wang, Cai, Ayaz, Alabbosh, Khan, Han, and Zhu]{Jalal2025}
+Jalal, A., Wang, Y., Cai, C., Ayaz, A., Alabbosh, K. F., Khan, K. A., Han, S., and Zhu, D. (2025).
+The architecture of adaptive lignin biosynthesis: Navigating environmental stresses in plants.
+\textit{Journal of Agronomy and Crop Science}, \textbf{211}, e70012.
+doi:10.1111/jac.70012
+
+\bibitem[Sharma et~al.(2019)Sharma, Shahzad, Rehman, Bhardwaj, Landi, and Zheng]{Sharma2019}
+Sharma, A., Shahzad, B., Rehman, A., Bhardwaj, R., Landi, M., and Zheng, B. (2019).
+Response of phenylpropanoid pathway and the role of polyphenols in plants under abiotic stress.
+\textit{Molecules}, \textbf{24}, 2452.
+doi:10.3390/molecules24132452
+
+\bibitem[Jajoo and Mathur(2021)]{Jajoo2021}
+Jajoo, A., and Mathur, S. (2021).
+Role of arbuscular mycorrhizal fungi as an underground saviour for protecting plants from abiotic stresses.
+\textit{Physiology and Molecular Biology of Plants}, \textbf{27}, 2589--2603.
+doi:10.1007/s12298-021-01091-2
+
+\bibitem[Kaur and Suseela(2020)]{KaurSuseela2020}
+Kaur, S., and Suseela, V. (2020).
+Unraveling arbuscular mycorrhiza-induced changes in plant primary and secondary metabolome.
+\textit{Metabolites}, \textbf{10}, 335.
+doi:10.3390/metabo10080335
+
+\bibitem[Han et~al.(2016)Han, Song, Liao, Yu, Jian, Lepo, Liu, Rong, Tian, Zeng, Guan, Ismail, and Zhang]{Han2016}
+Han, Y.-L., Song, H.-X., Liao, Q., Yu, Y., Jian, S.-F., Lepo, J. E., Liu, Q., Rong, X.-M., Tian, C., Zeng, J., Guan, C.-Y., Ismail, A. M., and Zhang, Z.-H. (2016).
+Nitrogen use efficiency is mediated by vacuolar nitrate sequestration capacity in roots of \textit{Brassica napus}.
+\textit{Plant Physiology}, \textbf{170}, 1684--1698.
+doi:10.1104/pp.15.01377
+
+\bibitem[Martinoia et~al.(2007)Martinoia, Maeshima, and Neuhaus]{Martinoia2007}
+Martinoia, E., Maeshima, M., and Neuhaus, H. E. (2007).
+Vacuolar transporters and their essential role in plant metabolism.
+\textit{Journal of Experimental Botany}, \textbf{58}, 83--102.
+doi:10.1093/jxb/erl183
+
+\bibitem[Wleklik and Borek(2023)]{Wleklik2023}
+Wleklik, K., and Borek, S. (2023).
+Vacuolar processing enzymes in plant programmed cell death and autophagy.
+\textit{International Journal of Molecular Sciences}, \textbf{24}, 1198.
+doi:10.3390/ijms24021198
+
+\bibitem[von Sivers et~al.(2019)von Sivers, Jaspar, Johst, Roese, Bitterlich, Franken, and K{\"u}hn]{vonSivers2019}
+von Sivers, L., Jaspar, H., Johst, B., Roese, M., Bitterlich, M., Franken, P., and K{\"u}hn, C. (2019).
+Brassinosteroids affect the symbiosis between the AM fungus \textit{Rhizoglomus irregularis} and solanaceous host plants.
+\textit{Frontiers in Plant Science}, \textbf{10}, 571.
+doi:10.3389/fpls.2019.00571
+
+\bibitem[Ren et~al.(2021)Ren, Che, Liang, Wang, Han, Liu, Chen, and Tang]{Ren2021BRAM}
+Ren, Y., Che, X., Liang, J., Wang, S., Han, L., Liu, Z., Chen, H., and Tang, M. (2021).
+Brassinosteroids benefit plants performance by augmenting arbuscular mycorrhizal symbiosis.
+\textit{Microbiology Spectrum}, \textbf{9}, e01645-21.
+doi:10.1128/Spectrum.01645-21
+
+\bibitem[Ren et~al.(2024)Ren, Tobin, Yang, Xu, Chen, and Tang]{Ren2024BRTomato}
+Ren, Y., Tobin, B., Yang, S., Xu, T., Chen, H., and Tang, M. (2024).
+Brassinosteroids mediate arbuscular mycorrhizal symbiosis through multiple potential pathways and partial identification in tomato.
+\textit{Microbiological Research}, \textbf{289}, 127924.
+doi:10.1016/j.micres.2024.127924
 
 \end{thebibliography}
 
@@ -1302,6 +1499,14 @@ https://doi.org/10.1038/s41597-022-01913-2
     \includegraphics[width=\textwidth]{Figs/Fig6/Fig6_manhattan_plus_aridity_index.png}
     \caption{Aridity index genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of aridity index values. Together, these panels illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for climatic aridity.}
     \label{fig:fig6_manhattan_aridity}
+\end{figure*}
+
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{Figs/Fig4/Fig4_manhattan_plus_soilN.png}
+    \caption{Soil nitrogen (0--5 cm) genome-wide association results across five species. (A) Manhattan plots for Arabidopsis, barley, rice, maize, and sorghum, with the dashed red line marking the top 0.5\% SNP threshold used for downstream candidate-gene and orthogroup analyses. (B) Species-wise distributions of soil nitrogen phenotype values. The plots illustrate heterogeneous GWAS signal strength and phenotype distributions across taxa for this major edaphic variable.}
+    \label{fig:fig4_manhattan_soilN}
 \end{figure*}
 
 \end{appendices}
