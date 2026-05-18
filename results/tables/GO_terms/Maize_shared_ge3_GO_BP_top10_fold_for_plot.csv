@@ -1,123 +1,123 @@
-"term","ref_count","input_count","expected","direction","fold_enrichment","raw_p","fdr","phenotype","ontology","phenotype_label","term_wrapped","term_facet","neglog10_fdr"
-"dipeptide transmembrane transport (GO:0035442)",6,3,0.05,"+",54.94,1.46e-05,0.00143,"AMF","BP","AM fungal phenotypes","dipeptide transmembrane transport
+"term","ref_count","input_count","expected","direction","fold_enrichment","raw_p","fdr","phenotype","phenotype_label","facet_title","term_wrapped","term_facet","neglog10_fdr"
+"dipeptide transmembrane transport (GO:0035442)",6,3,0.05,"+",54.94,1.46e-05,0.00143,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","dipeptide transmembrane transport
 (GO:0035442)","dipeptide transmembrane transport
 (GO:0035442)___AM fungal phenotypes",2.84466396253494
-"dipeptide transport (GO:0042938)",6,3,0.05,"+",54.94,1.46e-05,0.00147,"AMF","BP","AM fungal phenotypes","dipeptide transport (GO:0042938)","dipeptide transport (GO:0042938)___AM fungal phenotypes",2.83268266525182
-"positive regulation of brassinosteroid mediated signaling pathway (GO:1900459)",4,2,0.04,"+",54.94,0.000489,0.0252,"AMF","BP","AM fungal phenotypes","positive regulation of
+"dipeptide transport (GO:0042938)",6,3,0.05,"+",54.94,1.46e-05,0.00147,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","dipeptide transport (GO:0042938)","dipeptide transport (GO:0042938)___AM fungal phenotypes",2.83268266525182
+"positive regulation of brassinosteroid mediated signaling pathway (GO:1900459)",4,2,0.04,"+",54.94,0.000489,0.0252,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","positive regulation of
 brassinosteroid mediated
 signaling pathway (GO:1900459)","positive regulation of
 brassinosteroid mediated
 signaling pathway (GO:1900459)___AM fungal phenotypes",1.59859945921846
-"pigmentation (GO:0043473)",4,2,0.04,"+",54.94,0.000489,0.0255,"AMF","BP","AM fungal phenotypes","pigmentation (GO:0043473)","pigmentation (GO:0043473)___AM fungal phenotypes",1.59345981956604
-"pigment accumulation (GO:0043476)",4,2,0.04,"+",54.94,0.000489,0.0258,"AMF","BP","AM fungal phenotypes","pigment accumulation (GO:0043476)","pigment accumulation (GO:0043476)___AM fungal phenotypes",1.58838029403677
-"pigment accumulation in response to UV light (GO:0043478)",4,2,0.04,"+",54.94,0.000489,0.0262,"AMF","BP","AM fungal phenotypes","pigment accumulation in response
+"pigmentation (GO:0043473)",4,2,0.04,"+",54.94,0.000489,0.0255,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","pigmentation (GO:0043473)","pigmentation (GO:0043473)___AM fungal phenotypes",1.59345981956604
+"pigment accumulation (GO:0043476)",4,2,0.04,"+",54.94,0.000489,0.0258,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","pigment accumulation (GO:0043476)","pigment accumulation (GO:0043476)___AM fungal phenotypes",1.58838029403677
+"pigment accumulation in response to UV light (GO:0043478)",4,2,0.04,"+",54.94,0.000489,0.0262,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","pigment accumulation in response
 to UV light (GO:0043478)","pigment accumulation in response
 to UV light (GO:0043478)___AM fungal phenotypes",1.58169870868025
-"pigment accumulation in tissues in response to UV light (GO:0043479)",4,2,0.04,"+",54.94,0.000489,0.0266,"AMF","BP","AM fungal phenotypes","pigment accumulation in tissues
+"pigment accumulation in tissues in response to UV light (GO:0043479)",4,2,0.04,"+",54.94,0.000489,0.0266,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","pigment accumulation in tissues
 in response to UV light
 (GO:0043479)","pigment accumulation in tissues
 in response to UV light
 (GO:0043479)___AM fungal phenotypes",1.57511836336893
-"pigment accumulation in tissues (GO:0043480)",4,2,0.04,"+",54.94,0.000489,0.0269,"AMF","BP","AM fungal phenotypes","pigment accumulation in tissues
+"pigment accumulation in tissues (GO:0043480)",4,2,0.04,"+",54.94,0.000489,0.0269,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","pigment accumulation in tissues
 (GO:0043480)","pigment accumulation in tissues
 (GO:0043480)___AM fungal phenotypes",1.57024771999759
-"anthocyanin accumulation in tissues in response to UV light (GO:0043481)",4,2,0.04,"+",54.94,0.000489,0.0273,"AMF","BP","AM fungal phenotypes","anthocyanin accumulation in
+"anthocyanin accumulation in tissues in response to UV light (GO:0043481)",4,2,0.04,"+",54.94,0.000489,0.0273,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","anthocyanin accumulation in
 tissues in response to UV light
 (GO:0043481)","anthocyanin accumulation in
 tissues in response to UV light
 (GO:0043481)___AM fungal phenotypes",1.56383735295924
-"alternative respiration (GO:0010230)",5,2,0.05,"+",43.96,0.000811,0.0391,"AMF","BP","AM fungal phenotypes","alternative respiration
+"alternative respiration (GO:0010230)",5,2,0.05,"+",43.96,0.000811,0.0391,"AMF","AM fungal phenotypes","D. AM fungal phenotypes","alternative respiration
 (GO:0010230)","alternative respiration
 (GO:0010230)___AM fungal phenotypes",1.40782324260413
-"radial axis specification (GO:0009945)",3,2,0.05,"+",44.44,0.000667,0.0414,"PCs","BP","WorldClim PCs","radial axis specification
+"radial axis specification (GO:0009945)",3,2,0.05,"+",44.44,0.000667,0.0414,"PCs","WorldClim PCs","A. WorldClim PCs","radial axis specification
 (GO:0009945)","radial axis specification
 (GO:0009945)___WorldClim PCs",1.3829996588791
-"protein-tetrapyrrole linkage (GO:0017006)",8,3,0.12,"+",25,0.000178,0.0136,"PCs","BP","WorldClim PCs","protein-tetrapyrrole linkage
+"protein-tetrapyrrole linkage (GO:0017006)",8,3,0.12,"+",25,0.000178,0.0136,"PCs","WorldClim PCs","A. WorldClim PCs","protein-tetrapyrrole linkage
 (GO:0017006)","protein-tetrapyrrole linkage
 (GO:0017006)___WorldClim PCs",1.86646109162978
-"mitochondrial transmembrane transport (GO:1990542)",9,3,0.14,"+",22.22,0.000264,0.0194,"PCs","BP","WorldClim PCs","mitochondrial transmembrane
+"mitochondrial transmembrane transport (GO:1990542)",9,3,0.14,"+",22.22,0.000264,0.0194,"PCs","WorldClim PCs","A. WorldClim PCs","mitochondrial transmembrane
 transport (GO:1990542)","mitochondrial transmembrane
 transport (GO:1990542)___WorldClim PCs",1.71219827006977
-"detection of visible light (GO:0009584)",10,3,0.15,"+",20,0.000372,0.026,"PCs","BP","WorldClim PCs","detection of visible light
+"detection of visible light (GO:0009584)",10,3,0.15,"+",20,0.000372,0.026,"PCs","WorldClim PCs","A. WorldClim PCs","detection of visible light
 (GO:0009584)","detection of visible light
 (GO:0009584)___WorldClim PCs",1.58502665202918
-"lignin biosynthetic process (GO:0009809)",16,4,0.24,"+",16.66,7.9e-05,0.00671,"PCs","BP","WorldClim PCs","lignin biosynthetic process
+"lignin biosynthetic process (GO:0009809)",16,4,0.24,"+",16.66,7.9e-05,0.00671,"PCs","WorldClim PCs","A. WorldClim PCs","lignin biosynthetic process
 (GO:0009809)","lignin biosynthetic process
 (GO:0009809)___WorldClim PCs",2.17327747983101
-"oligopeptide transmembrane transport (GO:0035672)",40,7,0.6,"+",11.66,1.99e-06,0.000205,"PCs","BP","WorldClim PCs","oligopeptide transmembrane
+"oligopeptide transmembrane transport (GO:0035672)",40,7,0.6,"+",11.66,1.99e-06,0.000205,"PCs","WorldClim PCs","A. WorldClim PCs","oligopeptide transmembrane
 transport (GO:0035672)","oligopeptide transmembrane
 transport (GO:0035672)___WorldClim PCs",3.68824613894425
-"response to steroid hormone (GO:0048545)",76,13,1.14,"+",11.4,1.08e-10,1.51e-08,"PCs","BP","WorldClim PCs","response to steroid hormone
+"response to steroid hormone (GO:0048545)",76,13,1.14,"+",11.4,1.08e-10,1.51e-08,"PCs","WorldClim PCs","A. WorldClim PCs","response to steroid hormone
 (GO:0048545)","response to steroid hormone
 (GO:0048545)___WorldClim PCs",7.82102305270683
-"steroid hormone receptor signaling pathway (GO:0043401)",76,13,1.14,"+",11.4,1.08e-10,1.57e-08,"PCs","BP","WorldClim PCs","steroid hormone receptor
+"steroid hormone receptor signaling pathway (GO:0043401)",76,13,1.14,"+",11.4,1.08e-10,1.57e-08,"PCs","WorldClim PCs","A. WorldClim PCs","steroid hormone receptor
 signaling pathway (GO:0043401)","steroid hormone receptor
 signaling pathway (GO:0043401)___WorldClim PCs",7.80410034759077
-"cellular response to brassinosteroid stimulus (GO:0071367)",76,13,1.14,"+",11.4,1.08e-10,1.63e-08,"PCs","BP","WorldClim PCs","cellular response to
+"cellular response to brassinosteroid stimulus (GO:0071367)",76,13,1.14,"+",11.4,1.08e-10,1.63e-08,"PCs","WorldClim PCs","A. WorldClim PCs","cellular response to
 brassinosteroid stimulus
 (GO:0071367)","cellular response to
 brassinosteroid stimulus
 (GO:0071367)___WorldClim PCs",7.78781239559604
-"cellular response to steroid hormone stimulus (GO:0071383)",76,13,1.14,"+",11.4,1.08e-10,1.69e-08,"PCs","BP","WorldClim PCs","cellular response to steroid
+"cellular response to steroid hormone stimulus (GO:0071383)",76,13,1.14,"+",11.4,1.08e-10,1.69e-08,"PCs","WorldClim PCs","A. WorldClim PCs","cellular response to steroid
 hormone stimulus (GO:0071383)","cellular response to steroid
 hormone stimulus (GO:0071383)___WorldClim PCs",7.77211329538633
-"vacuolar protein processing (GO:0006624)",5,2,0.03,"+",68.45,0.000336,0.0375,"SoilN","BP","soil nitrogen","vacuolar protein processing
+"vacuolar protein processing (GO:0006624)",5,2,0.03,"+",68.45,0.000336,0.0375,"SoilN","soil nitrogen","C. soil nitrogen","vacuolar protein processing
 (GO:0006624)","vacuolar protein processing
 (GO:0006624)___soil nitrogen",1.42596873227228
-"plasmodesmata-mediated intercellular transport (GO:0010497)",14,3,0.08,"+",36.67,6.82e-05,0.0121,"SoilN","BP","soil nitrogen","plasmodesmata-mediated
+"plasmodesmata-mediated intercellular transport (GO:0010497)",14,3,0.08,"+",36.67,6.82e-05,0.0121,"SoilN","soil nitrogen","C. soil nitrogen","plasmodesmata-mediated
 intercellular transport
 (GO:0010497)","plasmodesmata-mediated
 intercellular transport
 (GO:0010497)___soil nitrogen",1.91721462968355
-"intercellular transport (GO:0010496)",15,3,0.09,"+",34.22,8.49e-05,0.0138,"SoilN","BP","soil nitrogen","intercellular transport
+"intercellular transport (GO:0010496)",15,3,0.09,"+",34.22,8.49e-05,0.0138,"SoilN","soil nitrogen","C. soil nitrogen","intercellular transport
 (GO:0010496)","intercellular transport
 (GO:0010496)___soil nitrogen",1.86012091359876
-"regulation of root development (GO:2000280)",20,3,0.12,"+",25.67,0.000208,0.0263,"SoilN","BP","soil nitrogen","regulation of root development
+"regulation of root development (GO:2000280)",20,3,0.12,"+",25.67,0.000208,0.0263,"SoilN","soil nitrogen","C. soil nitrogen","regulation of root development
 (GO:2000280)","regulation of root development
 (GO:2000280)___soil nitrogen",1.58004425151024
-"cellulose catabolic process (GO:0030245)",25,3,0.15,"+",20.53,0.000411,0.0423,"SoilN","BP","soil nitrogen","cellulose catabolic process
+"cellulose catabolic process (GO:0030245)",25,3,0.15,"+",20.53,0.000411,0.0423,"SoilN","soil nitrogen","C. soil nitrogen","cellulose catabolic process
 (GO:0030245)","cellulose catabolic process
 (GO:0030245)___soil nitrogen",1.37365963262496
-"beta-glucan catabolic process (GO:0051275)",25,3,0.15,"+",20.53,0.000411,0.0435,"SoilN","BP","soil nitrogen","beta-glucan catabolic process
+"beta-glucan catabolic process (GO:0051275)",25,3,0.15,"+",20.53,0.000411,0.0435,"SoilN","soil nitrogen","C. soil nitrogen","beta-glucan catabolic process
 (GO:0051275)","beta-glucan catabolic process
 (GO:0051275)___soil nitrogen",1.36151074304536
-"enzyme-linked receptor protein signaling pathway (GO:0007167)",43,4,0.25,"+",15.92,0.000117,0.0163,"SoilN","BP","soil nitrogen","enzyme-linked receptor protein
+"enzyme-linked receptor protein signaling pathway (GO:0007167)",43,4,0.25,"+",15.92,0.000117,0.0163,"SoilN","soil nitrogen","C. soil nitrogen","enzyme-linked receptor protein
 signaling pathway (GO:0007167)","enzyme-linked receptor protein
 signaling pathway (GO:0007167)___soil nitrogen",1.78781239559604
-"cell surface receptor protein serine/threonine kinase signaling pathway (GO:0007178)",43,4,0.25,"+",15.92,0.000117,0.0169,"SoilN","BP","soil nitrogen","cell surface receptor protein
+"cell surface receptor protein serine/threonine kinase signaling pathway (GO:0007178)",43,4,0.25,"+",15.92,0.000117,0.0169,"SoilN","soil nitrogen","C. soil nitrogen","cell surface receptor protein
 serine/threonine kinase signaling
 pathway (GO:0007178)","cell surface receptor protein
 serine/threonine kinase signaling
 pathway (GO:0007178)___soil nitrogen",1.77211329538633
-"exocytosis (GO:0006887)",77,6,0.45,"+",13.33,6.21e-06,0.0027,"SoilN","BP","soil nitrogen","exocytosis (GO:0006887)","exocytosis (GO:0006887)___soil nitrogen",2.56863623584101
-"secretion by cell (GO:0032940)",84,6,0.49,"+",12.22,1.03e-05,0.00365,"SoilN","BP","soil nitrogen","secretion by cell (GO:0032940)","secretion by cell (GO:0032940)___soil nitrogen",2.43770713554353
-"response to salt (GO:1902074)",10,3,0.06,"+",49.14,2.61e-05,0.00364,"pH","BP","soil pH","response to salt (GO:1902074)","response to salt (GO:1902074)___soil pH",2.43889861635094
-"phenylpropanoid catabolic process (GO:0046271)",21,4,0.13,"+",31.2,7.45e-06,0.00121,"pH","BP","soil pH","phenylpropanoid catabolic process
+"exocytosis (GO:0006887)",77,6,0.45,"+",13.33,6.21e-06,0.0027,"SoilN","soil nitrogen","C. soil nitrogen","exocytosis (GO:0006887)","exocytosis (GO:0006887)___soil nitrogen",2.56863623584101
+"secretion by cell (GO:0032940)",84,6,0.49,"+",12.22,1.03e-05,0.00365,"SoilN","soil nitrogen","C. soil nitrogen","secretion by cell (GO:0032940)","secretion by cell (GO:0032940)___soil nitrogen",2.43770713554353
+"response to salt (GO:1902074)",10,3,0.06,"+",49.14,2.61e-05,0.00364,"pH","soil pH","B. soil pH","response to salt (GO:1902074)","response to salt (GO:1902074)___soil pH",2.43889861635094
+"phenylpropanoid catabolic process (GO:0046271)",21,4,0.13,"+",31.2,7.45e-06,0.00121,"pH","soil pH","B. soil pH","phenylpropanoid catabolic process
 (GO:0046271)","phenylpropanoid catabolic process
 (GO:0046271)___soil pH",2.91721462968355
-"lignin catabolic process (GO:0046274)",21,4,0.13,"+",31.2,7.45e-06,0.00127,"pH","BP","soil pH","lignin catabolic process
+"lignin catabolic process (GO:0046274)",21,4,0.13,"+",31.2,7.45e-06,0.00127,"pH","soil pH","B. soil pH","lignin catabolic process
 (GO:0046274)","lignin catabolic process
 (GO:0046274)___soil pH",2.89619627904404
-"lignin metabolic process (GO:0009808)",41,4,0.25,"+",15.98,0.000115,0.0124,"pH","BP","soil pH","lignin metabolic process
+"lignin metabolic process (GO:0009808)",41,4,0.25,"+",15.98,0.000115,0.0124,"pH","soil pH","B. soil pH","lignin metabolic process
 (GO:0009808)","lignin metabolic process
 (GO:0009808)___soil pH",1.90657831483776
-"regulation of intracellular signal transduction (GO:1902531)",93,7,0.57,"+",12.33,1.74e-06,4e-04,"pH","BP","soil pH","regulation of intracellular
+"regulation of intracellular signal transduction (GO:1902531)",93,7,0.57,"+",12.33,1.74e-06,4e-04,"pH","soil pH","B. soil pH","regulation of intracellular
 signal transduction (GO:1902531)","regulation of intracellular
 signal transduction (GO:1902531)___soil pH",3.39794000867204
-"response to steroid hormone (GO:0048545)",76,5,0.46,"+",10.78,0.000105,0.0117,"pH","BP","soil pH","response to steroid hormone
+"response to steroid hormone (GO:0048545)",76,5,0.46,"+",10.78,0.000105,0.0117,"pH","soil pH","B. soil pH","response to steroid hormone
 (GO:0048545)","response to steroid hormone
 (GO:0048545)___soil pH",1.93181413825384
-"steroid hormone receptor signaling pathway (GO:0043401)",76,5,0.46,"+",10.78,0.000105,0.0121,"pH","BP","soil pH","steroid hormone receptor
+"steroid hormone receptor signaling pathway (GO:0043401)",76,5,0.46,"+",10.78,0.000105,0.0121,"pH","soil pH","B. soil pH","steroid hormone receptor
 signaling pathway (GO:0043401)","steroid hormone receptor
 signaling pathway (GO:0043401)___soil pH",1.91721462968355
-"cellular response to brassinosteroid stimulus (GO:0071367)",76,5,0.46,"+",10.78,0.000105,0.0124,"pH","BP","soil pH","cellular response to
+"cellular response to brassinosteroid stimulus (GO:0071367)",76,5,0.46,"+",10.78,0.000105,0.0124,"pH","soil pH","B. soil pH","cellular response to
 brassinosteroid stimulus
 (GO:0071367)","cellular response to
 brassinosteroid stimulus
 (GO:0071367)___soil pH",1.90657831483776
-"cellular response to steroid hormone stimulus (GO:0071383)",76,5,0.46,"+",10.78,0.000105,0.0128,"pH","BP","soil pH","cellular response to steroid
+"cellular response to steroid hormone stimulus (GO:0071383)",76,5,0.46,"+",10.78,0.000105,0.0128,"pH","soil pH","B. soil pH","cellular response to steroid
 hormone stimulus (GO:0071383)","cellular response to steroid
 hormone stimulus (GO:0071383)___soil pH",1.89279003035213
-"brassinosteroid mediated signaling pathway (GO:0009742)",76,5,0.46,"+",10.78,0.000105,0.0133,"pH","BP","soil pH","brassinosteroid mediated
+"brassinosteroid mediated signaling pathway (GO:0009742)",76,5,0.46,"+",10.78,0.000105,0.0133,"pH","soil pH","B. soil pH","brassinosteroid mediated
 signaling pathway (GO:0009742)","brassinosteroid mediated
 signaling pathway (GO:0009742)___soil pH",1.87614835903291

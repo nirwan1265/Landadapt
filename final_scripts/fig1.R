@@ -174,16 +174,16 @@ crop_present <- map_crop_order[map_crop_order %in% unique(points$crop)]
 
 legend_df <- data.frame(
   crop = crop_present,
-  lon = -170,
-  lat = seq(72, by = -7, length.out = length(crop_present)),
+  lon = seq(-55, 55, length.out = length(crop_present)),
+  lat = rep(80, length(crop_present)),
   col = unname(unlist(crop_palettes[crop_present]))
 )
 
 p <- p +
-  annotate("rect", xmin = -178, xmax = -126, ymin = 20, ymax = 80, fill = alpha("white", 0.9), color = "black", linewidth = 0.25) +
-  annotate("text", x = -175, y = 77, label = "Crop", hjust = 0, size = 3.4, fontface = "bold") +
+  annotate("rect", xmin = -72, xmax = 72, ymin = 71, ymax = 84, fill = alpha("white", 0.92), color = "black", linewidth = 0.25) +
+  annotate("text", x = -68, y = 82.5, label = "Crop", hjust = 0, size = 3.4, fontface = "bold") +
   geom_point(data = legend_df, aes(x = lon, y = lat), color = legend_df$col, size = 3) +
-  geom_text(data = legend_df, aes(x = lon, y = lat, label = crop), hjust = 0, nudge_x = 6, size = 3.5)
+  geom_text(data = legend_df, aes(x = lon, y = lat - 2.2, label = crop), size = 3.5)
 
 p <- p +
   labs(x = NULL, y = NULL) +
